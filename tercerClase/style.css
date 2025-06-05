@@ -1,0 +1,17 @@
+.title{
+    color: brown;
+    border: 1px solid black;
+    width: 230px;
+}
+
+.barra-de-navegacion{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}

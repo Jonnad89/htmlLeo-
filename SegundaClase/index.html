@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Intermedio + formularios</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form>
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" /> <br /><br /><br />
+      <!-- La etiqueta <br> hace un salto de linea -->
+
+      <label for="color">Color favorito:</label>
+      <input type="color" id="color" name="color" /> <br /><br /><br />
+
+      <label for="rango">Nivel de satisfacción:</label>
+      <input type="range" id="rango" name="rango" min="0" max="10" />
+      <br /><br /><br />
+
+      <label for="archivo">Subí tu CV</label>
+      <input type="file" id="archivo" name="archivo" /> <br /><br /><br />
+
+      <label for="pais">País:</label>
+      <select name="pais" id="pais">
+        <option value="arg">Argentina</option>
+        <option value="mex">México</option>
+        <option value="esp">España</option>
+      </select>
+      <br /><br /><br />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea name="mansaje" id="mensaje" rows="4" cols="30"></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+    <hr />
+    <form action="/procesar" method="post">
+      <label for="sexo">Sexo:</label>
+      <input type="radio" id="masculino" name="sexo" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="femenino" name="sexo" value="femenino" />
+      <label for="femenino">Femenino</label>
+      <br />
+      <label for="intereses">Intereses:</label>
+      <input type="checkbox" id="deporte" name="intereses" value="deporte" />
+      <label for="deporte">Deporte</label>
+      <input type="checkbox" id="musica" name="intereses" value="musica" />
+      <label for="musica">Música</label>
+
+      <label for="comentarios">Comentarios:</label>
+      <textarea
+        name="comentarios"
+        id="comentarios"
+        rows="4"
+        cols="50"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <hr />
+
+    <!-- Radio buttons (una opción) -->
+    <p>¿Te gusta programar?</p>
+    <input type="radio" id="si" name="programa" value="si" />
+    <label for="si">Sí</label>
+    <input type="radio" id="no" name="programa" value="no" />
+    <label for="no">No</label>
+
+    <!-- Checkbox (múltiples opciones) -->
+    <p>Lenguajes favoritos:</p>
+    <input type="checkbox" id="html" name="lenguaje" value="HTML" />
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="lenguaje" value="CSS" />
+    <label for="css">CSS</label>
+
+    <input type="checkbox" id="js" name="lenguaje" value="JS" />
+    <label for="js">JavaScript</label><br /><br /><br />
+
+    <!-- Fieldset (grupo de campos) -->
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" /><br />
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" />
+    </fieldset>
+
+    <hr />
+
+    <hr />
+    <!-- Atributos globales -->
+    <h1 id="titulo" class="destacado" title="Bienvenido a mi página">
+      Bienvenidos
+    </h1>
+    <!-- Accesibilidad -->
+    <img src="./Assets/logo.png" alt="Logo de la empresa" width="50" height="50"/>
+
+  </body>
+</html>
