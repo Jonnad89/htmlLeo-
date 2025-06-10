@@ -1,0 +1,47 @@
+p {
+    color: green;
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+.titulo{
+    color: red;
+}
+
+.destacado{
+    color: yellowgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: brown;
+}
+
+#titulo{
+    color: navy;
+    text-align: center;
+}
+
+.parrafo-estilizado{
+    color: crimson;
+    background-color: cadetblue;
+    font-size: 24px;
+    font-family: cursive;
+    text-align: center;
+    margin: 30px;
+    padding:30px;
+    border: 2px solid yellowgreen;
+}
+
+.caja{
+    background-color: lightblue;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid navy;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

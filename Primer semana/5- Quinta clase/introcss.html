@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a CSS</title>
+    <style>
+      h1 {
+        color: darkblue;
+      }
+      p{
+        background-color: blueviolet;
+      }
+    </style>
+    <!-- External CSS -->
+     <link rel="stylesheet" href="estilos.css"> 
+     <!-- Está es la forma correcta de aplicar CSS -->
+  </head>
+  <body>
+    <!-- 
+    Hay tres maneras de aplicar CSS:
+    1- Inline CSS (dentro del mismo HTML)
+    2- Internal CSS (dentro de una  etiqueta <style> en el <head>)
+    3- External CSS (en un archivo .css vinculado al HTML) <- La más recomendada
+    -->
+    <h1 style="color: red">Título de la página</h1>
+    <p>Este párrafo usa CSS interno</p>
+        <h2 class="titulo destacado">Título principal</h2>
+    <section>
+        <h2>Soy una prueba</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quidem unde obcaecati, sequi quos labore perferendis commodi rerum blanditiis. Dolorum consequuntur, facere assumenda optio ipsam veniam animi adipisci repellendus asperiores.</p>
+        <p class="destacado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora praesentium, rerum ab alias quam repudiandae quae dolor amet deleniti fugit nam iure earum illo modi rem est, laborum exercitationem nesciunt!</p>
+    </section>
+    <div class="caja">
+        Soy una caja
+    </div>
+    <section>
+        <h2 id="titulo">Título con ID</h2>
+        <hr>
+        <p class="parrafo-estilizado">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae voluptatem architecto fuga culpa eos assumenda consequatur pariatur expedita, cupiditate, id doloribus dolorum. Earum incidunt ipsa animi! Harum, esse reprehenderit!
+        </p>
+    </section>
+  </body>
+</html>

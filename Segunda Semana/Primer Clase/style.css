@@ -1,0 +1,53 @@
+body{
+    background-color: #f3f3f3; /* Color de fondo */
+    font-family: 'Segoe UI', sans-serif; /* Tipografía */
+}
+
+a{
+    text-decoration: none; /* También: underline, line-through */
+}
+
+h1{
+    color: #333;  /* color del título */
+    text-align: center; /* Centrar al centro */
+}
+
+p {
+    font-weight: bold; /* Grosor del texto */
+    color: #555;
+    font-size: 18px; /* Tamaño de letra */
+    text-align: center;
+    text-transform: uppercase; /* También: lowercase, capitalize */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    word-spacing: 10px; /* Espaciado por palabra */
+    line-height: 1.5; /* Espacio entre lineas */
+}
+
+button {
+    display: block;
+    margin:20px auto ; /* margen externo de 20px hacia arriba y abajo, y automático hacia los lados */
+    padding: 10px 20px; /* (margen interno 10px arriba y 20px hacia los lados */
+    background-color: #009688; 
+    color: white;
+    border: none; /* Sin bordes */
+    border-radius: 6px; /* Redondea los bordes */
+    cursor: pointer; /* Cambia el mouse al pasar por encima */
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* padding: 20px;
+    margin: 40px; */
+    padding-top: 10px;
+    padding-left: 10px; /* Margen interno hacia la izquierda del box model */
+    margin-left: 50px; /* Margen externo hacia la izquierda del box model */
+    margin-top: 50px; /* Margen externo de arriba hacia abajo */
+    margin-bottom: 70px; /* Margen externo de abajo hacia arriba */ 
+    border: 2px dotted black; /* estilo: solid, dashed, dotted */
+}

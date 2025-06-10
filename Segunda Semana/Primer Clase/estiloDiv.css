@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+}
+
+.card {
+    background-color: white;
+    width: 300px; /* Ancho de la caja o box model */
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #0097a7;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras */
+    text-align: center;
+}
+
+.card h2{
+    color: #00796b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #00796b;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.8s ease; /* Transición al recargar la página */
+}
+
+.card a:hover {
+    background-color: #004d40;
+}
+
+.ejemplo-em{
+    background-color: red;
+    width: 50%; /* La mitad del ancho del contendor padre */
+    padding: 1.5em; /* Relleno 1.5 veces el tamaño de fuente */
+    margin: 20px auto; /* Márgenes verticales 20px, horizontales automáticos para centrar */
+    border: 3px solid blue;
+    box-sizing: border-box;
+}

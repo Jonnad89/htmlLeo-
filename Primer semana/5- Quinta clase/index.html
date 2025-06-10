@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quinta Clase</title>
+  </head>
+  <body>
+    <form>
+      <h2>Formularios</h2>
+      <!-- Normbre y apellido -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <br /><br />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" />
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- Teléfono -->
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" />
+      <br /><br />
+
+      <!-- Fecha -->
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" />
+      <br /><br />
+
+      <!-- Archivo -->
+      <label for="cv">Subí tu CV</label>
+      <input type="file" id="cv" name="cv" />
+      <br /><br />
+
+      <!-- Botones del formulario -->
+       <input type="submit" value="Enviar formulario">
+       <input type="reset" value="Borrar todo">
+    </form>
+    <hr />
+    <h2>Checkbox y radio buttons</h2>
+    <!-- Checkboxes -->
+    <p>Seleccioná tus lenguajes favoritos:</p>
+    <input type="checkbox" id="html" name="lenguajes" value="HTML" />
+    <label for="html">HTML</label> <br />
+
+    <input type="checkbox" id="css" name="lenguajes" value="CSS" />
+    <label for="css">CSS</label><br />
+
+    <input type="checkbox" id="js" name="lenguajes" value="JavaScript" />
+    <label for="js">JavaScript</label> <br /><br />
+
+    <!-- Radio -->
+    <p>Sexo:</p>
+    <input type="radio" id="masculino" name="saxo" value="masculino" />
+    <label for="masculino">Masculino</label> <br />
+
+    <input type="radio" id="femenino" name="saxo" value="femenino" />
+    <label for="femenino">Femenino</label> <br />
+
+    <input type="radio" id="otro" name="saxo" value="otro" />
+    <label for="otro">Otro</label> <br /><br />
+    <hr />
+    <!-- Select (listas desplegables) -->
+
+    <label for="pais">País:</label>
+    <select name="pais" id="pais">
+      <option value="">Seleccionar</option>
+      <option value="ar">Argentina</option>
+      <option value="mx">México</option>
+      <option value="co">Colombia</option>
+      <option value="es">España</option>
+    </select>
+    <br />
+    <hr />
+    <!-- Rango y área de texto -->
+    <label for="experiencia">Experiencia (0 a 10 años):</label>
+    <input type="range" id="experiencia" name="experiencia" min="0" max="10">
+    <br> <br>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea name="comentarios" id="comentarios" rows="4" cols="40"></textarea>
+    <br> <hr>
+    <fieldset>
+        <legend>Información Personal</legend>
+        
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni">
+        <br> <br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+    </fieldset>
+  </body>
+</html>
