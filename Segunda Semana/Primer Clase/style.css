@@ -24,7 +24,7 @@ p {
 }
 
 button {
-    display: block;
+    display: block; /* Es la propiedad que define cómo un elemento se comporta en la página, si es un bloque, inline, flex, grid, etc.. */
     margin:20px auto ; /* margen externo de 20px hacia arriba y abajo, y automático hacia los lados */
     padding: 10px 20px; /* (margen interno 10px arriba y 20px hacia los lados */
     background-color: #009688; 

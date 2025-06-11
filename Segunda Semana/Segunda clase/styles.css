@@ -1,0 +1,103 @@
+.block{
+    display: block;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.inline{
+    display: inline;
+    background-color: lightgreen;
+    margin-right: 10px;
+}
+
+.inline-block{
+    display: inline-block;
+    background-color: lightcoral;
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container{
+    position: relative;
+    background-color: #eee;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Static */
+.static{
+    position: static;
+    background: lightblue;
+}
+
+/* Relative */
+.relative{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: lightgreen;
+}
+
+/* Absolute */
+.absolute{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: lightcoral;
+}
+
+/* Fixed */
+.fixed{
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+    background: orange;
+}
+
+/* Sticky */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    margin-top: 150px;
+    background: lightpink;
+}
+
+/* Flex */
+.flex-container {
+    display: flex;
+    background-color: #ddd;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 10px;
+    /* Ahora los hijos van en columna */
+    flex-direction: column;
+    /* Si hay muchos, se envuelven a otra columna */
+    flex-wrap: wrap;
+
+}
+
+.flex-item{
+    background: #4CaF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    /* Ejemplo avanzado con flex-grow */
+    flex-grow: 1;
+    margin: 5px;
+}
+

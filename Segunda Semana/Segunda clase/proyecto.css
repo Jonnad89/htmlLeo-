@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 15px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #f0a500;
+}
+.container{
+    border: 2px solid black;
+    display: inline-block;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 20px;
+    border-radius: 50%; /* circulo perfecto */
+}
+input{
+    position: absolute;
+    top: 60px;   
+}
