@@ -1,0 +1,62 @@
+/* .box{
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+} */
+
+.hidden {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.overflow-box {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    overflow: auto; /* otros valores: hidden, scroll, visible */
+
+}
+
+.nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    border: 1px solid black;
+
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    border: 2px solid red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: lightblue;
+}
+
+.absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightgreen;
+}

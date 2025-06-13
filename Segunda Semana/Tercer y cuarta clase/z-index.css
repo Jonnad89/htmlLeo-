@@ -1,0 +1,19 @@
+.z-box{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+}
+
+.back{
+    background-color: red;
+    z-index: 1;
+}
+.front {
+    background-color: blue;
+    z-index: 10;
+}
