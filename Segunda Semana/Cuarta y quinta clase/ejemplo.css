@@ -1,0 +1,68 @@
+.caja {
+    background-color: lightblue;
+    width: 50vw;
+    height: 50vh;
+    font-size: 2rem;
+    text-align: center;
+
+    /* 
+    % -> porcentaje del contenedor padre
+    vh -> porcentaje de la altura de la pantalla
+    vw -> porcentaje del ancho de la pantalla
+    rem -> tamaño relativo a la raíz (html)
+    em -> tamaño relativo al padre inmediato
+    */
+}
+
+/* 
+¿Qué son las media Queries?
+Son reglas condicionales que se ejecutan según el ancho de la pantalla
+Por ejemplo: 
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
+
+Valores comunes:
+    max-width -> aplica hasta cierto tamaño (celulares)
+    min-width -> aplica desde cierto tamaño (escritorio)
+*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background: #f39c12;
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+/* Responsivo para tablets */
+@media (max-width: 768px) {
+    .item {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* Responsivo para celulares */
+@media (max-width: 480px) {
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        width: 80vw;
+        height: 20vh;
+    }
+}

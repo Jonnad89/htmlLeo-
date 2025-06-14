@@ -1,0 +1,90 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+
+.menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.flex-container{
+    display: flex;
+    height: 250px;
+    border: 2px solid #444;
+    padding: 10px;
+    flex-direction: row; /* row (por defecto) o column */
+    justify-content: flex-start; /* flex start por defecto */
+    /* 
+    flex-end -> al final
+    center -> al centro
+    space-between -> espacio entre elementos
+    space-around -> espacio antes y después de cada item
+    space-evenly -> espacio igual entre todos
+    */
+    align-items: center; 
+    /*
+    flex-start -> al principio
+    center -> al centro
+    flex-end -> al final
+    */
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20;
+}
+
+/* Clase contenedor */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    /* 
+    nowrap  -> por defecto
+    wrap -> permite que los ítems pasen a otra fila/columna
+    wrap-reverse -> igual que wrap, pero en sentido inverso    
+    */
+    gap: 20px;
+    /* row-gap: 10px; */
+    /* column-gap: 30px; */
+    /*
+    gap -> espacio en ambos ejes
+    row-gap -> solo entre filas
+    column-gap -> solo entre columnas
+    gap también funciona en grid y es más limmpio que usar margin
+    */
+    height: 400px;
+    align-content: center;
+    /* 
+    Valores
+    flex-start
+    flex-end
+    center
+    space-between
+    space-around
+    stretch (por defecto)
+    */
+ 
+}
+
+.items {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.item-destacado {
+    align-self: center;
+}
