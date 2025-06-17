@@ -1,0 +1,76 @@
+.grid {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat(3, 1fr); 
+    /* grid-template-rows: 100px 100px; */
+    grid-template-rows: repeat(100px 150px);
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+.item{
+    background-color: #3498db;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+/* Ejemplos con pokemon */
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: aquamarine;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ejemplo Layout */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+        gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #2ecc71;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f1c40f;
+}
+
+main {
+    grid-area: main;
+    background-color: #3498db;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e67e22;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #34495e;
+}
+
+.contenedor > * {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
