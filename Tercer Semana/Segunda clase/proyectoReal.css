@@ -1,0 +1,30 @@
+:root {
+    --bg: #ffffff;
+    --color-texto: #000000;
+    --boton-bg: #3498db;
+    --boton-color: #ffffff;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--color-texto);
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+button{
+    background-color: var(--boton-bg);
+    color: var(--boton-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+body.oscuro {
+    --bg: #1e1e1e;
+    --color-texto: #f0f0f0;
+    --boton-bg: #555;
+    --boton-color: #fff;
+}

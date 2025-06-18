@@ -1,0 +1,21 @@
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --fuente-principal: "Segoe UI", sans-serf;
+    --espaciado: 20px;
+    --bg:whte;
+    --texto: black;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: var(--fuente-principal);
+    color: var(--texto);
+    padding: var(--espaciado);
+    transition: backgroud 0.3s, color 0.3s ;
+}
+
+body.oscuro {
+    --bg: #121212;
+    --texto: #f1f1f1;
+}
