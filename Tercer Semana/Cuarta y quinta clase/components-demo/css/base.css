@@ -1,0 +1,21 @@
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-fondo: #ffffff;
+    --color-texto: #333;
+    --fuente: "Segoe UI", sans-serif;
+    --espaciado: 1rem;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: var(--espaciado);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,2 @@
+- Personalizar colores de :root para crear tu propia paleta
+- Aplicar modo oscuro a una landing page que tengas hecha

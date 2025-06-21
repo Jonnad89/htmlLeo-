@@ -1,0 +1,41 @@
+.header, .footer{
+    padding: 1rem 2rem;
+    background-color: var(--color-primario);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__toggle{
+    cursor: pointer;
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.servicios__contenedor{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.formulario{
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+}

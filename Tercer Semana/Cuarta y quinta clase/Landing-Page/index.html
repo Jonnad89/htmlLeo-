@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Landing Profesional</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="light-mode">
+    <header class="header">
+      <h1 class="header__logo">MiMarca</h1>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="tema-toggle" class="header__toggle">🌙</button>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero__titulo">Creamos soluciones digitales</h2>
+      <p class="hero__texto">
+        Diseño, desarrollo y posicionamiento para tu marca.
+      </p>
+      <button class="btn btn--primario">Conocer más</button>
+    </section>
+
+    <section class="servicios">
+      <h3 class="servicios__titulo">Nuestros Servicios</h3>
+      <div class="servicios__contenedor">
+        <div class="card card--servicio">
+          <h4 class="card__titulo">Diseño Web</h4>
+          <p class="card__texto">Sitios modernos, rápidos y responsivos.</p>
+        </div>
+        <div class="card card--servicio">
+            <h4 class="card__titulo">Desarrollo</h4>
+            <p class="card__texto">Aplicaciones a medida para cada necesidad.</p>
+        </div>
+        <div class="card card--servicio">
+            <h4 class="card__titulo">Marketing</h4>
+            <p class="card__texto">Publicidad efectiva y segmentada</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario">
+        <h3 class="formulario__titulo">Contacto</h3>
+        <form class="form">
+            <input class="form__input" type="text" placeholder="Tu nombre" required>
+            <input class="form__input" type="email" placeholder="Tu email" required>
+            <textarea class="form__textarea" placeholder="Mensaje" required></textarea>
+            <button class="btn btn--primario">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MiMarca. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/toggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+- Terminar esta landing (copiando, modificando o recreando)
+- Subirla a github
+- mostarta como parte del portafolio
+- opcional: agregar animaciones, scroll suave o íconos(con FontAwesome)
