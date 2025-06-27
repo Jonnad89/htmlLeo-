@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+//         let entrada = "";
+// let intentos = 0;
+
+// while (entrada !== "salir" && intentos < 5){
+//     entrada = prompt("Escribi 'salir' para terminar: ");
+//     intentos++
+// }
+
+// alert("Fin del programa")
+// let opcion;
+
+// do {
+//     opcion = prompt("elegí una opción: \n1. Ver perfil\n2. Salir")
+// } while (opcion !== "2")
+
+
+// Ejemplo de Repetir un menú hasta que se elija salir
+
+let opcion;
+
+do{
+    opcion = prompt("MENÚ\n1. Saludar\n2. Ver hora\n3. Salir");
+    if(opcion === "1"){
+        console.log("Hola!");
+    } else if (opcion === "2"){
+        console.log("Sola las", new Date().toLocaleDateString())
+    }
+} while ( opcion !== "3");
+console.log("Programa finalizado")
+
+
+
+
+    </script>
+</body>
+</html>
