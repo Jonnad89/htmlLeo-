@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p>ejemplo con getElemntById</p>
+    <h1 id="titulo">Hola</h1>
+
+    <button onclick="cambiarTexto()">Cambiar</button>
+
+    <br /><br />
+    <p>Ejemplo con querySelector</p>
+    <div class="contenedor"></div>
+    <button onclick="mostrarHTML()">Mostrar Mensaje</button>
+    <br /><br />
+    <div id="caja" style="padding: 20px; border: 1px solid #ccc">
+      Soy una caja
+    </div>
+
+    <button onclick="cambiarColor()">Cambiar color</button>
+    <br /><br />
+
+    <p>Ejemplo con evento click</p>
+    <button id="btn">Hacé click</button>
+    <br /><br />
+    <p>Evento input</p>
+
+    <input type="text" id="nombre" placeholder="Escibi tu nombre" />
+    <p id="salida"></p>
+    <br /><br />
+    <p>Evento submit con preventDefault</p>
+    <form id="formulario">
+        <input type="text" id="usuario" placeholder="Tu nombre">
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+
+    <h2>Crear Elementos de manera dinámica</h2>
+
+    <button onclick="crearParrafo()">Agregar párrafos</button>
+
+    <h2>Eliminar un elemento del DOM</h2>
+    <div id="mensaje">Este mensaje será elimnado</div>
+    <button onclick="eliminar()">Eliminar</button>
+    <script src="./app.js"></script>
+  </body>
+</html>

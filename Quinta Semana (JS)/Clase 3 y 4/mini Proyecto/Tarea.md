@@ -1,0 +1,5 @@
+- Si la tarea ya existe, mostrar un mensaje de "Tarea duplicada"
+- Permitir tachar tareas ya completadas (con un click doble)
+- Agregar un botón "Eliminar todas" debajo de la lista (limpiar localStorage) 
+- Marcar tareas como completadas (toggle con class)
+- Guardar también el etado de completada en localStorage (usando objetos { texto, completada })
