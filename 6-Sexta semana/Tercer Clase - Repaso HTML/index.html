@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- Le dice al navegador que usaremosHTML5-->
+<html lang="es">
+  <!-- Idioma principal del sitio -->
+  <head>
+    <!-- Información para el navegador (no visible) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Para cargar el CSS -->
+  </head>
+  <body>
+    <header>
+      <h1>Noticias del Día</h1>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Tecnologías</a>
+        <a href="#">Deportes</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Sección principal -->
+      <section>
+        <h2>Tecnologías</h2>
+        <article>
+          <h3>Nuevo Smartphone Revoluciona el Mercado</h3>
+          <p>
+            Hoy se presentó un nuevo modelo de teléfono que promete cambiar la
+            forma en que usamos la tecnología
+          </p>
+          <p><small>Publicado el 10 de junio 2025</small></p>
+        </article>
+
+        <article>
+          <h3>Actualización de Software Corrige Falos Críticos</h3>
+          <p>
+            La nueva versión del sistema operativo solucona varios errores de
+            seguridad reportados por los usuarios
+          </p>
+          <p><small>Publicado el 9 de Junio de 2025</small></p>
+        </article>
+      </section>
+
+      <!-- Sección de noticias deportivas -->
+      <section>
+        <h2>Deportes</h2>
+        <article>
+          <h3>Argentina Gana en el último Minuto</h3>
+          <p>
+            Con el gol agónico, la selección nacional se impuso por 2-1 en un
+            partido electrizante.
+          </p>
+          <p><small>Publicado ell 10 de Junio de 2025</small></p>
+        </article>
+
+        <article>
+          <h3>Nueva Marca Mundial en Atletismo</h3>
+          <p>
+            Un joven atleta rompe récord en los 100 metros llanos durante una
+            compentecia internacional.
+          </p>
+          <p><small>Publicado el 9 de Junio de 2025</small></p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Noticias del Día. Todos los derechos reservados.</p>
+    </footer>
+
+    <hr />
+    <hr />
+    <!-- Todo lo visible para el usuario -->
+    <!-- Títulos y párrafos -->
+    <h1>Título principal</h1>
+    <h2>Subtítulo</h2>
+    <p>Esto es un párrafo de texto.</p>
+
+    <!-- Listas -->
+    <ul>
+      <!-- unorder list -->
+      <li>Elemento dea no ordenada</li>
+      <!-- list item -->
+    </ul>
+
+    <ol>
+      <!-- order list -->
+      <li>Elemento de lista ordenada</li>
+    </ol>
+
+    <!-- Imágenes y enlaces -->
+
+    <img
+      src="../../1-Primer semana/4- Cuarta clase/Assets/perro.jpg"
+      alt="Descripción de la imagen"
+    />
+    <!-- en src buscamos donde está la imagen -->
+    <a href="https://google.com" target="_blank">Ir a google</a>
+    <!-- en href colocamos la url externa o local a donde querramos que se redirija -->
+
+    <!-- Formularios -->
+
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Tablas -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pan</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Azúcar</td>
+          <td>$90</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Multimedia -->
+
+    <video controls width="300">
+      <!-- Activamos los controles de pausa y volumen, y le damos un width de 300px -->
+      <source src="video.mp4" type="video/mp4" />
+      <!-- Buscamos donde está el video  -->
+      Tu navegador no soporta video
+      <!-- Esto se va a mostrar en caso de que el navegador no soporte el formato -->
+    </video>
+
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio
+    </audio>
+
+    <!-- <figure> -->
+    <figure>
+      <img
+        src="../../1-Primer semana/4- Cuarta clase/Assets/perro.jpg"
+        alt="Perro"
+        width="300"
+      />
+      <figcaption>Un hermoso perro con fondo rosa</figcaption>
+    </figure>
+
+    <figure>
+      <pre><code>console.log("Hola, mundo");</code></pre>
+      <figcaption>Ejemplo de código en JavaScript</figcaption>
+    </figure>
+    <!-- <details> -->
+        <details>
+            <summary>
+                Receta de galletitas saludables
+            </summary>
+            <ul>
+                <li>2 bananas maduras</li>
+                <li>1 taza de avena</li>
+                <li>Chips de chocolates o pasas</li>
+            </ul>
+        </details>
+    <script src=""></script>
+    <!-- Para cargar el JavaScript -->
+  </body>
+</html>
