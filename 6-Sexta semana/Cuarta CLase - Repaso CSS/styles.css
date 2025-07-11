@@ -1,0 +1,305 @@
+/* Estilos globales */
+body {
+  font-size: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 
+font-family: cambia la tipografía del sitio
+margin:0; : quita el margen predeterminado del navegador
+paadiing: 20px; : agrega espacio interno al body 
+background-color: color de fondo claro (celestito)
+color: color de texto principal (gris oscuro)
+line-height: espacio entre lineas, mejora la lectura
+*/
+
+/* Header y navegación */
+
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 
+background-color: color de fondo del header
+color: texto blanco
+padding: espacio interno alrededor del contenido
+text-aling: center; : centra el texto dentro del header
+*/
+
+nav {
+  margin-top: 50px;
+}
+
+/* 
+margin-top: separación hacia abajo desde el título
+*/
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 
+margin: separación horizontal entre links 
+text-decoration: none; : quita el subrayado
+font-weight: bold; : texto en negrita
+*/
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 
+text-decoration: subraya los enlaces al pasar el mouse
+*/
+
+/* Títulos */
+
+h1,
+h2,
+h3 {
+  color: #1b354e;
+}
+
+/* 
+Todos los títulos tendrán un color gris oscuro azulado
+*/
+
+/* Figure y figcaption */
+
+figure {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+/* 
+caja blanca con borde gris claro
+margin: 20px auto; : arriba y abajo, centrado horizontal
+box-shadow: le da sombra para efecto de profundidad
+border-radius: esquinas redondeadas
+*/
+
+figure img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* 
+La imagen ocupa todo el ancho de su contenedor
+border redondeados suavemente
+*/
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* 
+El texto de la leyenda se ve en cursiva, centrado y en gris suave
+*/
+
+/* Section y article */
+section {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+/* 
+Espacio hacia abajo entre secciones y padding interno
+*/
+
+article {
+  background-color: #ffffff;
+  border-left: 5px solid #00796b;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+Cada artículo tiene fondo blanco, borde izquierdo de color, 
+padding y sombra para destacar visualmente
+*/
+
+article h3 {
+  margin-top: 0;
+  color: #00796b;
+}
+
+/* 
+El título del art´culo empieza sin margen superior y usa el color verde azulado
+*/
+
+/* Details y Summary(FAQs) */
+
+details {
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* 
+Cada Detail  (acordeón) tiene fondo verde claro, borde suave y padding interno
+*/
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #1b5e20;
+}
+
+/* Summary tiene color más fuerte, está en negrita y cambia el cursor a mano */
+
+/* Listas */
+
+ul,
+ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+/* Espaciado hacia la izquierda para lstas ordenadas y desordenadas */
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #00796b;
+  color: white;
+  font-size: 20px;
+}
+
+/* Pie de página con fondo oscuro, texto blanco, centrado y con 20px */
+
+/* Formulario */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+form button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+/* Tablas */
+
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0f2f1;
+}
+
+/* Video y Audio */
+
+video, audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive (celulares) */
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  figure {
+    max-width: 100%;
+  }
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/* 
+Cuando la pantalla es menor a 600px:
+    - El body reduce su padding
+    - Las figure se hacen adaptables
+    - Los enlaces de navegación se apilan (uno debajo del otro)
+*/
