@@ -1,0 +1,50 @@
+/* Selector de clase */
+.destacado {
+    color: red;
+}
+/* Selector de ID */
+#titulo {
+    font-size: 24px;
+    color: blue;
+}
+
+/* Selectores agrupados */
+h1, h2, p {
+    margin-bottom: 50px;
+}
+
+/* Selectores descendientes y combinadores */
+
+nav ul li {
+    list-style: none;
+    color: brown;
+}
+
+article > p {
+    color: blue;
+}
+
+/* Pseudo-elemento */
+
+p::after{
+    content: ":)"
+}
+
+/* Propiedades básicas */
+body{
+    /* Color y fondo */
+    background-color: #f0f0f0;
+    color: #333;
+    /* Tipografía */
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    /* Tamaños */
+    width: 300px;
+    height: 200px;
+    /* Bordes */
+    border: 2px solid #444;
+    border-radius: 10px;
+    /* Espaciados */
+    margin: 20px;
+    padding: 15px;
+}

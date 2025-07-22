@@ -1,0 +1,55 @@
+.item1{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item2{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item3{
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item4 {
+    color: yellowgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item1:hover{
+    background-color: burlywood;
+}
+
+.item2:hover{
+    background-color: aqua;
+}
+
+.item3:hover{
+    background-color: blueviolet;
+}
+
+.item4:hover{
+    background-color: black;
+}
+
+/* Estilos para el div */
+
+.tarjeta{
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid #000;
+}
+
+.titulo{
+    color: white;
+}
+
+.texto{
+    color: chartreuse;
+}
+
