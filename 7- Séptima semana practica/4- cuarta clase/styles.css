@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d1d5db;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+/* Media query navbar */
+@media(max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Tarjeta */
+
+.servicios {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+}
+
+.tarjeta h3 {
+  color: #1d4ed8;
+}
+
+.tarjeta p {
+  color: #4b5563;
+}
+/* Layout */
+.planes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.plan {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.plan ul li {
+    list-style: none;
+}
+
+.destacado {
+    border: 2px solid #2563eb;
+}
+
+/* Media query Layout */
+@media(max-width: 768px){
+    .planes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan{
+        width: 90%;
+    }
+}
+
+/* Testimonios */
+
+.testimonios {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.testimonial {
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Media query testimonios */
+@media(max-width: 768px){
+    .testimonios{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial {
+        width: 90%;
+    }
+}
+
+/* Formulario */
+
+.formulario-seccion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f2fe;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Media query formulario */
+@media(max-width: 768px) {
+    .formulario {
+        width: 90%;
+    }
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #111827;
+  color: white;
+  padding: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/* Media query footer */
+
+@media(max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Agregar JS */
+
+/* Habilidades */
+.habilidades{
+    padding: 40px 20px;
+    background-color: #f3f4f6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.habilidad {
+    margin-bottom: 20px;
+}
+
+.barra {
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.btn-pulso {
+    display: inline-block;
+    background-color: #10b981;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    animation: pulso 1.5s infinite;
+    box-shadow: 0 4px r12px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulso {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
