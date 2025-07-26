@@ -1,0 +1,209 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-responsive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1e3a8a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 1;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 0;
+        
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Agregar JS */
+
+/* Transiciones y animaciones */
+
+.boton-comun{
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Botón con hover suave */
+
+.btn-animado {
+    padding: 12px 24px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-animado:hover{
+    transform: scale(1.05);
+    background-color: #059669;
+}
+
+/* Animación fade-in */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.caja-fadein {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    background-color: #facc15;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Tarjeta de perfil responsive con animación de entrada y hover */
+
+/* body{
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+} */
+
+.perfil-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.perfil-card{
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out forwards;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+.perfil-card:hover{
+    transform: translateY(0) scale(1.03);
+}
+
+.perfil-card img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.btn-perfil{
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-perfil:hover{
+    background-color: #2563eb;
+}
+
+/* Animación de entrada */
+
+@keyframes faden {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .perfil-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .perfil-card img {
+        width: 80px;
+    }
+
+    .btn-perfil{
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* CSS de la tarjeta */
+.tarjeta-responsive {
+    background-color: #fef3c7;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Mobile: se expande al 100% */
+@media (max-wodth: 600px) {
+    .tarjeta-responsive{
+        width: 90%;
+    }
+}
