@@ -1,0 +1,173 @@
+/* Estilos generales */
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sasns-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+
+/* Lector principal */
+.lector {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lector header {
+    text-align: center;
+    background-color: #222;
+    padding: 1rem;
+    border-bottom: 2px solid #ff4b2b;
+}
+.lector header h1{
+    margin: 0.3rem;
+    font-size: 1.8rem;
+    color: #ff4b2b;
+}
+
+.lector header p{
+    font-size: 1rem;
+    color: #ddd;
+}
+
+
+
+/* Contenedor del manga */
+.manga-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.manga-container img {
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 0 15px rgba(255, 75, 43, 0.6);
+    border-radius: 5px;
+}
+
+/* Controles de navegación */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #222;
+    border-top: 2px solid #ff4b2b;
+}
+
+.btn {
+    background-color: #ff4b2b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #ff6347;
+}
+
+/* Contenedor de capitulos flex para sidebar + lector */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar lateral */
+
+.sidebar {
+    background-color: #222;
+    padding: 1.5rem;
+    width: 250px;
+    border-right: 2px solid #ff4b2b;
+}
+
+.sidebar h2{
+    margin-bottom: 1rem;
+    color: #ff4b2b;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Lista de capítulos */
+
+.capitulos-lista {
+    list-style: none;
+}
+
+.capitulo {
+    padding: 10px 15px;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.capitulo:hover {
+    background-color: #ff4b2b;
+    color: #111;
+}
+
+.capitulo.activo {
+    background-color: #ff4b2b;
+    color: #111;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff4b2b;
+}
+
+
+
+/* Pie de página */
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    margin-top: auto;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Modo Responsive */
+
+@media (max-width: 600px) {
+    header h1{
+        font-size: 1.4em;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Responsive - sidebar vertical */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ff4b2b;
+}
+
+    .lector {
+        flex-grow: 0;
+    }
+}
