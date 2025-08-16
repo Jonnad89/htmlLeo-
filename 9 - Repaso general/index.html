@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Estilo e-commerce</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="#">Desarrollo<span>.</span></a>
+        <nav class="nav__links">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#testimonios">Testimmonios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="nav__toggle">🔻</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Construyo sitios rápidos y escalables</h1>
+          <p>
+            Desarrollo web moderno con foco en performance, accesibilidad y
+            conversión. Mirá mis proyectos si fueran un catalogo de tienda.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-ghost" href="#servicios">Servicios</a>
+          </div>
+          <ul class="hero__badges">
+            <li>💛 Performance</li>
+            <li>🧡 Accesible</li>
+            <li>💚 Responsive</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtros (visual) -->
+    <section class="filters container" aria-label="Filtros de proyectos">
+      <button class="chip chip--active">Todos</button>
+      <button class="chip">Landing</button>
+      <button class="chip">E-commerce</button>
+      <button class="chip">Dashboard</button>
+      <button class="chip">Componentes UI</button>
+    </section>
+
+    <!-- Grid de Proyectos -->
+    <section id="proyectos" class="products container">
+      <header class="section__head">
+        <h2>Mis proyectos</h2>
+        <p>
+          Tarjetas tipo producto con badges, precio ficticio (o nivel) y CTA.
+        </p>
+      </header>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+              alt="Proyecto 1"
+            />
+            <span class="badge badge--new">Nuevo</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Tienda minimalista</h3>
+            <p class="card__sub">Stack: HTML . CSS Grid</p>
+            <div class="card__meta">
+              <span class="price">$ Nivel: Intermedio</span>
+              <span class="pill">E-commerce</span>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#">Ver demo</a>
+              <a class="btn btn-ghost" href="#">Repositorio</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="
+     https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1200&auto=format&fit=crop
+
+"
+              alt="Proyecto 2"
+            />
+            <span class="badge">Open Source</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">UI Kit Componentes</h3>
+            <p class="card__sub">Stack: HTML . CSS BEM</p>
+            <div class="card__meta">
+              <span class="price">⭐Popular</span>
+              <span class="pill">Componentes</span>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#">Ver demo</a>
+              <a class="btn btn-ghost" href="#">Repositorio</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="      https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1200&auto=format&fit=crop"
+              alt="Proyecto 3"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Dashboard Analytics</h3>
+            <p class="card__sub">Stack: HTML . CSS - Flexbox</p>
+            <div class="card__meta">
+              <span class="price">$ Nivel: Avanzado</span>
+              <span class="pill">Dashboard</span>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#">Ver demo</a>
+              <a class="btn btn-ghost" href="#">Repositorio</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="     https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+              alt="Proyecto 4"
+            />
+            <span class="badge">🔥Hot</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Landing Evento</h3>
+            <p class="card__sub">Stack: HTML . CSS - Animaciones</p>
+            <div class="card__meta">
+              <span class="price">Free</span>
+              <span class="pill">Landing</span>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#">Ver demo</a>
+              <a class="btn btn-ghost" href="#">Repositorio</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+              alt="Proyecto 5"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Blog Magazine</h3>
+            <p class="card__sub">Stack: HTML . CSS - Grid Areas</p>
+            <div class="card__meta">
+              <span class="price">$ Nivel: intermedio</span>
+              <span class="pill">Blog</span>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#">Ver demo</a>
+              <a class="btn btn-ghost" href="#">Repositorio</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="card">
+          <div class="card__media">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+              alt="Proyecto 6"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Portfolio One-Page</h3>
+            <p class="card__sub">Stack: HTML . CSS - Utility</p>
+            <div class="card__meta">
+              <span class="price">⭐ Recomendado</span>
+              <span class="pill">Portfolio</span>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#">Ver demo</a>
+              <a class="btn btn-ghost" href="#">Repositorio</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicios" class="pricing">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <h2>Servicios</h2>
+          <p>Paquetes claros, como en una tienda.</p>
+        </header>
+        <div class="pricing__grid">
+          <article class="plan">
+            <h3>Landing Básica</h3>
+            <p class="plan__prince">USD 149</p>
+            <ul class="plan__features">
+              <li>1 sección larga</li>
+              <li>Responsive</li>
+              <li>Entrega 72hs</li>
+            </ul>
+            <a class="btn btn--secondary" href="#contacto">Empezar</a>
+          </article>
+          <article class="plan plan--featured">
+            <h3>Web Negocio</h3>
+            <p class="plan__prince">USD 399</p>
+            <ul class="plan__features">
+              <li>Hasta 5 páginas</li>
+              <li>Optimización SEO</li>
+              <li>Animaciones</li>
+            </ul>
+            <a class="btn btn--primary" href="#contacto"></a>
+          </article>
+          <article class="plan">
+            <h3>UI components</h3>
+            <p class="plan__prince">USD 249</p>
+            <ul class="plan__features">
+              <li>Design System</li>
+              <li>Guía de estilos</li>
+              <li>Kit exportable</li>
+            </ul>
+            <a class="btn btn--secondary" href="#contacto">Consultar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+
+    <section id="testimonios" class="testimonials">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <h2>Clientes felices</h2>
+        </header>
+        <div class="testimonials__row">
+          <blockquote class="coute">
+            "Entregó rápido y superó expectativas. Volvería a contratar."
+            <cite>- Ana, Founder</cite>
+          </blockquote>
+          <blockquote class="coute">
+            "El sitio cargó al instante y mejoró nuestras conversiones."
+            <cite>- Martín, Marketing</cite>
+          </blockquote>
+          <blockquote class="coute">
+            "Código prolijo y accesible. Excelente comunicación."
+            <cite>- Sofía, PM</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto / cta final -->
+
+    <section id="contacto" class="cta">
+      <div class="container cta__box">
+        <div>
+          <h2>¿Listo para tu próximo proyecto?</h2>
+          <p>Escribime y lo armamos juntos.</p>
+        </div>
+        <a href="mailto:jonnadvwork@gmail.com">Contactar</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="containter footer__inner">
+        <p>@ 2025 Desarrollo</p>
+        <nav class="footer__links">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">X ex Twitter</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
