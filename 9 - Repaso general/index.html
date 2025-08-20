@@ -17,7 +17,7 @@
           <a href="#testimonios">Testimmonios</a>
           <a href="#contacto">Contacto</a>
         </nav>
-        <button class="nav__toggle">🔻</button>
+        <button class="nav__toggle">☰</button>
       </div>
     </header>
 
@@ -25,19 +25,29 @@
       <div class="container hero__grid">
         <div class="hero__copy">
           <h1>Construyo sitios rápidos y escalables</h1>
+          <button id="toggleMode">🌙Modo Oscuro</button>
           <p>
             Desarrollo web moderno con foco en performance, accesibilidad y
             conversión. Mirá mis proyectos si fueran un catalogo de tienda.
           </p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
-            <a class="btn btn-ghost" href="#servicios">Servicios</a>
+            <a class="btn btn--ghost" href="#servicios">Servicios</a>
           </div>
           <ul class="hero__badges">
             <li>💛 Performance</li>
             <li>🧡 Accesible</li>
             <li>💚 Responsive</li>
           </ul>
+        </div>
+        <div class="hero__card">
+            <div class="ribbon">Destacado</div>
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Mockup proyecto">
+            <div class="hero__card-body">
+                <h3>Landing SaS</h3>
+                <p>Stack: HTML - CSS - JS</p>
+                <a class="btn btn--secondary" href="#" target="_blank" rel="noopener">Ver demo</a>
+            </div>
         </div>
       </div>
     </section>
@@ -78,7 +88,7 @@
             </div>
             <div class="card__actions">
               <a class="btn btn--primary" href="#">Ver demo</a>
-              <a class="btn btn-ghost" href="#">Repositorio</a>
+              <a class="btn btn--ghost" href="#">Repositorio</a>
             </div>
           </div>
         </article>
@@ -103,7 +113,7 @@
             </div>
             <div class="card__actions">
               <a class="btn btn--primary" href="#">Ver demo</a>
-              <a class="btn btn-ghost" href="#">Repositorio</a>
+              <a class="btn btn--ghost" href="#">Repositorio</a>
             </div>
           </div>
         </article>
@@ -124,7 +134,7 @@
             </div>
             <div class="card__actions">
               <a class="btn btn--primary" href="#">Ver demo</a>
-              <a class="btn btn-ghost" href="#">Repositorio</a>
+              <a class="btn btn--ghost" href="#">Repositorio</a>
             </div>
           </div>
         </article>
@@ -135,7 +145,7 @@
               src="     https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
               alt="Proyecto 4"
             />
-            <span class="badge">🔥Hot</span>
+            <span class="badge badge--hot">🔥Hot</span>
           </div>
           <div class="card__body">
             <h3 class="card__title">Landing Evento</h3>
@@ -146,7 +156,7 @@
             </div>
             <div class="card__actions">
               <a class="btn btn--primary" href="#">Ver demo</a>
-              <a class="btn btn-ghost" href="#">Repositorio</a>
+              <a class="btn btn--ghost" href="#">Repositorio</a>
             </div>
           </div>
         </article>
@@ -167,7 +177,7 @@
             </div>
             <div class="card__actions">
               <a class="btn btn--primary" href="#">Ver demo</a>
-              <a class="btn btn-ghost" href="#">Repositorio</a>
+              <a class="btn btn--ghost" href="#">Repositorio</a>
             </div>
           </div>
         </article>
@@ -188,12 +198,14 @@
             </div>
             <div class="card__actions">
               <a class="btn btn--primary" href="#">Ver demo</a>
-              <a class="btn btn-ghost" href="#">Repositorio</a>
+              <a class="btn btn--ghost" href="#">Repositorio</a>
             </div>
           </div>
         </article>
       </div>
     </section>
+
+    <!-- Servicios -->
 
     <section id="servicios" class="pricing">
       <div class="container">
@@ -220,7 +232,7 @@
               <li>Optimización SEO</li>
               <li>Animaciones</li>
             </ul>
-            <a class="btn btn--primary" href="#contacto"></a>
+            <a class="btn btn--primary" href="#contacto">Consultar</a>
           </article>
           <article class="plan">
             <h3>UI components</h3>
@@ -244,15 +256,15 @@
           <h2>Clientes felices</h2>
         </header>
         <div class="testimonials__row">
-          <blockquote class="coute">
+          <blockquote class="quote">
             "Entregó rápido y superó expectativas. Volvería a contratar."
             <cite>- Ana, Founder</cite>
           </blockquote>
-          <blockquote class="coute">
+          <blockquote class="quote">
             "El sitio cargó al instante y mejoró nuestras conversiones."
             <cite>- Martín, Marketing</cite>
           </blockquote>
-          <blockquote class="coute">
+          <blockquote class="quote">
             "Código prolijo y accesible. Excelente comunicación."
             <cite>- Sofía, PM</cite>
           </blockquote>
@@ -283,5 +295,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
