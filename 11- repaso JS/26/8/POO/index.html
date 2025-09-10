@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document Object Model)</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Hola</h1>
+    <button id="boton">Cambiar texto</button>
+<br><br>
+    <div class="contenedor"></div>
+    <button onclick="mostrarHTML()">Mostrar mensaje</button>
+    <br><br>
+    <div id="caja" style="padding: 20px; border: 1px solid #ccc;">
+        Soy una caja
+    </div>
+    <button onclick="cambiarColor()">Cambiar color</button>
+    <br><br>
+    <h3>Eventos</h3>
+    <button id="btn">Hacé click</button>
+<br><br>    
+    <input type="text" id="nombre" placeholder="Escribí tu nombre">
+    <p id="salida"></p>
+    <br><br>
+    <form id="formulario">
+        <input type="text" id="usuario" placeholder="Tu nombre">
+        <button type="submit">Enviar</button>
+    </form>
+    <h3>Crear elementos dinámicamente</h3>
+    <button onclick="crearParrafo()">Agregar párrafo</button>
+    <br><br>
+    <h3>Eliminar un elemento del DOM</h3>
+    <div id="mensaje">Este mensaje será eliminado</div>
+    <button onclick="eliminar()">Eliminar</button>
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
