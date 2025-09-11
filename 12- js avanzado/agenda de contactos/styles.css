@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#lista-contactos {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contacto button{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contacto button:hover{
+    background: #c0392b;
+}
+
+/* Estilos para el input de búsqueda */
+
+#buscar {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#buscar:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219, 0.4);
+}
+
+/* Para que los contactos no queden pegados */
+#lista-contactos {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Botón Agregar contacto */
+
+#form-contacto button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#form-contacto button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#form-contacto button:active{
+    transform: scale(0.98);
+}
