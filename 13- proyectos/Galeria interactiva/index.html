@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Galería</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Buscar imagen">
+            <button data-filter="all">Todos</button>
+            <button data-filter="montaña">Montaña</button>
+            <button data-filter="playa">Playa</button>
+            <button data-filter="ciudad">Cuidad</button>
+            <label class="switch">
+                <input type="checkbox" id="toggle-theme">
+                <span  class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <main class="gallery" id="gallery">
+        <!-- Js inyectará las imágenes acá -->
+    </main>
+
+    <div class="modal" id="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img id="modalImg" alt="">
+        <p id="modalDesc"></p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
