@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de stock</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Control de Stock</h1>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Agregar Producto</h2>
+            <form id="prodcutForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" required step="0.01">
+
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Inventario</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable">
+                    <!-- Acá van los productos agregados -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mini sistema de control de stock</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
