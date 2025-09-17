@@ -11,4 +11,4 @@
  - Al hacer click en "Editar", que se carguen los datos de ese producto en el formulario y al volver a enviar se actualice la fila en vez de crear una nueva.
 
  4- Ordenar productos 
-  - Crear botones para ordenar los productos por nombre, por cantidad y por precio (ascendente/descendente).
+  - Crear botones para ordenar los productos por nombre, por cantidad y por precio (ascendente/descendente).s
