@@ -38,3 +38,15 @@ Un botón “Sumar” que incremente el número cada vez que se hace click.
 Un botón “Restar” que lo decremente.
 
 Un input de texto para escribir un color; cuando se pierda el foco (blur), el color de fondo de la página cambia a ese color.
+
+=====================================================
+
+Consigna del Proyecto: “Galería de imágenes con cambio de tamaño”
+
+Crea una página web que tenga:
+
+Un título y un contenedor con varias imágenes pequeñas.
+
+Al hacer click en cualquier imagen, se debe agrandar (aplicar un estilo CSS diferente) y si vuelves a hacer click, vuelve a su tamaño original.
+
+Debajo, un botón que al hacer click muestre/oculte todas las imágenes (toggle).
