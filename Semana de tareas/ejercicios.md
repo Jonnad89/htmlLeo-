@@ -23,3 +23,18 @@ En todo el documento (document), cada vez que se presione una tecla (keydown), i
 Detectar scroll.
 
 Cuando el usuario haga scroll en la página, muestra en la parte superior el número de píxeles que se ha desplazado.
+
+
+===================================================
+
+Consigna del Proyecto: “Contador Interactivo”
+
+Crea una página con:
+
+Un texto que muestre un número.
+
+Un botón “Sumar” que incremente el número cada vez que se hace click.
+
+Un botón “Restar” que lo decremente.
+
+Un input de texto para escribir un color; cuando se pierda el foco (blur), el color de fondo de la página cambia a ese color.
