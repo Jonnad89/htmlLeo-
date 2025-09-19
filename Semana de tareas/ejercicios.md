@@ -50,3 +50,47 @@ Un título y un contenedor con varias imágenes pequeñas.
 Al hacer click en cualquier imagen, se debe agrandar (aplicar un estilo CSS diferente) y si vuelves a hacer click, vuelve a su tamaño original.
 
 Debajo, un botón que al hacer click muestre/oculte todas las imágenes (toggle).
+
+==================================================
+
+Objetivo:
+Crear un sitio web estilo Facebook muy simplificado que tenga:
+
+Página de Login:
+
+Un formulario con usuario y contraseña.
+
+Si las credenciales son correctas (por ejemplo, usuario: admin y contraseña: 1234), redirigir a una “página de inicio”.
+
+Página de Inicio (estilo Facebook sin imágenes):
+
+Un encabezado con el nombre del sitio.
+
+Un formulario para escribir un “estado” (un texto).
+
+Debajo, mostrar todos los estados publicados, como un muro.
+
+Cada vez que se publica un estado, se agrega arriba del muro.
+
+Estilos agradables con CSS.
+
+Colores claros, cajas centradas.
+
+Botones estilizados.
+
+Sin usar imágenes ni frameworks.
+
+Restricciones:
+– Podes usar HTML, CSS y JavaScript puro.
+– Usa solamente el evento click para el envío de formularios.
+– No uses bases de datos: guarda los estados en un array en JS.
+
+📝 Estructura del proyecto
+
+Tendrás dos archivos HTML:
+
+login.html (página de inicio de sesión)
+
+home.html (la “página estilo Facebook”)
+
+Y un archivo CSS y JS cada uno, o bien un único CSS y JS compartid
