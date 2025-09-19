@@ -94,3 +94,35 @@ login.html (página de inicio de sesión)
 home.html (la “página estilo Facebook”)
 
 Y un archivo CSS y JS cada uno, o bien un único CSS y JS compartid
+
+=========================================================================
+Consigna: “Mini-Notas Online”
+
+Crea una página web en la que un usuario pueda guardar, ver y eliminar notas.
+Las notas se guardarán en localStorage para que, aunque recargues la página, sigan ahí.
+
+Requisitos
+
+Formulario para agregar notas
+
+Un input de texto para el título de la nota.
+
+Un textarea para el contenido de la nota.
+
+Un botón “Agregar nota”.
+
+Listado de notas guardadas
+
+Cada nota debe mostrarse con su título y contenido.
+
+Debe tener un botón “Eliminar” para borrar sólo esa nota.
+
+Persistencia
+
+Las notas deben guardarse en localStorage para que al recargar la página sigan apareciendo.
+
+Estilo
+
+Usar CSS para hacer tarjetas de notas (.nota) con borde, padding y un color suave de fondo.
+
+Poner las notas en un grid responsive (por ejemplo, dos columnas en desktop, una en móvil).
