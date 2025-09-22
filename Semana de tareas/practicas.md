@@ -1,0 +1,3 @@
+# 1 -
+Consigna del Proyecto: Calculadora Básica
+El objetivo es construir una calculadora funcional que pueda realizar operaciones aritméticas básicas: suma, resta, multiplicación y división. La interfaz debe tener botones para los números (0-9), las operaciones (+, -, *, /), el punto decimal, el signo igual (=) y un botón para borrar (C). La pantalla de la calculadora debe mostrar los números ingresados y el resultado de las operaciones.
