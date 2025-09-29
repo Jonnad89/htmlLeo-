@@ -1,7 +1,3 @@
-¡Ese es un desafío ambicioso e interesante! Quieres crear un Sistema de Gestión de Pedidos de Cocina (KDS - Kitchen Display System), similar al que usan las grandes cadenas de comida rápida. Este proyecto es de nivel avanzado porque combina la gestión de tiempo real, la actualización constante de la interfaz y la manipulación de estados complejos.
-
-Aquí tienes la consigna detallada de lo que podría ser este proyecto, utilizando HTML, CSS y JavaScript, sin necesidad de APIs externas.
-
 Consigna del Proyecto: Sistema KDS (Kitchen Display System) 
 El objetivo es crear un panel de control para la cocina que muestre los pedidos pendientes y permita a los cocineros gestionar su estado.
 
