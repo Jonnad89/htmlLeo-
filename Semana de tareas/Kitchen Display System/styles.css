@@ -1,0 +1,123 @@
+:root {
+    --color-pendiente: #f8d7da; /* Rojo claro */
+    --color-preparacion: #fff3cd; /* Amarillo claro */
+    --color-listo: #d4edda; /* Verde claro */
+    --color-urgente: #dc3545; /* Rojo vivo para urgencia */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #343a40; /* Fondo oscuro tipo panel de cocina */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.kds-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #f8f9fa;
+}
+
+.columnas-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.columna {
+    flex: 1;
+    min-width: 300px;
+    background-color: #495057;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.columna h2 {
+    color: #f8f9fa;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.pedidos-list {
+    min-height: 100px; /* Para mantener la estructura */
+}
+
+/* Estilos de la Tarjeta de Pedido */
+.pedido-card {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pedido-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.pedido-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.pedido-card .crono {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+/* Colores de las tarjetas según el estado */
+.pedido-card[data-estado="pending"] {
+    background-color: var(--color-pendiente);
+}
+
+.pedido-card[data-estado="preparing"] {
+    background-color: var(--color-preparacion);
+}
+
+.pedido-card[data-estado="ready"] {
+    background-color: var(--color-listo);
+}
+
+/* Indicador de Urgencia (Más de 5 minutos en preparación) */
+.pedido-card.urgente {
+    background-color: var(--color-urgente);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+.pedido-card.urgente .crono {
+    color: white;
+}
+
+/* Botón de Añadir Pedido */
+#add-order-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
