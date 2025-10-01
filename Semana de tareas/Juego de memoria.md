@@ -1,0 +1,3 @@
+# 1- El Juego de la Memoria (Memory Game)
+Crear un tablero de cartas (pares) que el usuario debe emparejar.
+Habilidades a Desarrollar	Generación Aleatoria: Barajar las cartas (Math.random(), sort()). Gestión de Estado: Mantener la cuenta de las cartas volteadas y los pares encontrados. Temporización: Usar setTimeout para voltear las cartas si no son pareja. CSS Dinámico: Añadir/quitar clases para mostrar/ocultar el contenido de la carta.
