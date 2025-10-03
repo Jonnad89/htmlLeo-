@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema RH con Clases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Sistema de Registro de Personal 🤠💼</h1>
+
+        <div class="panel-control">
+            <form id="formulario-registro" class="caja-formulario">
+                <h2>Registrar Nuevo Empleado</h2>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="text" id="puesto" placeholder="Puesto (Ej: Desarrollador)">
+                <input type="number" id="salario" placeholder="Salario (USD)" min="1" required>
+                <button type="submit">Agregar Empleado</button>
+            </form>
+
+            <div class="caja-busqueda">
+                <h2>Buscar Personal</h2>
+                <input type="text" id="input-busqueda" placeholder="Buscar por Nombre">
+                <p id="contador-empleados">Total de Empleados: 0</p>
+            </div>
+        </div>
+
+        <div id="lista-personal" class="lista-personal"></div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

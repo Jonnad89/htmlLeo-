@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0, 0.1);
+}
+
+h1{
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.panel-control{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.caja-formulario, .caja-busqueda{
+    flex: 1;
+    min-width: 300px;
+    background-color: #e9f5ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+}
+
+input:not(#input-busqueda) {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+#input-busqueda{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #1e7e34;
+}
+
+.lista-personal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-empleado {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.05);
+}
+
+.tarjeta-empleado h3 {
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.tarjeta-empleado p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.tarjeta-empleado span {
+    font-weight: bold;
+    color: #007bff;
+}
