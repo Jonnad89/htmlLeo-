@@ -1,0 +1,118 @@
+:root {
+    --color-fondo: #f4f7f6;
+    --color-primario: #007bff;
+    --color-fuerte: #28a745;
+    --color-media: #ffc107;
+    --color-debil: #dc3545;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor-principal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- Panel de Salida y Barra --- */
+
+.panel-salida {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+#password-output {
+    width: calc(100% - 80px); /* Deja espacio para el botón Copiar */
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#copiar-btn {
+    width: 80px;
+    padding: 12px 0;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.fortaleza-indicador {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.barra {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#mensaje-fortaleza {
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* --- Panel Generador y Opciones --- */
+
+.panel-generador h2 {
+    font-size: 1.3em;
+    color: #444;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.opcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+#generar-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
