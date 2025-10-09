@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Generador y Analizador de Contraseñas</h1>
+
+        <div class="panel-salida">
+            <input type="text" id="password-output" placeholder="Tu Contraseña o Generada Aquí" readonly>
+            <button id="copiar-btn">📋 Copiar</button>
+            
+            <div class="fortaleza-indicador">
+                <div id="barra-fortaleza" class="barra"></div>
+            </div>
+            <p id="mensaje-fortaleza">Escribe o genera una contraseña.</p>
+        </div>
+
+        <div class="panel-generador">
+            <h2>Configuración de Generación</h2>
+            
+            <div class="opcion">
+                <label for="largo">Longitud:</label>
+                <input type="number" id="largo" min="4" max="30" value="12">
+            </div>
+            
+            <div class="opcion">
+                <input type="checkbox" id="incluir-mayus" checked>
+                <label for="incluir-mayus">Incluir Mayúsculas (A-Z)</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" id="incluir-minus" checked>
+                <label for="incluir-minus">Incluir Minúsculas (a-z)</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" id="incluir-numeros" checked>
+                <label for="incluir-numeros">Incluir Números (0-9)</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" id="incluir-simbolos">
+                <label for="incluir-simbolos">Incluir Símbolos (!@#$...)</label>
+            </div>
+
+            <button id="generar-btn">Generar Contraseña 🔑</button>
+        </div>
+    </div>
+</body>
+</html>

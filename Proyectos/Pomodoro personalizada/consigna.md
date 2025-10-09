@@ -35,3 +35,5 @@ input number #descanso-corto-min value 5 min 1
 grupo-config
 label for descanso-largo-min
 input number #descanso-largo-min value 15 min 1
+
+
