@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Básico con JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>Panel Kanban 📋</h1>
+
+        <div class="panel-input">
+            <input type="text" id="nueva-tarea-input" placeholder="Descripción de la nueva tarea">
+            <button id="agregar-tarea-btn">Añadir Tarea</button>
+        </div>
+
+        <div id="tablero-kanban" class="tablero">
+
+            <div id="col-todo" class="columna" data-estado="todo">
+                <h3>Por Hacer</h3>
+                <div class="lista-tareas">
+                    </div>
+            </div>
+
+            <div id="col-progress" class="columna" data-estado="inProgress">
+                <h3>En Progreso</h3>
+                <div class="lista-tareas">
+                    </div>
+            </div>
+
+            <div id="col-done" class="columna" data-estado="done">
+                <h3>Terminado</h3>
+                <div class="lista-tareas">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
