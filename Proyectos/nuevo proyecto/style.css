@@ -1,0 +1,139 @@
+:root {
+    --color-fondo-principal: #141414;
+    --color-texto: #e5e5e5;
+    --color-primario: #e50914; /* Rojo Netflix */
+    --color-gris-claro: #303030;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto);
+    margin: 0;
+    padding-top: 60px; /* Espacio para el header fijo */
+}
+
+/* --- Encabezado y Navegación --- */
+
+.encabezado {
+    background-color: var(--color-fondo-principal);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    color: var(--color-primario);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#input-busqueda {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid var(--color-gris-claro);
+    background-color: #222;
+    color: white;
+    width: 250px;
+}
+
+/* --- Estilos del Catálogo --- */
+
+.contenedor-principal {
+    padding: 20px 50px;
+}
+
+.fila-categoria {
+    margin-bottom: 40px;
+}
+
+.fila-categoria h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Contenedor del Carrusel (el scroll horizontal) */
+.carrusel-peliculas {
+    display: flex; /* La clave para la disposición horizontal */
+    overflow-x: scroll; /* La clave para el scroll lateral */
+    padding-bottom: 15px;
+    gap: 10px;
+}
+
+/* Ocultar barra de scroll en Webkit (Chrome, Safari) */
+.carrusel-peliculas::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo de la Tarjeta de Película */
+.tarjeta-pelicula {
+    /* Define el tamaño para que se ajusten varios en pantalla */
+    width: 250px; 
+    height: 140px;
+    flex-shrink: 0; /* IMPEDIR que las tarjetas se encojan */
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-pelicula:hover {
+    transform: scale(1.05); /* Efecto hover tipo streaming */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    z-index: 5;
+}
+
+.tarjeta-pelicula img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Estilos del Modal (Pop-up) --- */
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.modal-contenido {
+    background-color: var(--color-gris-claro);
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+}
+
+.cerrar-modal {
+    color: var(--color-texto);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover {
+    color: var(--color-primario);
+}
