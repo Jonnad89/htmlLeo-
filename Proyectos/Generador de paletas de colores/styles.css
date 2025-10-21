@@ -1,0 +1,87 @@
+:root {
+    --color-fondo: #f0f0f0;
+    --color-texto: #333;
+    --color-bloqueado: #999;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* --- Contenedor Principal (Flexbox) --- */
+.paleta-contenedor {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 70vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* --- Tarjeta de Color Individual --- */
+.color-tarjeta {
+    flex-grow: 1; /* Hace que cada tarjeta ocupe el mismo espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* --- Contenido de la Tarjeta --- */
+.codigo-hex {
+    font-size: 1.4em;
+    font-weight: bold;
+    /* Ajusta el color del texto para que sea legible sobre el fondo */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+.bloquear-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: inherit; /* Hereda el color del texto de la tarjeta */
+    transition: transform 0.2s;
+}
+
+.bloquear-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para el estado BLOQUEADO */
+.color-tarjeta[data-bloqueado="true"] .bloquear-btn {
+    color: var(--color-bloqueado);
+}
+
+/* --- Controles --- */
+.controles {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#generar-btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: var(--color-texto);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
