@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calificaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Gestor de Notas</h1>
+
+        <div class="input-area">
+            <input type="number" id="nota-input" min="0" max="10" placeholder="Nota (0 a 10)">
+            <button id="agregar-btn">Agregar Nota</button>
+        </div>
+
+        <div class="resultados">
+            <h2>Notas Ingresadas:</h2>
+            <ul id="lista-notas">
+                </ul>
+            
+            <h2 class="promedio-titulo">Promedio: <span id="promedio-valor">0.0</span></h2>
+            
+            <h1 id="estado-aprobacion">Esperando notas...</h1>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
