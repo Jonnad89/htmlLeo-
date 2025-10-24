@@ -28,3 +28,11 @@ Ejercicio 3: El Punto de Equilibrio (Bucles while y Acumulación)Crea una funci�
 Entrada,Salida Esperada
 Saldo Inicial: −1000 / Ingreso: 300 / Gasto: 150,Se requieren 7 semanas.
 Saldo Inicial: −500 / Ingreso: 100 / Gasto: 20,Se requieren 7 semanas.
+
+* sea igual o superior a cero, usando un bucle 'while'.
+ *
+ * @param {number} saldoInicial Saldo inicial (debe ser negativo).
+ * @param {number} ingresoSemanal Ingreso fijo por semana.
+ * @param {number} gastoSemanal Gasto fijo por semana.
+ * @returns {string} El número de semanas requeridas y el saldo final.
+ */
