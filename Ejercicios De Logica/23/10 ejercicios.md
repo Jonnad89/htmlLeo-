@@ -19,3 +19,12 @@ Crea una función llamada calcularBonificacion que reciba el array de empleados 
 Consignas,Conceptos a Reforzar
 a. Recorrer un array de objetos y crear uno nuevo (usar .map() o bucle for).,Arrays y Objetos.
 b. Uso de if/else if/else anidados y operadores lógicos && para las reglas de bonificación.,Lógica Condicional Compleja.
+
+
+==================================================================
+
+Ejercicio 3: El Punto de Equilibrio (Bucles while y Acumulación)Crea una función llamada encontrarPuntoEquilibrio que simule el siguiente escenario: Tenes un saldo inicial y dos tipos de transacciones que ocurren repetidamente. La función debe determinar cuántas semanas tienen que pasar para que el saldo sea igual o superior a cero. Saldo Inicial (Negativo): Ej. $-1000$.Ingreso Semanal Fijo: Ej. $+300$.Gasto Semanal Fijo: Ej. $-150$.Consigna: Usar un bucle while para simular las semanas. El bucle debe continuar mientras el saldo sea negativo. Dentro del bucle, debes acumular el saldo y contar las semanas.
+
+Entrada,Salida Esperada
+Saldo Inicial: −1000 / Ingreso: 300 / Gasto: 150,Se requieren 7 semanas.
+Saldo Inicial: −500 / Ingreso: 100 / Gasto: 20,Se requieren 7 semanas.
