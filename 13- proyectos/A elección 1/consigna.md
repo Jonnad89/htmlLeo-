@@ -1,0 +1,7 @@
+1. Estructura de Datos (Arrays y Objetos)Implementar: 
+Debe utilizar un array de objetos ([] y {}) para almacenar la información base de la aplicación.Ejemplo: Si es un visor de películas, el array debe contener objetos con propiedades como titulo, genero, puntuacion, etc.
+2. Control de Flujo (Bucles y Condicionales)Usar: Debe implementar una función que recorra el array de datos usando un bucle (for o .forEach / .map).
+Usar: Debe implementar lógica condicional (if/else if/else) para tomar una decisión o clasificar un resultado.Ejemplo: Si la puntuación es $\ge 8$, mostrar "Recomendado" en verde; si es $< 8$, mostrar "Normal" en amarillo.
+3. Interacción del Usuario (DOM y Eventos)Entrada de Datos: Debe tener al menos un botón (button) y un campo de entrada (input) que sean utilizados para modificar el array de datos.Ejemplo: Un botón "Agregar Elemento" para añadir un nuevo objeto al array, o un botón "Filtrar" para buscar.Salida Dinámica: 
+Debe haber una función que re-renderice (actualice) la lista de elementos en el HTML cada vez que el array de datos cambie, usando innerHTML o createElement.
+4. Función Avanzada (Filtro o Suma)Implementar: Debe crear una función separada que utilice uno de los siguientes métodos avanzados:Filtro (.filter()): Para mostrar solo los elementos que cumplan una condición (ej. solo mostrar juegos de "Estrategia").Acumulación/Suma (.reduce() o Bucle for con acumulador): Para calcular una métrica (ej. el promedio de puntuación, el total de un carrito de compras, o la suma de horas jugadas).
