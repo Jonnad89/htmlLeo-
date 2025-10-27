@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controles">
+    <h3>Añadir Nuevo Manga (Requisito 3)</h3>
+    <input type="text" id="titulo-input" placeholder="Título" required>
+    <select id="genero-input">
+        <option value="Aventura">Aventura</option>
+        <option value="Acción">Acción</option>
+        <option value="Misterio">Misterio</option>
+        <option value="Comedia">Comedia</option>
+    </select>
+    <input type="number" id="puntuacion-input" placeholder="Puntuación (0-10)" min="0" max="10" step="0.1" required>
+    <button id="agregar-btn">Agregar Manga</button>
+</div>
+
+<hr>
+
+<h3>Filtros y Métricas</h3>
+<select id="filtro-genero" onchange="filtrarManga()">
+    <option value="todos">Mostrar Todos</option>
+    </select>
+<p>Promedio General de Puntuación: <span id="promedio-display">0.0</span></p>
+
+<ul id="lista-manga">
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
