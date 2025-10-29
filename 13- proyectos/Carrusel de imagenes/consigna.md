@@ -6,3 +6,11 @@ El objetivo es crear una pequeña interfaz con una imagen y dos botones para cam
 3.,Manipulación del DOM: Crear una función (cambiarImagen()) que utilice el valor de indiceActual para obtener la ruta del array y actualizar el atributo src del elemento img.,setAttribute().
 4.,"Lógica de Navegación (Bucles): Dentro de las funciones de navegación, usar lógica if/else o el operador módulo (%) para asegurarse de que el índice vuelva a cero al llegar al final del array (navegación circular).",Lógica Condicional y Bucles Implícitos/Cíclicos.
 5."Eventos: Añadir listeners a dos botones: ""Anterior"" y ""Siguiente"".","addEventListener('click', ...)."
+
+
+const RUTAS_IMAGENES = [
+    'https://picsum.photos/500/350?random=1', // Imagen 0
+    'https://picsum.photos/500/350?random=2', // Imagen 1
+    'https://picsum.photos/500/350?random=3', // Imagen 2
+    'https://picsum.photos/500/350?random=4', // Imagen 3
+];

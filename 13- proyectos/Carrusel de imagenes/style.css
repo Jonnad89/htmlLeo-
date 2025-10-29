@@ -1,0 +1,62 @@
+:root {
+    --color-principal: #3498db;
+    --color-secundario: #2c3e50;
+    --color-fondo: #ecf0f1;
+}
+
+/* --- Estilos Generales --- */
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Arial', sans-serif;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor-principal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estilo para la imagen */
+.visor-imagen {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 5px solid #bdc3c7;
+}
+
+/* Controles */
+.controles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    flex-grow: 1; /* Para que ocupen espacio similar */
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #2980b9;
+}
