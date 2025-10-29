@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Fondo Dinámico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>Selecciona un Color de Fondo</h1>
+
+        <div class="controles">
+            <label for="color-selector">Elige el color:</label>
+            
+            <select id="color-selector">
+                <option value="default">— Elige un color —</option>
+                <option value="#3498db">Azul Cielo</option>
+                <option value="#e74c3c">Rojo Fuego</option>
+                <option value="#2ecc71">Verde Naturaleza</option>
+                <option value="#f1c40f">Amarillo Sol</option>
+            </select>
+            
+            <button id="reiniciar-btn">Reiniciar Color</button>
+        </div>
+
+        <p class="nota">Observa cómo cambia el color de toda la página al seleccionar una opción.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
