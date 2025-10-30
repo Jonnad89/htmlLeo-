@@ -1,0 +1,2 @@
+Proyecto: Botón Anti-Click (El Fugitivo)
+El objetivo es crear un botón que se mueva aleatoriamente por la pantalla cada vez que el cursor del ratón se acerca o lo toca, haciendo que sea difícil de presionar. Este proyecto se enfoca en la gestión de eventos de mouse y la manipulación de CSS posicional
