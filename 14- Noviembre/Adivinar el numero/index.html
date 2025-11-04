@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el númmero </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>adivina el número (1-100)</h1>
+
+        <div class="controles">
+            <label for="adivinanza-input">Tu Número:</label>
+            <input type="number" id="adivinanza-input" min="1" max="100" value="50">
+
+            <button id="comprobar-btn">¡Comprobar!</button>
+        </div>
+
+        <hr>
+
+        <p class="estado" id="pista-mensaje">Indtroduci un número y hace click en comprobar</p>
+        <p class="intentos">Intentos restantes: <span id="intentos-display">10</span> </p>
+
+        <button id="reiniciar-btn" class="reiniciar" 
+        style="display: none;"        
+        >Jugar de nuevo</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
