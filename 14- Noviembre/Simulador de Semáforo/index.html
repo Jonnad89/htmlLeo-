@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semáforo Interactivo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <h1>Simulador de Semáforo</h1>
+
+      <div class="semaforo">
+        <div id="luz-roja" class="luz"></div>
+        <div id="luz-amarilla" class="luz"></div>
+        <div id="luz-verde" class="luz"></div>
+      </div>
+      <div class="controles">
+        <label for="selector-luz">Seleccionar Estado:</label>
+
+        <select id="selector-luz">
+            <option value="apagado"> -- Selecciona una luz -- </option>
+            <option value="rojo">ROJO (Detener)</option>
+            <option value="amarillo">AMARILLO (Precaución)</option>
+            <option value="verde">VERDE (Avanzar)</option>
+        </select>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

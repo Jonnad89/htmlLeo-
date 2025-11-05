@@ -1,0 +1,68 @@
+:root {
+  --color-rojo: #e74c3c;
+  --color-amarillo: #f1c40f;
+  --color-verde: #2ecc71;
+  --color-carcasa: #34495e;
+}
+
+body {
+  background-color: #f4f6f9;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.contenedor-principal {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* --- Estilos del Semáforo --- */
+
+.semaforo {
+    background-color: var(--color-carcasa);
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.luz {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: 0.2; /* Inicialmente apagada */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+/* --- Colores Base --- */
+#luz-roja {background-color: var(--color-rojo);}
+#luz-amarilla {background-color: var(--color-amarillo);}
+#luz-verde {background-color: var(--color-verde);}
+
+/* --- Controles --- */
+
+.controles label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#selector-luz {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+}

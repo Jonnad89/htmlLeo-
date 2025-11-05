@@ -1,0 +1,2 @@
+El objetivo es crear un interruptor que, al ser presionado,
+cambie dinámicamente el tema de la página web entre un modo claro (por defecto) y modo oscuro, inyectando y quitando una clase CSS del elemento body.
