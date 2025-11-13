@@ -1,0 +1,137 @@
+:root {
+    --color-principal: #e50914;
+    --color-fondo: #f3f3f9;
+    --color-gris-oscuro:#34495e;
+    --color-ok: #2ecc71;
+    --color-fail:#e74c3c;
+    --color-descanso:#f1c40f;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: Aral, sans-serif;
+    color: var(--color-gris-oscuro);
+    padding: 20px;
+    margin: 0;
+}
+
+.k-factor-dashboard{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1{
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Diseño de Panel - CSS grid */
+.paneles-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /* 4 columnas de igual ancho */
+    gap: 20px;
+}
+
+.panel{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.panel h2{
+    color: var(--color-principal);
+    border-bottom: 2px dashed #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Indicadores */
+
+.indicadores p, .rrhh p, .resultado-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.contador-principal {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*  Estilos de Producción/Calidad  */
+
+#simular-produccion-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.visor-calidad {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#estado-item {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.estado-ok {color: var(--color-ok);}
+.estado-facil {color: var(--color-fail);}
+
+/* Tiempos de Máquina */
+.descanso-activo {color: var(--color-descanso);}
+
+#iniciar-ciclo-btn, #pausar-ciclo-btn {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#iniciar-ciclo-btn {background-color: var(--color-ok); color: white;}
+#pausar-ciclo-btn {background-color: #bdc3c7; color: var(--color-gris-oscuro);}
+
+/* Recursos Humanos */
+
+#lista-empleados {
+    list-style: none;
+    padding: 0;
+}
+
+.empleado-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.estado-laboral { 
+    font-weight: bold;
+}
+
+.estado-activo {color: var(--color-ok);}
+.estado-inactivo { color: var(--color-fail); }
+
+.btn-rrhh {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+}

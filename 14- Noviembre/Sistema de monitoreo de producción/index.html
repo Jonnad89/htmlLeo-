@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo De Producción</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="k-factor-dashboard">
+        <h1>Sistema de Monitoreo de Producción K-Factor</h1>
+
+        <div class="paneles-grid">
+            <!-- Panel 1: Producción y Calidad -->
+             <div class="panel produccion-calidad">
+                <h2>📊Línea de Producción</h2>
+                <button id="simular-produccion-btn">Simular Producción (+1)</button>
+
+                <div class="indicadores">
+                    <p>Total Producido: <span id="total-producido">0</span> </p>
+                    <p>Meta Diaria: <span id="total-meta">100</span> </p>
+                </div>
+
+                <div class="visor-calidad" id="visor-calidad">
+                    <p>Estado del último ítem:</p>
+                    <span id="estado-item" class="estado-ok">OK</span>
+                </div>
+             </div>
+
+             <!-- Panel 2: Inventario -->
+              <div class="panel inventario">
+                <h2>📦Inventario de Componentes</h2>
+                <p>Necesario por el momento:</p>
+
+                <div class="indicadores">
+                    <p>Botellas (Req.): <span id="req-botellas">0</span> </p>
+                    <p>Tapitas (Req,): <span id="req-tapitas">0</span> </p>
+                </div>
+              </div>
+
+              <!-- Panel 3: Tiempos de Máquina -->
+               <div class="panel tiempos-maquina">
+                <h2>⏱Ciclo de Máquina</h2>
+
+                <p class="etiqueta">Tiempo transcurrido (Prod.):</p>
+                <span id="tiempo-transcurrido" class="contador-principal">00:00:00</span>
+
+                <p class="etiqueta">Tiempo de Descanso Restante:</p>
+                <span id="tiempo-descanso" class="contador-principal descanso-activo">30:00</span>
+
+                <button id="iniciar-ciclo-btn">INICIAR CICLO</button>
+                <button id="pausar-ciclo-btn">PAUSAR</button>
+               </div>
+
+               <!-- Panel 4: Recursos Humanos -->
+                <div class="panel rrhh">
+                    <h2>🤠💼Personal de Turno</h2>
+                    <ul id="lista-empleados">
+                        <!-- Los empleados van a ser inyectados acá -->
+                    </ul>
+                    <button id="marcar-salida-general-btn">Marcar Salida General</button>
+                </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

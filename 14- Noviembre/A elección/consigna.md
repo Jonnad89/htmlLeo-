@@ -12,7 +12,8 @@ Debe usar al menos un listener de evento distinto a un clic de botón (ej: 'inpu
 Debe usar una estructura if/else o if/else if/else para tomar una decisión en función de la entrada del usuario.
 
 4.	Manipulación de Clases	
-Debe modificar los estilos de al menos un elemento usando .classList.add() / .remove() o .classList.toggle() (ej: para mostrar un error, cambiar el tema, o resaltar un resultado).
+Debe modificar los estilos de al menos un elemento usando .classList.add() / .remove() o .classList.toggle() (ej: para 
+mostrar un error, cambiar el tema, o resaltar un resultado).
 
 5.	Manipulación de Salida	
 Debe escribir o actualizar dinámicamente el contenido de un elemento HTML usando .textContent o .innerHTML para mostrar el resultado de la lógica.
