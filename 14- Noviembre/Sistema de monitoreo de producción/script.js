@@ -13,7 +13,7 @@ let cronometroDescanso = null;
 
 // Estructura de RR.HH (Persistencia con localStorage)
 
-let empleados = JSON.parse(localStorage.getItem("kfactorempleados")) || [
+let empleados = JSON.parse(localStorage.getItem("kfactorEmpleados")) || [
 
     {id: 1, nombre: "Marta R.", activo: false, horaEntrada: null},
     {id: 2, nombre: "Carlos G.", activo: false, horaEntrada: null},
@@ -24,7 +24,7 @@ let empleados = JSON.parse(localStorage.getItem("kfactorempleados")) || [
 
 const totalProducidoDisplay = document.getElementById("total-producido");
 const reqBotellasDisplay = document.getElementById("req-botellas");
-const reqTapitasDisplay = document.getElementById("req-tapiitas");
+const reqTapitasDisplay = document.getElementById("req-tapitas");
 const estadoItemDisplay = document.getElementById("estado-item");
 const visorCalidad = document.getElementById("visor-calidad")
 const tiempoTranscurridoDisplay = document.getElementById("tiempo-transcurrido");
@@ -127,8 +127,8 @@ function iniciarCiclo() {
     }
 
     cicloActivo = true; 
-    iniciarCicloBtn.disable = true; 
-    pausarCicloBtn.disable = false; 
+    iniciarCicloBtn.disabled = true; 
+    pausarCicloBtn.disabled = false; 
     simularBtn.disabled = false;
 
     // Iniciar cronómetro de producción 
@@ -189,7 +189,7 @@ function manejarMarcaje(id, action) {
         empleados[empIndex].activo = true;
         empleados[empIndex].horaEntrada = Date.now();
     } else if (action === 'salida') {
-        empleados[empIndex].action = false;
+        empleados[empIndex].activo = false;
         empleados[empIndex].horaEntrada = null;
     }
 
