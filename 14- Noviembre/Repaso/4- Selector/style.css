@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 500px;
+}
+
+h1{
+    color: #2c3e50;
+    text-align: center;
+}
+
+.caja{
+    min-height: 150px;
+    padding: 20px;
+    margin-top: 20px;
+    /* Los estilos de borde, fondo, etc. será definidos por JS */
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.controles{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.controles label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.controles input {
+    margin-left: 10px;
+}

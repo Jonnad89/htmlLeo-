@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración Persistente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Selector de Estilos Persistentes</h1>
+
+        <div class="controles">
+            <h3>Controles de Estilo</h3>
+
+            <label>Color Fondo: <input type="color" id="color-fondo" value="#ecf0f1"></label>
+            <label> Color de Boder: <input type="color" id="color-borde" value="#3498db"></label>
+            <label>Grosor de Borde (px): <input type="range" id="grosor-borde" min="0" max="15" value="5"></label>
+            <label>Texto: <input type="text" id="texto-input" placeholder="Escribe algo aquí..."></label>
+        </div>
+        <hr>
+        <div class="caja" id="caja-estilos">
+            <p>¡Este texto mantiene su estilo al recargar!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

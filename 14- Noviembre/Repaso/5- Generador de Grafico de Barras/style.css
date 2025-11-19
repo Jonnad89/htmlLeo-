@@ -1,0 +1,64 @@
+:root {
+    --color-barra: #3498db ;
+    --color-fondo: #f4f4f9 ;
+    --color-caja: #ecf0f1 ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contenedor-grafico{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1{ color:#2c3e50; }
+
+.grafico{
+    height: 300px; /* Altura máxima del gráfico */
+    width: 100%;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex; /* Para alinear las barras */
+    align-items: flex-end; /* Alinear las barras al fondo */
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 15%;
+    background-color: var(--color-barra);
+    margin: 0 5px;
+    transition: height 0.5s ease-out;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.barra-valor{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.barra-mes{
+    position: absolute;
+    bottom: -25px;
+    color: #555;
+    font-size: 0.9em;
+    width: 100%;
+}
