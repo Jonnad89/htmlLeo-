@@ -1,0 +1,90 @@
+:root {
+    --color-principal: #e74c3c; /* Rojo Caramelo */
+    --color-secundario: #f1c40f; /* Amarillo Dulce */
+    --color-fondo: #ecf0f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.contenedor-fabrica {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    max-width: 1000px;
+}
+
+h1 { color: var(--color-principal); text-align: center; }
+
+.paneles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.panel {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 5px solid var(--color-secundario);
+}
+
+.panel h2 {
+    color: var(--color-principal);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.panel p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.reposicion-controles, .produccion-controles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.inventario button { background-color: #2ecc71; color: white; }
+.inventario button:hover { background-color: #27ad60; }
+
+.produccion button { background-color: #3498db; color: white; }
+.produccion button:hover { background-color: #2980b9; }
+
+.logistica button { background-color: var(--color-principal); color: white; }
+.logistica button:hover { background-color: #c0392b; }
+
+.btn-reset {
+    background-color: #95a5a6;
+    margin-top: 15px;
+}
+
+.ingresos {
+    font-size: 1.5em !important;
+    color: #27ae60;
+}
+
+.nota {
+    font-size: 0.8em !important;
+    font-weight: normal;
+    color: #7f8c8d;
+}

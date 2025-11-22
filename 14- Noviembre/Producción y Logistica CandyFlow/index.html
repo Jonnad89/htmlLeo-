@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica CandyFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-fabrica">
+        <h1>Sistema de Producción CandyFlow</h1>
+
+        <div class="paneles-grid">
+            
+            <div class="panel inventario">
+                <h2>📦 1. Materias Primas</h2>
+                <p>Azúcar (Kg): <span id="stock-azucar">0</span></p>
+                <p>Envoltorios (Unidades): <span id="stock-envoltorios">0</span></p>
+                
+                <div class="reposicion-controles">
+                    <button id="reponer-azucar-btn">Reponer Azúcar (+50Kg)</button>
+                    <button id="reponer-envoltorios-btn">Reponer Envoltorios (+200)</button>
+                </div>
+            </div>
+
+            <div class="panel produccion">
+                <h2>🏭 2. Producción</h2>
+                <p>Caramelos Crudos (Lotes): <span id="stock-crudo">0</span></p>
+                <p>Caramelos Terminados: <span id="stock-terminado">0</span></p>
+
+                <div class="produccion-controles">
+                    <button id="crear-lote-btn">Crear Lote (Consume 10Kg Azúcar)</button>
+                    <button id="empacar-btn">Empacar (Consume 50 Envoltorios)</button>
+                </div>
+            </div>
+
+            <div class="panel logistica">
+                <h2>🚚 3. Logística y Ventas</h2>
+                <p class="ingresos">Ingresos Acumulados: <span id="ingresos-totales">$0.00</span></p>
+                
+                <p class="nota">1 Entrega consume 100 Caramelos Terminados.</p>
+                
+                <button id="entregar-btn">Entregar Pedido (Vender)</button>
+                <button id="reset-btn" class="btn-reset">Reiniciar Fábrica</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
