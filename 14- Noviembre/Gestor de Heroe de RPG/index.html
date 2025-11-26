@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Héroe de RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contendor-rpg">
+        <h1>Gestor de Equipo de Héroes ⚔</h1>
+
+        <div class="panel-creacion">
+            <h2>Recclutar Héroe</h2>
+            <input type="text" id="nombre-input" placeholder="Nombre del Héroe">
+            <select id="clase-select">
+                <option value="Guerrero">Guerrero (🗡)</option>
+                <option value="Mago">Mago (🔮)</option>
+                <option value="Arquero">Arquero (🏹)</option>
+            </select>
+            <button id="reclutar-btn">Reclutar</button>
+        </div>
+        <hr>
+        <div class="panel-batalla">
+            <h2>Simulación de Combate</h2>
+            <button id="atacar-equipo-btn">🔥 Ataque General (-15 Daño a todos)</button>
+        </div>
+        <hr>
+
+        <h2>Equipo Actual ( <span id="total-heroes">0</span> )</h2>
+        <div class="equipo-grid" id="lista-equipo"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
