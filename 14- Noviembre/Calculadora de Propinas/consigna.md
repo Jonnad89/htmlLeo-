@@ -11,11 +11,11 @@ y número de personas
 
 - Evento clave: la actualización de todos los resultados debe ocurrir cada vez que cualquiera de los tres inputs cambie (usando el evento input o change)
 
-<div class="contenedor-calculadora">
+div class="contenedor-calculadora"
 <!-- Titulo -->
 
-<div class="controles-entrada">
-    <label for="cuenta-input">Total de la cuenta ($)</label>
-    <input type="number" id="cuenta-input" >
- </div>
-</div>
+div class="controles-entrada"
+    label for="cuenta-input" Total de la cuenta ($) label
+    input type="number" id="cuenta-input" 
+ div
+div
