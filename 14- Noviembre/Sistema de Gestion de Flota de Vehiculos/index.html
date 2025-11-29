@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Flota (Herencia)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-flota">
+        <h1>Gestión de Flota de Vehículos 🚛</h1>
+
+        <div class="panel-creacion">
+            <h2>Añadir Vehículo</h2>
+
+        <input type="text" id="patente-input" placeholder="Patente">
+        <input type="text" id="marca-input" placeholder="Marca (Ej: Ford)">
+        <select id="tipo-select">
+            <option value="Coche">Coche</option>
+            <option value="Camion">Camión</option>
+        </select>
+        <input type="number" id="capacidad-input" placeholder="Carga Máx (solo camión)" value="0" min="0">
+        <button id="agregar-btn">Añadir a Flota</button>
+        </div>
+
+        <hr>
+
+        <h2>Flota Actual</h2>
+        <div class="flota-grid" id="lista-flota">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
