@@ -1,0 +1,145 @@
+:root {
+    --color-escritorio: #2980b9; /* Azul clásico */
+    --color-barra: #34495e; /* Gris oscuro */
+    --color-ventana-fondo: #ecf0f1;
+    --color-ventana-borde: #bdc3c7;
+}
+
+/* 1. Estilos Globales y Escritorio */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Evita scrolls */
+}
+
+#escritorio {
+    width: 100%;
+    height: calc(100vh - 40px); /* 100% de la vista menos el alto de la barra */
+    background-color: var(--color-escritorio);
+}
+
+/* 2. Barra de Tareas */
+#barra-tareas {
+    position: fixed; /* Fija la barra abajo */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-barra);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 1000; /* Siempre encima de todo */
+}
+
+#menu-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 3. Menú de Inicio */
+#menu-inicio {
+    position: fixed;
+    bottom: 40px; /* Se posiciona justo encima de la barra */
+    left: 10px;
+    width: 250px;
+    background: white;
+    border: 1px solid var(--color-ventana-borde);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 999;
+}
+
+.oculto {
+    display: none;
+}
+
+.app-icono {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.app-icono:hover {
+    background-color: #eee;
+}
+
+/* 4. Estilos de Ventana */
+.ventana {
+    position: absolute; /* Clave para el movimiento y posición */
+    width: 350px;
+    min-height: 200px;
+    background-color: var(--color-ventana-fondo);
+    border: 1px solid var(--color-barra);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    left: 50px; /* Posición inicial */
+    top: 50px;
+    z-index: 10;
+}
+
+.barra-titulo {
+    background-color: var(--color-barra);
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab; /* Indica que es arrastrable (DRAG) */
+}
+
+.ventana-contenido {
+    padding: 10px;
+}
+
+.ventana-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.ventana-btn:hover {
+    color: #e74c3c;
+}
+
+/* Contenido de Apps */
+.notas-app textarea {
+    width: 95%;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+}
+.calculadora-app input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 5px;
+    text-align: right; /* Para simular una calculadora */
+    font-size: 1.2em;
+}
+
+.botones-calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.botones-calculadora button {
+    padding: 15px 0;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
