@@ -1,0 +1,176 @@
+/* 1. Reset básico y fondo del cuerpo */
+body{
+    font-family: Arial, sans-serif; /* Fuente básica para todo el texto */
+    background-color: #ecf0f1; /* Gris claro para el fondo */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 20px; /* Agrega un espaciado de los lados y de arriba hacia abajo */
+}
+/* Contenedor principal para centrar el contenido */
+
+.contenedor-principal {
+    width: 90%;
+    /* max-width: 800px; <--- importante para queno sea muy ancho en monitores grandes */ 
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el bloque horizontalmente (0 arriba/abajo, auto izquierda/derecha */
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+    z-index: 10; /* Le damos un z-index más bajo que el aviso flotante */
+}
+
+/* 2. Estilo para todos los titulos */
+h1, h2, h3 {
+    color: #2c3e50; /* Azul oscuro elegante */
+}
+
+p{
+    line-height: 1.6; /* Mejora la lectura de los párrafos */
+}
+
+/*3. Estilo para los enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+
+
+
+/* Estilo para el artículo principal */
+article {
+    border-bottom: 2px solid #bdc3c7; /* Línea separadora */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para hacer que la tabla sea legible */
+
+table{
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre borders de celdas */
+    margin: 15px 0;
+}
+
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+/* Estilos para la imagen (Asegurar que no exceda el ancho del contenedor) */
+figure{
+    margin: 20px 0;
+    text-align: center; /* Centra la imagen y la leyenda */
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+img {
+    width: 100%;
+    max-width: 650px; /* La imagen no debe ser más ancha que 600px */
+    height: auto;
+    border-radius: 4px;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Estilo para las secciones de contenido secundario */
+
+section {
+    margin-top: 25px;
+    /* padding-bottom: 20px; */
+    padding: 15px 0;
+    border: 1px solid #7f8c8d;
+    border-radius: 5px;
+}
+
+select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Estilo para listas */
+
+ul{
+    list-style-type: none; /* Cambia el bullet por defecto */
+    margin-left: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+li::before{
+    content: "📍"; /* Usa un emoji como bullet personalizado */
+    margin-right: 8px;
+    color: #3498db;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* --- 1. AVISO FLOTANTE (z-index y position: fixed) --- */
+
+#aviso-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 100; /* Asegura que esté por encima de la página  */
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+}
+
+/* Cursor grab (indicador visual) */
+
+.enlace-contacto a {
+    /* El enlace tiene el estilo de a{} heredado */
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: grab;
+}
+
+
+/* Pie de página */
+footer{
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+    color: #555;
+    font-size: 0.9em;
+    background-color: #e0e0e0;
+
+    /* Propiedades flex */
+    display: flex; /* Convierte el footer en un contenedor flexible */
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Aseguramos que los párrafos dentro del footer no ocupen todo el ancho por defecto */
+
+footer p {
+    margin: 0; 
+    padding: 0 10px;
+}

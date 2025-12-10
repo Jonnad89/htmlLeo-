@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi ciudad favorita - HTML SIMPle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <article id="introduccion-ciudad">
+        <h1>Buenos Aires: La capital del Tango</h1>
+        <hr />
+
+        <p>Buenos Aires es la capital y ciudad más poblada de Argentina</p>
+
+        <img
+          src="obelisco.jpg"
+          alt="Obelisco de Buenos Aires en la Avenida 9 de Julio"
+        />
+
+       
+      </article>
+
+      <h2>Historia rápida</h2>
+
+      <p>
+        La ciudad fue fundada en 1536 y ha tenido un papel central en la
+        historia...
+      </p>
+
+      <h2>Datos Rápidos de la Ciudad</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Categorias</th>
+            <th>Datos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fundación</td>
+            <td>1536</td>
+          </tr>
+          <tr>
+            <td>Población (aprox)</td>
+            <td>3 millones</td>
+          </tr>
+          <tr>
+            <td>Moneda</td>
+            <td>Peso Argentino (ARS)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Figure -->
+
+      <figure>
+        <img src="./obelisco.jpg" alt="Obelisco de Buenos Aires" />
+        <figcaption>El Obelisco, símbolo de la capital.</figcaption>
+      </figure>
+
+      <h3>Escucha el Tango Clásico</h3>
+      <audio controls>
+        <source src="tango_muestra.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el elemento de audio
+      </audio>
+
+      <section>
+        <h2>Opciones de Interés</h2>
+        <label for="idioma-principal">Idioma Principal:</label>
+
+        <select name="idioma" id="idioma-principal">
+          <option value="" disabled selected>Selecciona un idioma</option>
+          <option value="espanol">Español</option>
+          <option value="ingles">Inglés</option>
+          <option value="italiano">Italiano</option>
+          <option value="portugues">Portugués</option>
+        </select>
+      </section>
+
+      <section class="atracciones">
+         <h2>Atracciones Imperdibles</h2>
+
+        <ul>
+          <li>El Obelisco y La Avenida 9 de Julio</li>
+          <li>El barrio de La Boca y Caminito</li>
+          <li>El Cementerio de la Recoleta</li>
+          <li>El Teatro Colón</li>
+        </ul>
+        <p>
+            <a href="https://es.wikipedia.org/wiki/Buenos_Aires" target="_blank"
+          >Ver más historia en Wikipedia</a>
+        </p>
+      </section>
+      <div id="aviso-flotante">
+          ⚠ ¡Visitas Guiadas todos los sábados!
+        </div>
+    </div>
+    <footer>&copy; 2025 - Proyecto HTML Semántico
+    <p class="fecha-actualizacion">Última revisión 09 Dic. 2025</p>
+    <div class="enlace-contacto">
+        <a href="#" style="cursor:grab;">
+            Arrastra para Contactar
+        </a>
+    </div>
+    </footer>
+  </body>
+</html>
