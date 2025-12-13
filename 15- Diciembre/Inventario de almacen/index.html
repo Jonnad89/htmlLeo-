@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario de Almacén</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Control de Stock 🛒</h1>
+
+      <section class="form-section">
+        <h2>Añadir Producto</h2>
+        <div class="input-group">
+          <label for="nombre-input">Nombre:</label>
+          <input
+            type="text"
+            id="nombre-input"
+            placeholder="Ej. Lentejas 500gr"
+          />
+        </div>
+        <div class="input-group">
+          <label for="cantidad-input">Cantidad:</label>
+          <input type="number" id="cantidad-input" value="1" min="1" />
+        </div>
+        <div class="input-group">
+          <label for="precio-input">
+            <label for="precio-input">Precio Unitario:</label>
+            <input
+              type="number"
+              id="precio-input"
+              value="0.00"
+              min="0"
+              step="0.01"
+            />
+          </label>
+        </div>
+        <button id="agregar-btn">➕ Agregar al Inventario</button>
+      </section>
+
+      <section class="inventario-section">
+        <h2>Inventario Actual</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+              <th>Precio U.</th>
+              <th>Valor Total</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="lista-inventario"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total Valor del Inventario:</td>
+              <td id="valor-total-inventario" colspan="2">$0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

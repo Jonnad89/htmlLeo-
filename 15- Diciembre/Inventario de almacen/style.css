@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0  4px 12px rgba(0,0,0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {color: #34495a; text-align: center;}
+h2 {
+    color: #2c3e50; 
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+/* Flex para la sección de formulario */
+.form-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los inputs bajen si no caben */
+    gap: 15px;
+    align-items: flex-end; /* Alinea los botones y labels en la parte inferior*/
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    flex-grow: 1;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.form-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4x;
+}
+
+#agregar-btn{
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#agregar-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Estilos de Tabla */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th{
+    background-color: #34495e;
+    color: white;
+    margin-top: 12px;
+}
+
+tbody td{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover{
+    background-color: #f9f9f9;
+}
+
+tfoot td{
+    font-weight: bold;
+    background-color: #ecf0f1;
+    padding: 12px;
+    text-align: right;
+}
