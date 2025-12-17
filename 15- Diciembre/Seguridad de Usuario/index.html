@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circulo-decorativo">
+        <div class="card" id="main-card">
+            <header>
+                <h1>Bienvenido, <span id="user-name">Invitado</span></h1>
+                <p id="status-text">Estado: 🔴 Desconectado</p>
+            </header>
+
+            <section class="info-user">
+                <article class="data-box">
+                    <p>Nivel de Acceso: <strong id="access-level">Nulo</strong> </p>
+                </article>
+            </section>
+
+            <section id="login-form">
+                <div class="input-group">
+                    <input type="password" id="password-input" placeholder="Ingresa la contraseña clave">
+                    <p id="error-msg" class="error oculto">❌ Contraseña incorrecta</p>
+                </div>
+            </section>
+
+            <div class="actions">
+                <button id="btn-login" style="cursor: pointer;">🔒 Iniciar Sesión</button>
+                <button id="btn-logout" class="oculto">🔒 Cerrar</button>
+            </div>
+            <div class="oculto" id="loader">
+                <div class="spinner"></div>
+                <p>Verificando credenciales...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
