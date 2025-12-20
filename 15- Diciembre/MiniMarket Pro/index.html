@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMarket Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="app-container">
+        <h1>🛒 MiniMarket Pro</h1>
+        <div class="main-grid">
+            <section class="panel">
+                <h2>Registrar Ventas</h2>
+                <div class="form-venta">
+                    <select id="select-producto">
+                        <option value="" disabled selected>Seleccione produto</option>
+                    </select>
+                    <input type="number" id="cantidad-venta" placeholder="Cantidad" min="1">
+                    <button id="btn-vender">Registrar Venta</button>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Inventario</h2>
+                <table id="tabla-stock">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </div>
+        <section class="panel reporte-seccion">
+            <div class="header-reporte">
+                <h2>📊 Reporte de Ventas</h2>
+                <button id="btn-reporte-semanal">Generar Reporte Sabático</button>
+            </div>
+
+            <div id="display-reporte" class="info-reporte oculto">
+                <p><strong>Periodo:</strong> Últimos 7 días</p>
+                <p><strong>Total Vendido:</strong><span id="total-semana">$0.00</span></p>
+                <p><strong>Producto Estrella:</strong>-<span id="producto-estrella"></span></p>
+                <p><strong>Cant. Transacciones:</strong><span id="cant-transacciones">0</span></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

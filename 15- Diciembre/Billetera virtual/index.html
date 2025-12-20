@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FinanzaPro - Billetera Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <header class="balance-card">
+            <p>Saldo Disponible</p>
+            <h1 id="balance-display">$0.00</h1>
+        </header>
+
+        <section class="transfer-area">
+            <h3>Enviar Dinero</h3>
+            <div class="form-group">
+                <input type="text" id="destinatario" placeholder="Nombre del destinatario">
+                <input type="number" id="monto" placeholder="Monto $">
+                <button id="btn-enviar">Confirmar Envío</button>
+            </div>
+            <p id="msg-feedback" class="oculto"></p>
+        </section>
+
+        <section class="history-area">
+            <h3>Historial de Movimientos</h3>
+            <ul id="lista-movimientos">
+                </ul>
+            <button id="btn-borrar-todo">Limpiar Historial</button>
+        </section>
+    </div>
+
+    <div id="loader-overlay" class="oculto">
+        <div class="spinner"></div>
+        <p>Comunicando con el banco...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
