@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberPet - Mi Mascota Virtual</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>👾 CyberPet</h1>
+    </div>
+    <div class="pet-standar" id="pet-container">
+      <div id="pet-emoji">😊</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-row">
+        <span>Hambre:</span>
+        <div class="bar"><div id="bar-hambre" class="fill"></div></div>
+        <div class="stat-row">
+          <span>Felicidad:</span>
+          <div class="bar"><div id="bar-felicidad" class="fill"></div></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="btn-alimentar">🍕 Alimentar</button>
+        <button id="btn-jugar">🎮Jugar</button>
+        <button id="btn-reiniciar" class="oculto">🔁 Revivir</button>
+      </div>
+      <p id="mensaje-consola">¡Tu mascota está feliz!</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

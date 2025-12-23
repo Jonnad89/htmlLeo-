@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Inmobiliaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏠 InmoDev</h1>
+        <div class="filtros">
+            <select id="filtro-tipo">
+                <option value="todos">Todos los tipos</option>
+                <option value="casa">Casas</option>
+                <option value="departamento">Departamentos</option>
+            </select>
+            <input type="number" id="filtro-precio" placeholder="Precio máximo $">
+            <button id="btn-buscar">Buscar Propiedades</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="galeria-propiedades" class="grid-propiedades"></section>
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

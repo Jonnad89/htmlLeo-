@@ -1,0 +1,83 @@
+body{
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Courier New",  Courier, monospace;
+}
+
+.game-container{
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 0 #bdc3c7;
+    width: 300px;
+}
+
+/* Animación de respiración para la mascota */
+
+#pet-container{
+    font-size: 80px;
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    border: 5px solid #34495e;
+    animation: flotar 2s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+/* Barras de progreso */
+.bar {
+    width: 100%;
+    background: #ddd;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.fill{
+    height: 100%;
+    background: #2ecc71;
+    width: 100%;
+    transition: width 0.3s ease, background 0.3s;
+}
+
+.stat-row{
+    /* display: flex; */
+    align-items: center;
+    margin: 10px 0;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.oculto{
+    display: none;
+}
