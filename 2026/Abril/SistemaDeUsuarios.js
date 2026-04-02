@@ -32,6 +32,6 @@ const usuarioComun = new Usuario("Jonatan", "jona@example.com.ar");
 console.log(usuarioComun.presentarse())
 
 const administrador = new Admin("Roma", "roma@admin.com", ["borrar_usuarios", "editar_productos"])
-console.log(administrador.presentarse())
+console.log(administrador.presentarse()) // Heredado de Usuario
 
 console.log(administrador.mostrarPermisos())
