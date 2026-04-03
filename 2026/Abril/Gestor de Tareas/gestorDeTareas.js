@@ -12,7 +12,7 @@ class Tarea {
     });
   }
 }
-
+ 
 // Estado de la aplicación
 let misTareas = [];
 
