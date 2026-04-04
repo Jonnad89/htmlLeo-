@@ -6,20 +6,17 @@ const inventario = [
 ];
 
 function mostrarTotal() {
-    console.log("El total es: " + suma);
     let suma = 52500; 
+    console.log(`El total es:  ${suma}`);
 }
 
-const saludarUsuario = nombre => {
-    return "Hola $nombre, bienvenido al sistema" 
+const saludarUsuario = (nombre) => {
+    return `Hola ${nombre}, bienvenido al sistema`
 }
 
 const obtenerSoloDisponibles = () => {
     
-    const disponibles = inventario.map(prod => {
-        prod.stock === true
-    });
-    return disponibles;
+   return inventario.filter( prod => prod.stock)
 }
 
 
@@ -31,14 +28,16 @@ const simularCargaServidor = () => {
     });
 };
 
-const iniciarApp = () => {
+const iniciarApp = async () => {
     console.log("Iniciando...");
     
-    const respuesta = simularCargaServidor(); 
+    const respuesta = await simularCargaServidor(); 
     console.log(respuesta); 
     
     const disponibles = obtenerSoloDisponibles();
     console.log("Productos disponibles:", disponibles);
+    console.log(saludarUsuario("Alumno"))
+    mostrarTotal()
 };
 
 iniciarApp();
