@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gestos de Tareas Pro</title>
+</head>
+<body>
+    <div class="app-container">
+        <h1>📃 Mis Tareas</h1>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="¿Qué hay que hacer hoy?">
+            <button id="add-btn">Agregar</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filtrarTareas('todas')">Todas</button>
+            <button onclick="filtrarTareas('pendientes')">Pendientes</button>
+            <button onclick="filtrarTareas('completadas')">Completadas</button>
+        </div>
+
+        <div class="footer">
+            <p id="counter">Tienes 0 tareas pendientes</p>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
