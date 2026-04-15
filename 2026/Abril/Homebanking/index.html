@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Roma Bank - Homebanking</title>
+</head>
+<body>
+    <div class="bank-container">
+        <header>
+            <h1>🏛 Roma Bank</h1>
+            <div class="balance-card">
+                <p>Saldo Disponible</p>
+                <h2 id="balance-display">$50.000</h2>
+            </div>
+        </header>
+
+        <section class="form-section">
+            <h3>Nueva Operación</h3>
+            <div class="input-group">
+                <input type="number" id="monto" placeholder="Monto $">
+                <select id="categoria">
+                    <option value="Sueldo">Sueldo</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Servicios">Servicios</option>
+                    <option value="Varios">Varios</option>
+                </select>
+                <button id="btn-ingreso" class="btn-in">Ingresar</button>
+                <button id="btn-egreso" class="btn-out">Retirar</button>
+            </div>
+        </section>
+
+        <section class="history-section">
+            <h3>Movimientos Recientes</h3>
+            <div class="hidden" id="loading">⌛ Procesando con el servidor...</div>
+            <ul id="lista-movimientos"></ul>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
