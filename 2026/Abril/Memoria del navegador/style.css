@@ -1,0 +1,75 @@
+body{
+    background: #121212;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.crypto-header{
+    border-bottom: 1px solid #333; 
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.price-card{
+    font-size: 1.5rem;
+    color: #f7931a;
+    margin: 5px 0;
+}
+
+.input-group {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #2d2d2d;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #3b82f6;
+    color: white;
+    font-weight: bold;
+}
+
+.clear-btn{
+    background: #6b7280;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+ul{
+list-style: none;
+padding: 0;
+}
+
+li {
+background: #2d2d2d;
+padding: 10px;
+margin-bottom: 5px;
+border-radius: 5px;
+display: flex;
+justify-content: space-between;
+}
