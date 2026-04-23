@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor De Gastos Inteligente</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+    <div class="dashboard">
+        <header>
+            <h1>Finance <span>Flow</span> </h1>
+            <div class="balance-card">
+                <p>Balcance Total</p>
+                <h2 id="total-balance">$0.00</h2>
+            </div>
+        </header>
+
+
+        <main>
+            <section form-section>
+                <h3>Nuevo Movimiento</h3>
+                <form id="finance-form">
+                    <input type="text" id="desc" placeholder="Descripción (ej: Supermercado)" required>
+                    <input type="number" id="amount" placeholder="Monto (ej: 5000)" required>
+                    <select id="category">
+                        <option value="Comida">Comida</option>
+                        <option value="Servicios">Servicios</option>
+                        <option value="Ocio">Ocio</option>
+                        <option value="Transporte">Transporte</option>
+                    </select>
+                    <button type="submit">Agregar Gastos</button>
+                </form>
+            </section>
+            <section class="list-section">
+                <div class="list-header">
+                    <h3>Historial de Gastos</h3>
+                    <select id="filter-category">
+                        <option value="Todos">Todos los filtros</option>
+                        <option value="Comida">Comida</option>
+                        <option value="Servicios">Servicios</option>
+                        <option value="Ocio">Ocio</option>
+                        <option value="Transporte">Transporte</option>
+                    </select>
+                </div>
+                <ul id="transaction-list"></ul>
+            </section>
+        </main>
+    </div>
+        <!-- <script src="https:/cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
