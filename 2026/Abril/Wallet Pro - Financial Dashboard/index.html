@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Pro - FInancial Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wallet-container">
+        <header>
+            <h1>Wallet <span>Pro</span></h1>
+            <div class="balance-card">
+                <p>Saldo Disponible</p>
+                <h2 id="total-balance">$0.00</h2>
+            </div>
+        </header>
+
+        <div class="main-grid">
+            <section class="form-section">
+                <div class="card">
+                    <h3>Nueva Transacción</h3>
+                    <input type="text" id="desc" placeholder="Ej: Supermercado">
+                    <input type="number" id="amount" placeholder="Monto: 1500">
+                    <select id="type">
+                        <option value="egreso">Gasto ( - )</option>
+                        <option value="ingreso">Ingreso ( + )</option>
+                    </select>
+                    <select id="category">
+                        <option value="Comida">Comida</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Sueldo">Sueldo</option>
+                        <option value="Ocio">Ocio</option>
+                    </select>
+                    <button id="add-btn">Registrar</button>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <div class="filters">
+                    <button onclick="Wallet.filtrar('todos')">Todos</button>
+                    <button onclick="Wallet.filtrar('ingreso')">Ingresos</button>
+                    <button onclick="Wallet.filtrar('egreso')">Gastos</button>
+                </div>
+                <ul id="transaction-list"></ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master Pro</title>
+    <link rel="stylesheet" href="./stye.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Task <span> Master </span>Pro</h1>
+            <div id="stats">Total: <span id="count">0</span> | Pendientes: <span id="pending">0</span></div>
+        </header>
+
+        <div class="main-grid">
+            <section class="controls">
+                <div class="card">
+                    <h3>Nueva Tarea</h3>
+                    <input type="text" id="task-name" placeholder="¿Qué hay que hacer?">
+                    
+                    <select id="task-priority">
+                        <option value="baja">Baja (Verde)</option>
+                        <option value="media">Media (Amarilla)</option>
+                        <option value="alta">Alta (Roja)</option>
+                    </select>
+                    
+                    <button id="add-btn">Añadir Tarea</button>
+                </div>
+
+                <div class="card">
+                    <h3>Filtros</h3>
+                    <button onclick="App.filtrar('todas')">Todas</button>
+                    <button onclick="App.filtrar('alta')">Solo Urgentes</button>
+                    <button onclick="App.limpiarCompletadas()">Limpiar Hechas</button>
+                </div>
+            </section>
+
+            <section class="list-container">
+                <ul id="task-list"></ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
