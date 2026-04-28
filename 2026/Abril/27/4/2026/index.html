@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="pizzeria-container">
+        <header>
+            <h1>Pizzería <span>Mario</span></h1>
+            <div class="caja">Caja: $<span id="total-caja">0</span></div>
+        </header>
+
+        <main class="grid-pizzeria">
+            <section class="menu card">
+                <h3>Nuestras Pizzas (Objetos)</h3>
+                <div id="botones-menu">
+                    <button onclick="Cocina.preparar('Muzzarella', 1200)">Muzzarella</button>
+                    <button onclick="Cocina.preparar('Fugazzeta', 1500)">Fugazzeta</button>
+                    <button onclick="Cocina.preparar('Especial', 1000)">Especial</button>
+                </div>
+            </section>
+
+            <section class="pedidos card">
+                <h3>Pedidos en curso</h3>
+                <ul id="lista-pedidos"></ul>
+                <div class="acciones">
+                    <button class="btn-clear"onclick="Cocina.limpiar()">Limpiar Entregados</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
