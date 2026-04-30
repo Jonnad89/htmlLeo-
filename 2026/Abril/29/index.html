@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="shop-container">
+        <header>
+            <h1> Tech <span>Store</span></h1>
+            <div id="cart-summary">
+                Items: <span id="cart-count"0></span> | $<span id="cart-total">0</span>
+            </div>
+        </header>
+
+        <main class="grid-shop">
+            <section>
+                <h2>Catálogo de Productos</h2>
+                <div id="product-grid" class="grid-cards"></div>
+            </section>
+
+            <section class="cart-section">
+                <h2>Tu Carrito</h2>
+                <div id="cart-list" class="cart-item"></div>
+                <button id="checkout-btn" class="btn-buy">Finalizar Compra</button>
+            </section>
+        </main>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

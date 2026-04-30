@@ -44,3 +44,70 @@ Un etos es una funcion que vive adentro de un objeto o de un tipo de dato
     - Map: Es como un transformador. Le decis: "A todas las pizzas de la lista, poneles doble queso"
     - Push: Es simplemente la accion de clavar un ticket nuevo al final de la lista
 
+6. Clases
+
+Imaginate que tenes un molde de acero para hacer pizzas. El molde no es una pizza, pero define que todas las pizzas que salgan de ahi sean redondas y tengan un borde
+
+- La clase es el molde (el plano)
+- El objeto es la pizza real que sale del molde (la instancia)
+
+6. La anatomia de una clase
+
+- El constructor (el momento del nacimiento)
+Es una funcion especial que se ejecuta una sola vez, justo cuando creamos el objeto. Sirvepara darle los "datos de nacimiento"
+
+- Propiedades (Lo que el objeso es)
+Son las variables internas: sabor, tamaño, precio
+
+- Metodos (lo que el obejo hace) 
+Son funciones que viven dentro de la clase. Por ejemplo: cocinar(), entregar() o aplicarDescuento()
+
+class Pizza {
+    //1. El molde recibe los datos
+    constructor(sabor, precio, ingredientes) {
+        this.sabor = sabor;         // Propiedad
+        this.precio = precio;       // Propiedad
+        this.ingredientes = ingredientes;       // Propiedad
+        this.estado = "cruda";         // Propiedad por defecto
+    }
+
+        // Un método: una acción que la pizza sabe hacer
+        cocinar() {
+            this.estado = "cocinada";
+            console.log(`La pizza de ${this.sabor} ya está lista`);
+        }
+
+        // Otro método: lógica de negocio
+        aplicarOferta() {
+            this.precio = this.precio * 0.9;    // 10% de descuento
+            console.log(`Oferta! El nuevo precio es $${this.precio}`);
+        }
+}
+
+// La instanciación: usamos la palabra magica "new"
+const pizzaDeJuan = new Pizza("Muzzarella", 1000, ["queso", "tomate"])
+const pizzaDeTobias = new Pizza("Calabresa", 1500, ["longaniza", "ají"])
+
+
+pizzaDeJuan.cocinar();  //cambia el estado
+pizzaDeTobias.aplicarOferta();  // Cambia su precio
+
+7. Concepto Clave (Para anotar en una hoja)
+
+- LA PALABRA THIS
+"this" significa "este objeto". Si estoy en la pizza de muzzarella, this.precio es el precio de esa mismma pizza, no es el de la de al lado.
+Es como si cada pizza tuviera su propioespejo verse a si misma.
+
+- LA PALABRA NEW
+Sin new, la clase no hace nada. new le dice a JAvaScrip: "Ey, usá el molde y fabricae un objeto real ahora mismo".
+
+8. ¿Por qué usar Clases? (La ventaja Pro)
+
+- Orden: Si mñana decidimos que todas las pizzas tienen que tener "fecha de vencimiento", solo lo agregamos en un lugar (la Clase) y 
+automáticamente miles de pizzas lo tendrán.
+
+- Seguridad: Evitar errores de tipeo. Todos los objetos tendrán exatamente las mismas propiedades.
+
+- Escalabilidad: Podes crear sub-clases (Herencia). Por ejemplo, una clase PizzaVegana que hereda todo de Pizza pero añade reglas especiales
+
+ 

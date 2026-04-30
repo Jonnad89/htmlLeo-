@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Battle Arena</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="arena-container">
+        <header>
+            <h1>👾 Monster <span>Battle</span> Arena</h1>
+        </header>
+
+        <main class="grid-arena">
+            <section class="creator card">
+                <h3>Crear Luchador</h3>
+                <input type="text" id="m-name" placeholder="Nombre del Monstruo">
+                <select id="m-type">
+                    <option value="Fuego">Fuego (Más Ataque)</option>
+                    <option value="Agua">Agua (Más Vida)</option>
+                    <option value="Tierra">Tierra (Equilibrado)</option>
+                </select>
+                <button onclick="Arena.crearLuchador()">Invocar Monstruo</button>
+            </section>
+
+            <section class="battlefield">
+                <h3>Luchadores en la Arena</h3>
+                <div id="monster-list" class="monster-grid"></div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
