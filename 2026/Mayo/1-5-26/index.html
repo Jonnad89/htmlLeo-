@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Code</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#">Leo <span>Code</span></a>
+            </div>
+
+            <!-- Botón Hamburguesa -->
+             <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+
+             <!-- Links de Navegacaón -->
+              <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Inicio</a></li>
+                <li><a href="#proyectos" class="nav-item">Proyectos</a></li>
+                <li><a href="#serviios" class="nav-item">Servicios</a></li>
+                <li><a href="#contacto" class="nav-item">Contacto</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section" id="home">
+        <!-- Espacio para las particulas -->
+         <canvas id="particle-canvas"></canvas>
+
+         <div class="hero-content">
+            <h2 class="hero-subtitle">Desarrollo Web & Diseño</h2>
+
+            <h1 class="hero-tittle">Creamos el <span>Futuro</span> Digital</h1>
+            <p class="hero-description">
+                Transformamos ideas complejas en experiencias digitales interactivas. Llevá tu proyecto al siguiente nivel con tecnología de vanguardia.
+            </p>
+
+            <div class="hero-btns">
+                <button class="btn-primary" id="btn-start">Empezar Ahora</button>
+                <button class="btn-secondary">Ver Portfolio</button>
+            </div>
+         </div>
+
+         <!-- Scroll indicador animado -->
+          <div class="scroll-indicator"></div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
