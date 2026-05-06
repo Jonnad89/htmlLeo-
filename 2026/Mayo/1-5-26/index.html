@@ -1,56 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo Code</title>
+    <title>LeoCode | Futuro Digital</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="main-header">
         <nav class="navbar">
             <div class="nav-logo">
-                <a href="#">Leo <span>Code</span></a>
+                <a href="#">Leo<span>Code</span></a>
             </div>
 
-            <!-- Botón Hamburguesa -->
-             <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-             </div>
+            </div>
 
-             <!-- Links de Navegacaón -->
-              <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="#home" class="nav-item">Inicio</a></li>
                 <li><a href="#proyectos" class="nav-item">Proyectos</a></li>
-                <li><a href="#serviios" class="nav-item">Servicios</a></li>
+                <li><a href="#servicios" class="nav-item">Servicios</a></li>
                 <li><a href="#contacto" class="nav-item">Contacto</a></li>
-              </ul>
+            </ul>
         </nav>
     </header>
 
     <main class="hero-section" id="home">
-        <!-- Espacio para las particulas -->
-         <canvas id="particle-canvas"></canvas>
+        <canvas id="particle-canvas"></canvas>
 
-         <div class="hero-content">
+        <div class="hero-content">
             <h2 class="hero-subtitle">Desarrollo Web & Diseño</h2>
-
-            <h1 class="hero-tittle">Creamos el <span>Futuro</span> Digital</h1>
+            <h1 class="hero-title">Creamos el <span>Futuro</span> Digital</h1>
             <p class="hero-description">
-                Transformamos ideas complejas en experiencias digitales interactivas. Llevá tu proyecto al siguiente nivel con tecnología de vanguardia.
+                Transformamos ideas complejas en experiencias digitales interactivas. 
+                Llevá tu proyecto al siguiente nivel con tecnología de vanguardia.
             </p>
-
             <div class="hero-btns">
-                <button class="btn-primary" id="btn-start">Empezar Ahora</button>
+                <button class="btn-primary">Empezar Ahora</button>
                 <button class="btn-secondary">Ver Portfolio</button>
             </div>
-         </div>
+        </div>
 
-         <!-- Scroll indicador animado -->
-          <div class="scroll-indicator"></div>
+        <div class="scroll-indicator"></div>
     </main>
+
+    <section class="services-section" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Lo que hacemos</h2>
+                <h1 class="section-title">Nuestros <span>Servicios</span></h1>
+            </div>
+            <div class="services-grid">
+
+                <!-- Tarjeta 1 -->
+                <div class="service-card" >
+                <div class="card-icon">💻</div>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios modernos, rápidos y adaptables a cualquier dispositivo</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+             <div class="service-card" >
+                <div class="card-icon">🎨</div>
+                <h3>Diseño Ui/UX</h3>
+                <p>Interfaces intuitivas centradas en la expernecia del usuario</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+             <div class="service-card" >
+                <div class="card-icon">🚀</div>
+                <h3>Optimización SEO</h3>
+                <p>Mejoramos tu visibilidad en buscadoes para alcanzar más clientes</p>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="proyectos">
+        <div class="containner">
+            <div class="section-header">
+                <h2 class="section-subtitle">Mis Trabajos</h2>
+                <h1 class="section-title">Proyectos <span>Recientes</span></h1>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Proyecto 1 -->
+                 <div class="project-card" data-category="web">
+                    <div class="project-img">💻</div>
+                    <div class="project-info">
+                        <h4>E-Commerce Pro</h4>
+                        <p>Tienda online con carrito dinámico</p>
+                    </div>
+                 </div>
+
+                 <!-- Proyecto 2 -->
+                  <div class="project-card" data-category="web">
+                    <div class="project-img">🎨</div>
+                    <div class="project-info">
+                        <h4>Branding Studio</h4>
+                        <p>Identidad visual para marcas tech</p>
+                    </div>
+                 </div>
+
+                 <!-- Proyecto 3 -->
+                  <div class="project-card" data-category="web">
+                    <div class="project-img">🚀</div>
+                    <div class="project-info">
+                        <h4>App del Climma</h4>
+                        <p>Consulta el tiempo en tiempo real</p>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+    </section>
+        <!-- SECCIÓN TESTIMONIOS -->
+
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-subtitle">Opiniones</h2>
+                    <h1 class="section-title">Lo que dicen <span>Clientes</span></h1>
+                </div>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial-container" id="testimonial-box">
+                        <!-- El Js va a insertar o a mover los testimonios acá -->
+                         <div class="testimonial-card" active>
+                            <p>"El trabajo de Leo superó nuestras expectativas. La web es rápida y eel diseño es increíble."</p>
+                            <h4>- Roberto Gómez</h4>
+                            <span>CEO en TechFlow</span>
+                         </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button id="prev-test"><</button>
+                        <button id="next-test">></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+         <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Leo<span>Code</span></h2>
+                    <p>Construyendo experiencias digitales desde 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="proyectos">Proyectos</a></li>
+                    </ul>
+                </div>
+            </div>
+         </footer>
     <script src="./script.js"></script>
 </body>
 </html>
