@@ -179,11 +179,71 @@ const PortfolioManager = {
     }
 };
 
+// TESTIMONIALS
+
+const TestimonialsManager = {
+    data: [
+        {name: "Roberto Gomez", job: "CEO en TechFlow", text: "El trabajo de Leo superó nuestras expectativas. La web es rápida y el diseño es increíble"},
+        {name: "Lucía Pérez", job: "Founder de CreativeLab", text: "Excelente comunicación y resultados profesionales. Muy recomendado para proyectos modernos."}, 
+        {name: "Marcos Díaz", job: "Director de Innova", text: "Las particulas y animaciones le dieron a mi marca ese toque futurista que buscaba."}
+    ],
+
+    currentIndex: 0,
+
+    init() {
+        this.box = document.getElementById("testimonial-box");
+        this.btnPrev = document.getElementById("prev-test");
+        this.btnNext = document.getElementById("next-test");
+
+        if (!this.box) return;
+
+        this.btnNext.addEventListener("click", () => this.change(1))
+        this.btnPrev.addEventListener("click", () => this.change(-1));
+
+        this.render();
+    },
+
+    change(direction) {
+        this.currentIndex += direction;
+
+        // Efecto circular (si llega al final vuelve al principio)
+
+        if(this.currentIndex >= this.data.length) this.currentIndex = 0;
+        if(this.currentIndex < 0) this.currentIndex = this.data.length -1;
+
+        this.render();
+    },
+
+    render() {
+        const item = this.data[this.currentIndex];
+
+        // Animmación de salida y entrada simple
+
+        this.box.style.opacity = "0";
+        this.box.style.transform = "translateX(20px)";
+
+        setTimeout(()=> {
+            this.box.innerHTML = `
+            
+                <div class="testimonial-card">
+                    <p>${item.text}</p>
+                    <h4> - ${item.name} </h4>
+                    <span>${item.job}</span>
+                </div>
+            `;
+            this.box.style.opacity = "1";
+            this.box.style.transform = "translateX(0)"
+        },300)
+    }
+}
+
 // --- ARRANQUE ---
 document.addEventListener('DOMContentLoaded', () => {
     NavManager.init();
     HeroManager.init();
     TiltManager.init(); 
     PortfolioManager.init();
+    TestimonialsManager.init();
 });
+
 

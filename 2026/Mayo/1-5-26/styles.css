@@ -292,3 +292,87 @@ body {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+/* --- TESTIMONIOS --- */
+
+.testimonials-section {
+    padding: 100px 5%;
+    background-color: #0f172a;
+    text-align: center;
+}
+
+.testimonial-slider{
+    min-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.slider-controls {
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider-controls button {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slider-controls button:hover {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #020617;
+    padding: 80px 5% 20px;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand h2 span {color: var(--primary);}
+.footer-links h4, .footer-social h4 {margin-bottom: 20px; color: var(--primary);}
+.footer-links ul {list-style: none;}
+.footer-links a {color: #94a3b8;}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color:  #64748b;
+    font-size: 0.9rem;
+}
