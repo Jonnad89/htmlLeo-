@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="api-section" id="buscador">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-subtitle">Conexión Externa</h2>
+          <h1 class="secton-title">Bucador <span>Interdimensional</span></h1>
+        </div>
+
+        <div class="api-content">
+          <div class="search-box">
+            <input
+              type="number"
+              id="char-id"
+              placeholder="ID (1 - 826)"
+              min="1"
+              max="826"
+            />
+            <button id="btn-fetch">Invocar</button>
+          </div>
+          <div class="favs-wrapper" id="favoritos-container">
+            <h3>⭐ Favoritos Guardados</h3>
+            <div class="favs-grid" id="favs-list"></div>
+            <button id="btn-clear-favs" class="btn-clear">Limpiar Multiverso</button>
+          </div>
+
+          <div id="char-result" class="result-container">
+            <div class="char-placeholder">
+              Ingresá un número para traer un personaje
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

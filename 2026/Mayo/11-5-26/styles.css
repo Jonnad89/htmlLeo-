@@ -1,0 +1,131 @@
+:root {
+    --primary: #00d2ff;
+    --dark: #0f172a;
+    --white: #ffffff;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.api-section{
+    padding: 100px;
+    background-color: #0f172a;
+}
+
+.api-content{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.search-box input {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    background: #1e293b;
+    color: white;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-box button:active {transform: scale(0.95);}
+
+/* Tarjeta de Resultado */
+.result-container {
+    min-height: 400px;
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(0,210,255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.char-card-api h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.char-card-api p {
+    color: #94a3b8;
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.char-placeholder {color: #64748b; font-style: italic;}
+
+.favs-wrapper {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255,255,255, 0.1);
+    padding: 30px;
+}
+
+.favs-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.fav-item {
+    width: 80px;
+    text-align: center;
+    animation: popIn 0.3s ease-out;
+}
+
+.fav-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.fav-item p {
+    font-size: 0.7rem;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-clear{
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+@keyframes popIn {
+    from {transform: scale(0); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+.btn-primary {
+    border-radius: 50%;
+    background: #0f172a;
+}
