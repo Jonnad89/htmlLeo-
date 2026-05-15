@@ -1,0 +1,105 @@
+.pokedex-section {padding: 100px 5%; background: #0f172a;}
+
+.pokedex-wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+    background: #dc0a2d;
+    padding: 30px;
+    border-radius: 20px;
+    border: 8px solid #8b0000;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.search-pokedex{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-pokedex input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.poke-screen {
+    background: #dedede;
+    border: 15px solid #222;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+}
+
+.poke-card-ui img{
+    width: 150px;
+    filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.1));
+}
+
+.poke-name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.poke-types {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.type-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* colores de tipos */
+
+.fire {background: #ff421c;}
+.grass {background: #78cc54;}
+.water {background: #6390f0;}
+.electric {background: #f7d02c; color: #333;}
+.default-type {background: #a8a77a;}
+
+/* Animación de destello para los shiny */
+
+.shiny-effect{
+    background: linear-gradient(45deg, #dedede, #fff7ad, #dedede);
+    background-size: 200% 200%;
+    animation: shinyBackground 2s infinite;
+    border: 2px solid #ffcc00;
+}
+
+@keyframes shinyBackground {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.stats-mini {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #555;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.loading-text{
+    animation: blikn 1s infinite;
+}
+
+@keyframes blikn {
+    50% {opacity: 0.5;}
+}
