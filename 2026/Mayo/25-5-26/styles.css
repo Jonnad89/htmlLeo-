@@ -1,0 +1,104 @@
+:root {
+    --primary: #00d2ff;
+    --dark: #0f172a;
+    --white: #ffffff;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Arena RPG Completo */
+
+.rpg-arena-section {
+    padding: 100px 5%;
+    background-color: #0b0f19;
+}
+
+.arena-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .arena-grid {grid-template-columns: 1fr;}
+}
+
+.arena-panel {
+    background: #131a26;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+}
+
+.arena-panel h3 {
+    font-size: 1.4rem;   
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 8px;
+    color: var(--primary);
+}
+
+.panel-desc {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Formularios internos */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group select {
+    padding: 12px;
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+}
+
+.btn-rpg {
+    padding: 12px;
+    background: var(--primary);
+    color: var(--dark);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-rpg:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn-rpg:disabled {
+    background: #334155;
+    color: #64748b;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-rpg.secondary {
+    background: #334155;
+    color: white;
+}
+
+.database-wrapper h4{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.db-list {
+    max-height: 200px;
+    
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de batallas de Arena Pokemon</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="rpg-arena-section" id="arena-rpg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Simulador de Combate con Bucles</h2>
+                <h1 class="section-title">Poke-Arena <span>Tactics RPG</span></h1>
+            </div>
+
+            <div class="arena-grid">
+                <div class="arena-panel selection-panel">
+                    <h3>🔵 Reclutar Combatientes</h3>
+                    <p class="panel-desc">Usa el sistema para inyectar personales a la base de datos central.</p>
+
+                    <div class="form-group">
+                        <input type="text" id="rpg-name" placeholder="Nombre (ej: Gengar)">
+                        <select id="rpg-type">
+                            <option value="Fuego">🔥 Fuego</option>
+                            <option value="Agua">💧 Agua</option>
+                            <option value="Planta">🌿 Planta</option>
+                            <option value="Eléctrico">⚡ Eléctrico</option>
+                        </select>
+                        <button id="btn-add-char" class="btn-rpg">Añadir al Banco</button>
+                    </div>
+
+                    <div class="database-wrapper">
+                        <h4>🗄 Base de Datos Actual (<span id="db-count">0</span>)</h4>
+                        <div class="db-list" id="db-list">   
+                            </div>
+                    </div>
+                </div>
+
+                <div class="arena-panel battle-panel">
+                    <h3>⚔ Campo de Batalla</h3>
+
+                    <div class="battle-teams">
+                        <div class="team-box">
+                            <h4>🔴 Tu Equipo</h4>
+                            <div class="team-slots" id="player-team"></div>
+                        </div>
+                        <div class="vs-divider">VS</div>
+                        <div class="team-box">
+                            <h4>🔵 Equipo Rival</h4>
+                            <div class="team-slots" id="enemy-team"></div>
+                        </div>
+                    </div>
+
+                    <div class="arena-controls">
+                        <button id="btn-generate-teams" class="btn-rpg secondary">🎲 Generar Equipos Aleatorios</button>
+                        <button id="btn-start-battle" class="btn-rpg primary" disabled>⚔ Iniciar Batalla por Turnos</button>
+                    </div>
+
+                    <div class="console-wrapper">
+                        <h4>📟 Consola del Sistema (Log de Cobate)</h4>
+                        <div class="battle-console" id="battle-console">
+                            <p class="system-msg">[Sistema]: Esperando que se generen los equipos para iniciar el escaneo...|</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
