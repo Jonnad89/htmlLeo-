@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Sistema de Stock y Caja Registradora</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 SmartMarket <span>POS v2.6</span></h1>
+        <p>Sistema Inteligente de Control de Stock y Facturación</p>
+    </header>
+
+    <main class="market-container">
+        <section class="panel system-panel">
+            <h2>📦 Productos en Góndola</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Códigos</th>
+                            <th>Nobre</th>
+                            <th>Precios</th>
+                            <th>Stock</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gondola-body">
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="admin-box">
+                <h3>➕ Reeabastecer / Crear Producto</h3>
+                <div class="from-grid">
+                    <input type="text" id="prod-name" placeholder="Nombre (ej: Leche)">
+                    <input type="number" id="prod-price" placeholder="Precio ($)" min="1">
+                    <input type="number" id="prod-stock" placeholder="Cantidad Inicial" min="1">
+                    <button id="btn-add-stock">Ingresar a Sistema</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel checkout-panel">
+            <h2>💰 Caja Registradora</h2>
+
+            <div class="cart-wrapper">
+                <h4>🛒 Elementos en el Carrito Actual</h4>
+                <div class="cart-list" id="cart-list">
+                    </div>
+            </div>
+
+            <div class="checkout-actions">
+                <button id="btn-clear-cart" class="btn-danger">Vaciar Carrito</button>
+                <button id="btn-process-sale" class="btn-success">📑 Procesar Venta e Imprimir Ticket</button>
+            </div>
+
+            <div class="ticket-wrapper">
+                <h4>⚡ Ticket Fiscal Emitido</h4>
+                <div class="ticket-output" id="ticket-output">
+                    <p class="empty-ticket">Ninguna venta procesada en este turno.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
