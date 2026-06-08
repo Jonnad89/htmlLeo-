@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tienda de Pociones de Leo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="tienda-box">
+        <h1>🧪 Tienda de Pociones de Leo</h1>
+        
+        <!-- Tablero de Estado (Pantallas) -->
+        <div class="tablero">
+            <div class="pantalla">
+                <p>Pociones en Stock 🧪</p>
+                <h2 id="pantalla-stock">10</h2>
+            </div>
+            <div class="pantalla">
+                <p>Oro Conseguido 💰</p>
+                <h2 id="pantalla-oro">0</h2>
+            </div>
+        </div>
+
+        <!-- Panel de Control -->
+        <div class="controles">
+            <input type="number" id="cantidad-input" placeholder="Cantidad de pociones" min="1">
+            
+            <div class="botonera">
+                <button id="btn-vender" class="btn-vender">Vender Pociones 💵</button>
+                <button id="btn-abastecer" class="btn-abastecer">Abastecer Stock 📦</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
