@@ -1,0 +1,40 @@
+Creación de Portfolio Personal
+Objetivo:
+Desarrollar un sitio web que funcione como portfolio personal interactivo. Debe ser estructurado de forma semántica, 
+tener un diseño visual moderno y responsivo, e incorporar dinamismo mediante JavaScript.
+
+Secciones Obligatorias:
+
+Sobre mí: Una presentación personal, una breve biografía, intereses y habilidades técnicas.
+
+Proyectos: Una galería o listado que muestre al menos 3 proyectos. Cada uno debe incluir título, descripción, tecnologías usadas y un botón o enlace.
+
+Testimonios: Una sección que simule reseñas, recomendaciones o comentarios de clientes o colegas.
+
+Requerimientos Técnicos
+1. Estructura (HTML)
+Uso estricto de HTML5 semántico (por ejemplo: <header>, <nav>, <main>, <section>, <article>, <footer>).
+
+Formularios y elementos de interacción configurados correctamente con sus atributos correspondientes 
+(alt para imágenes, aria-labels si es necesario para accesibilidad).
+
+2. Diseño y Estilos (CSS)
+Diseño Responsivo (Responsive Design): El portfolio debe verse y funcionar perfectamente tanto en dispositivos 
+móviles como en tablets y pantallas de escritorio. Se deben emplear Media Queries.
+
+Layout Moderno: Utilizar CSS Flexbox o CSS Grid para la organización de los elementos, especialmente en la galería de proyectos y la sección de testimonios.
+
+Identidad Visual: Definir una paleta de colores coherente y un buen manejo de la tipografía para lograr un acabado profesional y legible.
+
+3. Interactividad (JavaScript)
+Dinamismo en Proyectos o Testimonios: Implementar alguna de las siguientes funcionalidades con JS (escoge al menos una):
+
+Un sistema de filtrado de proyectos por categorías (ej. "Todos", "HTML/CSS", "JavaScript").
+
+Un carrusel o slider interactivo para navegar por los testimonios.
+
+Un modal (ventana emergente) que se abra al hacer clic en un proyecto para mostrar más detalles.
+
+Validación de Formulario (Opcional pero recomendado): Si incluyes sección de contacto, el envío o los campos deben ser validados con JS antes de simular la acción.
+
+Manipulación del DOM: Todo el dinamismo debe lograrse mediante la selección y modificación de elementos del DOM con JavaScript nativo.
