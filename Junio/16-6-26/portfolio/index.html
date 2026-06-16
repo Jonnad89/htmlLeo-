@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Portfolio de Dev | Desarrollador Web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Leo<span>.Dev</span></h1>
+            <nav>
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#testimonios">Testimonios</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-mi" class="seccion-sobre-mi">
+            <div class="contenedor-perfil">
+                <img class="foto-perfil" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=60" alt="Foto de Leo">
+                <div class="texto-perfil">
+                    <h2>Hola, soy Dev 👋</h2>
+                    <p>Soy un apasionado desarrollador frontend en formación. Me encanta conectar la lógica de la programación con diseños visuales e interactivos. Actualmente me especializo en crear soluciones lógicas y divertidas utilizando HTML, CSS y JavaScript.</p>
+                    <div class="habilidades">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion-proyectos">
+            <h2>Mis Proyectos</h2>
+            <p class="sub-g">Filtrar por categoría:</p>
+            
+            <div class="filtros-box">
+                <button class="btn-filtro activo" data-categoria="todos">Todos</button>
+                <button class="btn-filtro" data-categoria="juegos">Juegos</button>
+                <button class="btn-filtro" data-categoria="bancos">Finanzas</button>
+            </div>
+
+            <div class="proyectos-grid">
+                
+                <article class="tarjeta-proyecto" data-tipo="juegos">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=300&auto=format&fit=crop&q=60" alt="Leo-Quest">
+                    <div class="proyecto-info">
+                        <h3>Quest ⚔️</h3>
+                        <p>Un juego de batalla RPG por turnos donde controlás ataques mágicos y físicos contra un dragón jefe.</p>
+                        <span class="tag">Juegos / JS</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto" data-tipo="bancos">
+                    <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=300&auto=format&fit=crop&q=60" alt="Home Banking">
+                    <div class="proyecto-info">
+                        <h3>Home Banking 💰</h3>
+                        <p>Simulador bancario con depósitos, retiros en vivo y control de límite de créditos prendarios.</p>
+                        <span class="tag">Finanzas / JS</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto" data-tipo="juegos">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=300&auto=format&fit=crop&q=60" alt="Alchemist">
+                    <div class="proyecto-info">
+                        <h3>Dev's Alchemist 🧪</h3>
+                        <p>Laboratorio de alquimia interactivo que utiliza arrays para combinar ingredientes mágicos.</p>
+                        <span class="tag">Juegos / JS</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="testimonios" class="seccion-testimonios">
+            <h2>Lo que dicen de mí</h2>
+            <div class="testimonios-grid">
+                
+                <blockquote class="tarjeta-testimonio">
+                    <p class="comentario">"Dev demostró una capacidad increíble para resolver la lógica del temporizador de nuestro estacionamiento en tiempo récord."</p>
+                    <cite>– Juan, Tech Lead</cite>
+                </blockquote>
+
+                <blockquote class="tarjeta-testimonio">
+                    <p class="comentario">"Las interfaces que diseña son súper limpias, interactivas y divertidas de testear. Un gran desarrollador en potencia."</p>
+                    <cite>– Cliente Anónimo, RPG Guild</cite>
+                </blockquote>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Dev - Desarrollado con código nativo y mucha lógica.</p>
+    </footer>
+    <script src="./script.js"></script>c
+</body>
+</html>
