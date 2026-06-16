@@ -1,0 +1,81 @@
+Pryecto Change
+
+Te vas de viaje por el mundo y necesitas una app para saber cuandta plata tenes. Ingresa a
+tu saldo en pesos Argentinos, elegis a que moneda viajar y el sistema muesra la bandera 
+del pais y cuanta plata tenes ahi
+
+PASO 1: La estructura HTML:
+
+
+Un título <h1> que diga: "Change: Conversor del Viajero".
+Un <input type="number"> para poner la cantidad de Pesos Argentinos (id="pesos-input").
+Tres botones para elegir el destino, cada uno con una mini bandera (pueden ser 
+emojis para no renegar):
+Botón 1: "Viajar a EE.UU. 🇺🇸" (id=btn-dolar)
+Botón 2: "Viajar a Europa 🇪🇺" (id=btn-euro)
+Botón 3: "Viajar a Brasil 🇧🇷" (id=btn-real)
+La Pantalla de Destino: Un contenedor que tenga:
+Una imagen grande que va a cambiar mostrando un paisaje del país elegido 
+(id="img-pais"). Arranca con la foto de un mapa o aeropuerto.
+Una pantalla <h2> que muestre el resultado: Tu saldo allá: $0.
+
+Paso 2: Las Variables y Cotizaciones en JavaScript
+Arriba de todo en su script.js, Leo va a setear las constantes de valor 
+de las monedas extranjeras (inventamos números redondos para que la matemática 
+sea fácil):
+
+
+JAVASCRIPT:
+
+const VALOR_DOLAR = 1000;
+const VALOR_EURO = 1100;
+const VALOR_REAL = 200;
+
+// Imagen por defecto del aeropuerto
+const IMG_AEROPUERTO = "https://images.
+unsplash.com/photo-1542314831-068cd1dbfeeb?w=300&auto=format&fit=crop&q=60";
+
+
+Paso 3: La Función "Mandadera" con return (La dificultad nueva)
+En vez de hacer la división adentro de cada botón, vas a crear
+una función separada que calcula y devuelve (return) el dinero convertido
+
+function convertirDinero(pesos, valorMoneda) {
+    let resultado = pesos / valorMoneda;
+    
+    // Usamos return para escupir el valor con solo 2 decimales (.toFixed(2))
+    return resultado.toFixed(2); 
+}
+
+Paso 4: Los Botones de los Países (Freno y Conversión)
+Cuando hace click en "Viajar a EE.UU. 🇺🇸":
+Freno de mano: Lee el input de pesos. Si está vacío, es 0 o es negativo, 
+tira un alert("Ingresá un monto válido en pesos") y mete un return para congelar todo.
+Usa el cadete: Llama a la función de arriba pasándole los pesos del usuario 
+y el VALOR_DOLAR. Guarda lo que devuelve el return en una variable:
+
+
+let dineroConvertido = convertirDinero(montoPesos, VALOR_DOLAR);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

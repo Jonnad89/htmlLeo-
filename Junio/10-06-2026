@@ -1,0 +1,35 @@
+Un título h1 que diga: "Leo-Quest: Batalla Campal".
+La Arena de Batalla: Un contenedor con dos imágenes lado a lado (podés buscar dos enlaces de fotos simples en Google, tipo un guerrero y un dragón/monstruo, o usar emojis grandes si no quieren renegar con links).
+Imagen del Héroe (id="img-heroe").
+Imagen del Monstruo (id="img-monstruo").
+Una pantalla de estado (h2): Vida del Monstruo: span id="vida-monstruo" 100 span HP.
+Dos botones de ataque:
+Botón 1: "Espadazo ⚔️" (Saca 10 de vida).
+Botón 2: "Hechizo de Fuego 🔥" (Saca 25 de vida, pero ¡ojo! solo se puede usar 3 veces por partida).
+Paso 2: Las Variables en JavaScript (La Memoria)
+Arriba de todo en su script.js, Leo va a setear el estado inicial de la batalla:
+
+let vidaJefe = 100;
+let usosMagia = 3; // Límite para el ataque fuerte
+
+
+Paso 3: Botón Espadazo (El ataque normal)
+Cuando se hace click en "Espadazo":
+
+Le resta 10 a la variable vidaJefe.
+
+Actualiza el texto del span de la vida.
+
+Efecto visual loco con la imagen: Para que se note el golpe, hacemos que la foto del monstruo parpadee o se mueva rápido. Le cambiamos la opacidad por un segundo:
+
+const imgMonstruo = document.getElementById('img-monstruo');
+imgMonstruo.style.opacity = "0.3"; // Se vuelve fantasma del golpe
+setTimeout(() => { imgMonstruo.style.opacity = "1"; }, 200); // Vuelve a la normalidad
+
+
+Paso 4: Botón Hechizo de Fuego (Ataque fuerte con límite)
+Cuando se hace click en "Hechizo de Fuego":
+Control de munición: El sistema se fija con un if si usosMagia es mayor a 0. Si es 0, tira un alert("❌ ¡Te quedaste sin maná! No podés usar más este ataque") y corta con un return.
+Si tiene usos: Resta 1 a usosMagia y resta 25 a la vidaJefe.
+Actualiza la pantalla de la vida y el texto del propio botón para que diga cuántos usos le quedan (ej: "Hechizo de Fuego 🔥 (Quedan 2)").
+Hace el mismo chequeo de victoria de si el monstruo murió.
