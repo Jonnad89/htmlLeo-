@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Leonardo</h1>
+
+      <nav class="menu">
+        <a href="#sobremi">Sobre Mi</a>
+
+        <a href="#proyectos">Proyectos</a>
+
+        <a href="#testimonios">Testimonios</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="portfolio-container">
+        <h3 class="presentacion">
+          Buenas soy Leo un FrontEnd Developer en Formación
+        </h3>
+
+        <img src="" alt="imagen de leo" />
+
+        <article class="biografia">
+          <p>
+            Me dedico a construir interfaces limpias y responsivas en HTML, CSS
+            y JavaScript
+          </p>
+        </article>
+
+        <div class="section-container">
+          <section id="intereses-section" class="intereses">
+            <h3>Intereses</h3>
+
+            <span>Mejora Continua</span>
+
+            <span>Disciplina</span>
+
+            <span>Enfoque</span>
+          </section>
+
+          <section id="habilidades-section" class="habilidades">
+            <h3>Habilidades</h3>
+
+            <span>Html5</span>
+
+            <span>CSS3</span>
+
+            <span>JavaScript</span>
+          </section>
+        </div>
+
+        <section class="proyectos" id="proyectos">
+          <h2>Mis Proyectos</h2>
+
+          <p>Filtrador de proyectos por tecnologias usadas:</p>
+
+          <div class="buscador-box">
+            <input id="buscador" type="text" placeholder="Busca un Proyecto" />
+
+            <button id="buscadorBtn">Buscar</button>
+          </div>
+          <div class="grid-proyectos">
+            <div class="card">
+              <h3>Home Banking</h3>
+              <p>Una web funcional de Banking para una empresa</p>
+              <p>
+                Tecnologias usadas:
+                <span id="tecnologias">Html, Css y JavaScript</span>
+              </p>
+              <a href="#visitarenlace">Visitar Pagina</a>
+            </div>
+
+            <div class="card">
+              <h3>Calculadora</h3>
+              <p>Una calculadora cientifica funcional</p>
+              <p>
+                Tecnologias usadas: <span id="tecnologias">Html y Css</span>
+              </p>
+              <a href="#visitarenlace">Visitar Pagina</a>
+            </div>
+
+            <div class="card">
+              <h3>Change Money</h3>
+              <p>Una pagina de cambio de divisas</p>
+              <p>
+                Tecnologias usadas:
+                <span id="tecnologias">Html y JavaScript</span>
+              </p>
+              <a href="#visitarenlace">Visitar Pagina</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonios" id="testimonios">
+            <h3>Opiniones De Clientes:</h3>
+            
+            <div class="grid-testimonios">
+            <div class="test">
+              <blockquote>
+                <img src="" alt="imagen de cliente" />
+
+                <cite><h4>Juan:</h4></cite>
+
+                <p>Me encanto trabajar con leo es muy atento a los detalles!</p>
+              </blockquote>
+            </div>
+
+            <div class="test">
+              <blockquote>
+                <img src="" alt="imagen de cliente" />
+
+                <cite><h4>Maria:</h4></cite>
+
+                <p>Necesitaba una pagina urgente y gracias a leo la tuve ya!</p>
+              </blockquote>
+            </div>
+
+            <div class="test">
+              <blockquote>
+                <img src="" alt="imagen de cliente" />
+
+                <cite><h4>Ema:</h4></cite>
+
+                <p>Gracias a leo tengo el sitio web que siempre desee!</p>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="contacto">
+      Contactame: <a href="#mail">Leo@gmail.com</a> | Instagram
+      <a href="#instagram">@Leodev</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

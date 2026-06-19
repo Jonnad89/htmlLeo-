@@ -1,0 +1,233 @@
+body{
+
+    background-color: rgb(200, 198, 198);
+
+}
+
+.titulo{
+    display: flex;
+    color: rgb(83, 32, 131);
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px;
+    background-color: burlywood;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 95%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 4px;
+    background-color: burlywood;
+    width: 95%;
+}
+
+.menu a{
+
+    margin: 5px;
+}
+
+.menu a:hover{
+
+    color: red;
+}
+
+main{
+    display: flex;
+    background-color: aliceblue;
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin: 10px;
+    text-align: center;
+}
+
+.presentacion{
+
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: burlywood;
+    color: rebeccapurple;
+    width: 95%;
+    margin: 10px;
+    height: 30px;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.biografia{
+
+    background-color: burlywood;
+    width: 95%;
+    margin: 10px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    color: darkblue;
+}
+
+.section-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container section{
+
+    border: 1px solid blue;
+    border-radius: 4px; 
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    color: darkblue;
+    background-color: burlywood;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.section-container span{
+
+    border: 1px solid blue;
+    border-radius: 2px;
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container h3{
+
+    display: flex;
+    color: rebeccapurple;
+    justify-content: center;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.proyectos{
+
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: burlywood;
+    margin: 5px;
+}
+
+.card{
+
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: bisque;
+}
+
+.card h3{
+
+    color: rgb(14, 14, 70);
+    text-decoration: underline;
+}
+
+.card p{
+
+    color: rgb(42, 59, 108);
+    font-style: italic;
+    font-size: 0.7;
+}
+
+.card a{
+
+    border: solid 1px blue;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: rgb(192, 197, 201);
+    text-decoration: none;
+    padding: 5px 5px;
+    box-shadow: 3px 4px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.card a:hover{
+
+    background-color: cadetblue;
+    color: red;
+}
+
+.testimonios{
+
+    border: solid 1px blue;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 5px;
+}
+
+.testimonios h3{
+
+    color: rgb(161, 32, 32);
+    text-decoration: underline;
+}
+
+.grid-testimonios{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.test{
+
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: bisque;
+    color: rgb(42, 59, 108);
+}
+
+.test img{
+
+    margin: 10px;
+    border: solid 1px blue;
+    width: 50%;
+    height: 50%;
+}
+
+.test h4{
+
+    color: rebeccapurple;
+    font-size: 1.1rem;
+}
+
+#contacto{
+
+    border: solid 1px blue;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 10px;
+    color:  rgb(161, 32, 32);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#contacto a{
+
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#contacto a:hover{
+
+    color:  rgb(161, 32, 32);
+}
