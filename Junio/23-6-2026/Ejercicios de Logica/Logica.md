@@ -25,3 +25,18 @@ Una palabra es un palíndromo (o capicúa) cuando se lee igual al derecho y al r
 La regla: Crear una función que reciba una palabra y devuelva true si es capicúa o false si no lo es.
 
 Pista: ¡Acá podes reutilizar la lógica! Si la palabra original es exactamente igual a la palabra invertida, entonces ¡es capicúa!
+
+=====================================================================================0
+
+Estás programando un sistema meteorológico. Te dan una lista con las temperaturas máximas registradas durante la última semana en una ciudad del sur: [12, -2, 5, 0, -5, 18, -1].
+
+La regla: Crear una función que reciba esa lista de números y devuelva la cantidad exacta de días en los que la temperatura fue bajo cero (menor que 0).
+
+Pista: Al igual que en el ejercicio del carrito de compras, vas a necesitar un contador afuera del bucle (let diasFrios = 0;). Pero esta vez, en lugar de sumar el valor del cajón, solo tenes que sumarle 1 al contador (diasFrios++) únicamente si el número del cajón [i] es negativo.
+
+Ejercicio 2: El Repartidor de Cartas (¿Quién es el más joven?) 👶
+Imaginá que en un videojuego multijugador queremos armar un emparejamiento y necesitamos saber la edad del jugador más chico de un grupo. Nos pasan una lista desordenada: [25, 19, 32, 14, 21, 16].
+
+La regla: Crear una función que reciba ese array de edades y devuelva cuál es el número más chico de todos sin usar métodos automáticos.
+
+Pista: Este ejercicio es el hermano gemelo del que hiciste antes para buscar el cofre con el tesoro mayor. Vas a arrancar asumiendo que el primer número es el menor (let menor = lista[0];), recorres la lista y, si encontras un cajón que tenga un número más chico que su récord actual, actualiza la variable.
