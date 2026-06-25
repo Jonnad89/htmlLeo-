@@ -1,4 +1,5 @@
-Contexto: En Mercado Libre o cualquier tienda online, cuando sumás productos al carrito, el sistema calcula si llegás a un monto mínimo para darte el "Envío Gratis". Leo va a programar exactamente esa lógica.
+Desafío Final: El Filtro de Envíos Gratis (E-Commerce) 🛒🚚
+Contexto: En Mercado Libre o cualquier tienda online, cuando sumás productos al carrito, el sistema calcula si llegás a un monto mínimo para darte el "Envío Gratis". vas a programar exactamente esa lógica.
 
 La consigna: Crear una función llamada evaluarEnvioGratis que reciba un array con los precios de los productos que el usuario cargó en el carrito (por ejemplo: [1500, 4000, 2300]).
 La función debe hacer dos cosas:
