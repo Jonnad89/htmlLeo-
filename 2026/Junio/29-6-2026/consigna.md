@@ -19,7 +19,7 @@ La consigna: Crear una función llamada filtrarPorGenero que reciba el array del
 
 Pista: vas a usar la lógica que ya domina: crear una lista vacía (let filtrados = [];), recorrer la original con un for, evaluar if (lista[i].genero === generoElegido) y guardarlo usando .push(lista[i]).
 
-Ejercicio 4: El Verificador de Imágenes Rotas (Control de errores) 
+Ejercicio 4: El Verificador de Imágenes Rotas (Control de errores) ⚠️
 Contexto: Si nos olvidamos de ponerle el link de la imagen a una serie, en la web se va a ver un recuadro roto muy feo. Queremos un sistema de alerta que revise el catálogo antes de mostrarlo.
 
 La consigna: Crear una función llamada validarImagenes que reciba el array del catálogo. Debe revisar cada objeto y, si encuentra al menos uno donde la propiedad .urlImagen esté vacía (""), debe devolver false (lo que significa: "¡Alerta! Hay imágenes rotas"). Si revisa todo el catálogo y todas las series tienen su link de imagen puesto, devuelve true ("Catálogo aprobado").
