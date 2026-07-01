@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitBill App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-card">
+        <h2>💸 SplitBill</h2>
+        <p class="subtitle">Dividir la cuenta nunca fue tan fácil</p>
+
+        <div class="input-group">
+            <label>Total de la Cuenta ($):</label>
+            <input type="number" id="totalCuenta" placeholder="Ej: 5000">
+        </div>
+
+        <div class="input-group">
+            <label>¿Cuántos pagan?:</label>
+            <input type="number" id="cantidadPersonas" placeholder="Ej: 4">
+        </div>
+
+        <div class="input-group">
+            <label>¿Cuánto dejamos de propina?:</label>
+            <select id="porcentajePropina">
+                <option value="0">0% (Nada)</option>
+                <option value="10" selected>10% (Normal)</option>
+                <option value="15">15% (Copado)</option>
+                <option value="20">20% (Excelente servicio)</option>
+            </select>
+        </div>
+
+        <button id="btnCalcular">💥 Calcular División</button>
+
+        <div id="errorMensaje" class="error"></div>
+
+        <div id="resumenBox" class="resumen-container oculto">
+            <h3>📊 Resumen de la cuenta:</h3>
+            <p>Propina Total: <span id="resPropina">$0.00</span></p>
+            <p>Total con Propina: <span id="resTotalConPropina">$0.00</span></p>
+            <hr>
+            <p class="total-persona">Cada uno pone: <span id="resPorPersona">$0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
