@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSpace Tycoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-layout">
+        <div class="panel-clicker">
+            <div class="marcador">
+                <h1 id="contadorBytes">0</h1>
+                <p>⚡ BYTES EXTRAÍDOS ⚡</p>
+                <span class="automatico">Generación automática: <span id="txtBps">0</span> B/s</span>
+            </div>
+
+            <button id="btnHackear">🖥️ INITIALIZE HACK</button>
+        </div>
+
+        <div class="panel-tienda">
+            <h2>🛒 BLACK MARKET (UPGRADES)</h2>
+            
+            <div class="upgrade-card" id="cardServidor">
+                <div class="info">
+                    <h3>💾 Servidor Proxy</h3>
+                    <p>Genera +2 Bytes por segundo</p>
+                    <span>Poseídos: <span id="cantServidores">0</span></span>
+                </div>
+                <button id="btnComprarServidor">Coste: <span id="costoServidor">15</span> B</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
