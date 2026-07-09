@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.clima-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 320px;
+    text-align: center;
+}
+h2 { margin: 0; color: #2d3436; }
+.subtitle { color: #636e72; font-size: 0.85rem; margin-top: 5px; margin-bottom: 25px; }
+
+.selector-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.selector-box label { font-size: 0.9rem; font-weight: bold; color: #2d3436; margin-bottom: 5px; }
+.selector-box select { padding: 10px; border-radius: 8px; border: 1px solid #b2bec3; font-size: 1rem; outline: none; }
+
+button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover { background-color: #00cec9; }
+
+.resultado-container {
+    margin-top: 25px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+.resultado-container h3 { margin: 0; color: #2d3436; font-size: 1.4rem; }
+.temperatura-bloque { font-size: 3rem; font-weight: bold; color: #0984e3; margin: 15px 0; }
+.cargando { color: #0984e3; font-weight: bold; margin-top: 15px; font-size: 0.9rem; }
+.oculto { display: none; }

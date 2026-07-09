@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="clima-card">
+        <h2>🌤️ WeatherVibe</h2>
+        <p class="subtitle">Datos meteorológicos en tiempo real</p>
+
+        <div class="selector-box">
+            <label for="ciudadSelect">Seleccioná una ciudad:</label>
+            <select id="ciudadSelect">
+                <option value="buenosaires">Buenos Aires, Argentina</option>
+                <option value="madrid">Madrid, España</option>
+                <option value="tokio">Tokio, Japón</option>
+                <option value="nuevayork">Nueva York, EE.UU.</option>
+            </select>
+        </div>
+
+        <button id="btnConsultar">Buscar Clima Actual</button>
+
+        <div id="resultadoBox" class="resultado-container oculto">
+            <h3 id="txtCiudad">Ciudad</h3>
+            <div class="temperatura-bloque">
+                <span id="txtTemperatura">0</span>°C
+            </div>
+            <p>Viento: <span id="txtViento">0 km/h</span></p>
+        </div>
+        
+        <p id="txtCargando" class="cargando oculto">Conectando con el satélite...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
