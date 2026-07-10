@@ -1,0 +1,14 @@
+{
+    "grupoA": [
+        { "equipo": "Argentina 🇦🇷", "puntos": 7, "gf": 5, "gc": 1 },
+        { "equipo": "Canadá 🇨🇦", "puntos": 4, "gf": 2, "gc": 3 },
+        { "equipo": "Chile 🇨🇱", "puntos": 2, "gf": 1, "gc": 2 },
+        { "equipo": "Perú 🇵🇪", "puntos": 2, "gf": 0, "gc": 2 }
+    ],
+    "grupoB": [
+        { "equipo": "México 🇲🇽", "puntos": 4, "gf": 3, "gc": 3 },
+        { "equipo": "Ecuador 🇪🇨", "puntos": 6, "gf": 4, "gc": 2 },
+        { "equipo": "Venezuela 🇻🇪", "puntos": 7, "gf": 6, "gc": 1 },
+        { "equipo": "Jamaica 🇯🇲", "puntos": 0, "gf": 1, "gc": 9 }
+    ]
+}

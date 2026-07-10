@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundialApp 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mundial-container">
+        <h2>🏆 MundialApp 2026</h2>
+        <p class="subtitle">Analizador Estadístico de Grupos</p>
+
+        <div class="control-box">
+            <select id="selectGrupo">
+                <option value="grupoA">Grupo A</option>
+                <option value="grupoB">Grupo B</option>
+            </select>
+            <button id="btnCargar">Simular Tabla</button>
+        </div>
+
+        <p id="txtCarga" class="oculto">Conectando con la base de datos de la FIFA...</p>
+
+        <!-- Tabla dinámica -->
+        <div id="tablaBox" class="oculto">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Equipo</th>
+                        <th>Pts</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    <!-- JS va a meter las filas acá -->
+                </tbody>
+            </table>
+
+            <div class="clasificados-box">
+                <h3>Clasifican a 16avos de Final:</h3>
+                <p id="txtClasificados">...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
