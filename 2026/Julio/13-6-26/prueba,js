@@ -1,0 +1,31 @@
+function subirArchivoSimulado(nombreArchivo, pesoMB) {
+    return new Promise((resolve) => {
+        const tiempoDeEspera = pesoMB * 100; // 100ms por cada MB
+        setTimeout(() => {
+            resolve(nombreArchivo);
+        }, tiempoDeEspera);
+    });
+}
+
+async function subirGaleria() {
+    const archivos = [
+        { nombre: "foto_perfil.jpg", peso: 15 }, // Tarda 1.5s
+        { nombre: "banner_mundial.png", peso: 30 }, // Tarda 3.0s
+        { nombre: "video_gol.mp4", peso: 50 }, // Tarda 5.0s
+        { nombre: "doc_entrada.pdf", peso: 5 } // Tarda 0.5s
+    ];
+
+    console.log("Subiendo archivos en paralelo...");
+    console.time("Tiempo de subida total");
+
+    // Mapeamos el array a un array de promesas corriendo simultáneamente
+    const promesasDeSubida = archivos.map(archivo => 
+        subirArchivoSimulado(archivo.nombre, archivo.peso)
+    );
+
+    // Esperamos a que todas finalicen juntas
+    const archivosSubidos = await Promise.all(promesasDeSubida);
+    
+    console.log("✅ Archivos subidos con éxito:", archivosSubidos);
+    console.timeEnd("Tiempo de subida total"); // Debe rondar los ~5 segundos (el peso del video mas pesado)
+}
