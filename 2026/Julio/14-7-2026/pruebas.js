@@ -68,3 +68,5 @@ function contarVocales(texto) {
     }
     return contador;
 }
+
+console.log(contarVocales("Argentina"));
