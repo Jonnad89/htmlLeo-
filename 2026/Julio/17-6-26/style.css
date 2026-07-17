@@ -1,0 +1,83 @@
+*body {
+    background-color: #f0f3f4;
+    font-family: 'Segoe UI',  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.card {
+    background: #bbc3c7; /* Color gris inicial */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: background 0.3s ease;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.color-picker-container{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.color-picker-container label{
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#colorContainer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.color-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: transform 0,1s ease;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#bntGuardar {background: #2c3e50; color: white;}
+.danger-btn {background: #95a5a6; color: white;}

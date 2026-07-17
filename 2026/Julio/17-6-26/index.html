@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Club Manager 2026</title>
+</head>
+<body>
+    <div class="app-container">
+        <h2>Mi Club Favorito</h2>
+
+        <!-- Tarjeta dinámica que vamos a modificar con JS -->
+
+        <div class="card" id="clubCard">
+
+            <h3 id="cardTitle">Tu Club Acá</h3>
+            <p>Estado de Memoria: <span id="statusText">Vacío</span> </p>
+        </div>
+
+        <!-- Formulario e Interacciones -->
+         <div class="controls">
+            <input type="text" id="inputClub" placeholder="Escribí tu club (ej: Boca, River, Real Madrid)...">
+
+            <div class="color-picker-container">
+                <label>Elegí color de tarjeta:</label>
+                <!-- Delegación de eventos: Escucharemos los clicks en este div padre -->
+                 <div id="colorContainer">
+                    <button class="color-btn" data-color="#3498db" style="background: #3498db;"></button>
+                    <button class="color-btn" data-color="#e74c3c" style="background: #e74c3c;"></button>
+                    <button class="color-btn" data-color="#2ecc71" style="background: #2ecc71;"></button>
+                    <button class="color-btn" data-color="#f1c40f" style="background: #f1c40f;"></button>
+                 </div>
+            </div>
+
+            <button id="btnGuardar">Guardar Preferencias (LocalStorage)</button>
+            <button id="btnBorrar">Borrar Memoria</button>
+         </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
