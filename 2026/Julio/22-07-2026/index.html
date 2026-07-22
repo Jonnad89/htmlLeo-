@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Sanitas - Turnos iOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mockup estilo pantalla de iPhone -->
+    <main class="iphone-screen">
+        
+        <!-- Header minimalista -->
+        <header class="ios-header">
+            <span class="sub-title">Gestión de Turnos</span>
+            <h1>Clínica Sanitas 🩺</h1>
+        </header>
+
+        <!-- Selector de Especialista -->
+        <section class="ios-card">
+            <label for="selectMedico" class="ios-label">Seleccionar Especialista</label>
+            <select id="selectMedico" class="ios-select">
+                <option value="1">Dr. Mateo Rossi (Cardiología)</option>
+                <option value="2">Dra. Sofía Benítez (Pediatría)</option>
+            </select>
+        </section>
+
+        <!-- Calendario Simplificado del Mes -->
+        <section class="ios-card">
+            <div class="card-header">
+                <h2>Julio 2026</h2>
+                <div class="legend">
+                    <span class="dot green"></span> Libre
+                    <span class="dot red"></span> Lleno
+                </div>
+            </div>
+            
+            <div id="gridDias" class="days-grid">
+                <!-- Los días se van a generar dinámicamente con JS -->
+            </div>
+        </section>
+
+        <!-- Grilla de Horarios (9:00 a 17:00 hs) -->
+        <section class="ios-card">
+            <h2>Horarios para el día <span id="diaSeleccionadoTexto">15</span></h2>
+            <div id="gridHorarios" class="hours-grid">
+                <!-- Los botones de horarios se van a generar con JS -->
+            </div>
+        </section>
+
+        <!-- Botón de Acción Principal estilo iOS -->
+        <button id="btnReservar" class="ios-btn-primary" disabled>
+            Reservar Turno
+        </button>
+
+        <!-- Mensaje de Confirmación / Toast -->
+        <div id="toastMensaje" class="ios-toast hidden">
+            ✅ Turno reservado con éxito
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
