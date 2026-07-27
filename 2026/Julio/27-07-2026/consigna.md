@@ -47,3 +47,39 @@ En cualquier otro caso, el precio queda igual.
 Ejemplo 1: calcularPrecio(5000, "Lunes") ➔ Devuelve 4500.
 
 Ejemplo 2: calcularPrecio(12000, "Martes") ➔ Devuelve 10200.
+
+=================================================================================================
+
+Consigna del Desafío: "El Foco Interactivo"
+
+Objetivo
+Crear una pequeña aplicación web interactiva que simule un foco/lamparita de luz con un botón que permita encenderlo y apagarlo al hacer click.
+
+Requisitos
+HTML:
+
+Crear un contenedor para la interfaz.
+
+Colocar una imagen de un foco apagado (o un contenedor circular que represente la lamparita).
+
+Agregar un botón debajo que diga "Encender".
+
+CSS:
+
+Centrar la interfaz en la pantalla.
+
+Aplicar un estilo limpio a la lamparita y al botón.
+
+Crear una clase CSS .encendido que le dé al foco un brillo amarillo encendido (usando box-shadow o cambiando el color) y cambie el fondo/estilo para dar la sensación de iluminación.
+
+JavaScript:
+
+Seleccionar el foco y el botón utilizando document.getElementById o document.querySelector.
+
+Agregar un evento de click al botón.
+
+Al hacer click:
+
+Si el foco está apagado: encenderlo (agregando la clase de luz o cambiando la imagen) y hacer que el texto del botón cambie a "Apagar".
+
+Si el foco está encendido: apagarlo (quitando la clase de luz) y volver el texto del botón a "Encender"
