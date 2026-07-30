@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Stream Argentina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="player-card">
+        <!-- Header / Reproductor Principal -->
+        <header class="now-playing">
+            <span class="badge">EN VIVO 🔴</span>
+            <h1 id="tituloRadio">Seleccioná una emisora</h1>
+            
+            <!-- Etiqueta Audio Nativa de HTML5 -->
+            <audio id="reproductorAudio" controls autoplay></audio>
+        </header>
+
+        <!-- Lista de Emisoras -->
+        <section class="stations-section">
+            <h2>Estaciones Populares 🇦🇷</h2>
+            <div id="listaRadios" class="stations-list">
+                <!-- Se cargan dinámicamente con JS -->
+                <p class="loading">Cargando radios...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
