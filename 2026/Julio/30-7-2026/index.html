@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlix iOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="ios-app">
+        
+        <!-- Header Principal -->
+        <header class="ios-header">
+            <span class="sub-title">Catálogo</span>
+            <h1>CineFlix 🍿</h1>
+            
+            <!-- Pestañas de Navegación -->
+            <div class="tabs-container">
+                <button id="btnTodas" class="tab-btn active">Todas</button>
+                <button id="btnFavoritas" class="tab-btn">❤️ Favoritas (<span id="countFavs">0</span>)</button>
+            </div>
+        </header>
+
+        <!-- Grilla de Películas -->
+        <section id="gridPeliculas" class="movies-grid">
+            <p class="loading">Cargando catálogo...</p>
+        </section>
+
+        <!-- Notificación Toast de iOS (Compartido / Favorito) -->
+        <div id="toast" class="ios-toast hidden">
+            ¡Enlace copiado al portapapeles! 📋
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
