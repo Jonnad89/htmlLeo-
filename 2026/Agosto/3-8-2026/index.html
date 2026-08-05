@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Financiero Pro</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Layout Principal del Dashboard -->
+    <div class="dashboard-container">
+      <!-- === BARRA LATERAL (SIDEBAR) === -->
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="logo-icon">⚡</span>
+          <h2>ApexDash</h2>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="#" class="nav-link active">Resumen</a>
+          <a href="#" class="nav-link">Movimientos</a>
+          <a href="#" class="nav-link">Metas</a>
+          <a href="#" class="nav-link">Configuración</a>
+        </nav>
+
+        <div class="user-profile">
+          <div class="avatar">L</div>
+          <div class="user-info">
+            <p class="user-name">Leo</p>
+            <p class="user-role">Plan Premium</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- === CONTENIDO PRINCIPAL === -->
+      <main class="main-content">
+        <!-- Encabezado del Dashboard -->
+        <header class="top-header">
+          <div>
+            <h1>Hola, Leo</h1>
+            <p class="subtitle">
+              Este es el estado de tus finanzas en tiempo real.
+            </p>
+          </div>
+          <button id="btnRefrescar" class="btn-primary">
+            Actualizar Datos
+          </button>
+        </header>
+
+        <!-- === Tarjetas de métricas (KPIs) === -->
+        <section class="kpi-grid">
+          <!-- KPI 1: Balance Total -->
+          <article class="kpi-card animated-card">
+            <div class="kpi-header">
+              <span>Balance Total</span>
+              <span class="kpi-icon">💰</span>
+            </div>
+
+            <!-- El data-target es el valor final al que llegara la animacion JS -->
+            <h2 class="kpi-value" data-target="14580">$0</h2>
+            <span class="badge positive">+12.5% este mes</span>
+          </article>
+
+          <!-- KPI 2: Ingreso del mes -->
+
+          <article class="kpi-card animated-card">
+            <div class="kpi-header">
+              <span>Ingresos Totales</span>
+              <span class="kpi-icon">📈</span>
+            </div>
+            <h2 class="kpi-value" data-target="8200">$0</h2>
+            <span class="badge positive">+8.2% vs anterior</span>
+          </article>
+
+          <!-- KPI 3: Gastos Del mes -->
+
+          <article class="kpi-card animated-card">
+            <div class="kpi-header">
+              <span>Gastos Totales</span>
+              <span class="kpi-icon">📉</span>
+            </div>
+            <h2 class="kpi-value" data-target="3420">$0</h2>
+            <span class="badge negative">-3.1% ahorrado</span>
+          </article>
+        </section>
+
+        <!-- === SECCIÓN INFERIOR (TABLA Y METAS) === -->
+        <section class="dashboard-details">
+          <!-- columna Izquierda: Tabla de transacciones -->
+
+          <div class="table-container animated-card">
+            <div class="table-header">
+              <h3>Últimos movimientos</h3>
+              <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">
+                  Todos
+                </button>
+                <button class="filter-btn" data-filter="ingreso">
+                  Ingresos
+                </button>
+                <button class="filter-btn" data-filter="gasto">Gastos</button>
+              </div>
+            </div>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Concepto</th>
+                  <th>Categoria</th>
+                  <th>Monto</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody id="tablaCuerpo">
+                <!-- Se renderiza dinámicamente desde JavaScript -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Columna derecha: Metas de Ahorro con barras animadas -->
+          <div class="goals-container animated-card">
+            <h3>Metas de Ahorro</h3>
+            <div class="goal-item">
+              <div class="goal-info">
+                <span>Fondo de Emergencia</span>
+                <span class="goal-percentage">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <!-- data-progress indica cuanto debe animar el ancho en JS -->
+                <div class="progress-bar-fill" data-progress="80"></div>
+              </div>
+            </div>
+
+            <div class="goal-item">
+              <div class="goal-info">
+                <span>Nueva Laptop pro</span>
+                <span class="goal-percentage">45%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <!-- data-progress indica cuanto debe animar el ancho en JS -->
+                <div class="progress-bar-fill" data-progress="45"></div>
+              </div>
+            </div>
+
+            <div class="goal-item">
+              <div class="goal-info">
+                <span>Viaje de Vacaciones</span>
+                <span class="goal-percentage">60%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <!-- data-progress indica cuanto debe animar el ancho en JS -->
+                <div class="progress-bar-fill" data-progress="60"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
