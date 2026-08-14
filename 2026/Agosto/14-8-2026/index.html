@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computación Plus Web - Punto de Venta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- BARRA LATERAL DE ACCESOS RÁPIDOS -->
+        <aside class="sidebar">
+            <div class="brand">
+                <span>💻</span>
+                <h2>CompPlus</h2>
+            </div>
+            <nav class="shortcut-menu">
+                <button class="menu-btn"><span class="key">F1</span> Artículos</button>
+                <button class="menu-btn"><span class="key">F2</span> Clientes</button>
+                <button class="menu-btn active"><span class="key">F4</span> Ventas</button>
+                <button class="menu-btn"><span class="key">F5</span> Consultar</button>
+                <button class="menu-btn danger"><span>🚪</span> Salir</button>
+            </nav>
+        </aside>
+
+        <!-- VENTANA PRINCIPAL DE VENTA -->
+        <main class="pos-workspace">
+            <!-- ENCABEZADO DE FACTURACIÓN -->
+            <header class="invoice-header">
+                <div class="input-group">
+                    <label>Comprobante</label>
+                    <select id="tipo-factura">
+                        <option value="B">Factura B</option>
+                        <option value="A">Factura A</option>
+                        <option value="X">Presupuesto X</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Vendedor</label>
+                    <input type="text" id="vendedor" value="ARIEL" readonly>
+                </div>
+                <div class="input-group">
+                    <label>Cliente</label>
+                    <select id="cliente-select">
+                        <option value="CF">CONSUMIDOR FINAL</option>
+                        <option value="CL1">JUAN PEREZ (Resp. Inscripto)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Fecha</label>
+                    <input type="text" id="fecha-actual" readonly>
+                </div>
+            </header>
+
+            <!-- BARRA DE INGRESO DE PRODUCTOS -->
+            <section class="barcode-section">
+                <div class="field-code">
+                    <label for="input-codigo">Código / Producto:</label>
+                    <input type="text" id="input-codigo" placeholder="Escribí el código (ej: 101, 102) o nombre..." autofocus>
+                </div>
+                <div class="field-qty">
+                    <label for="input-cant">Cant:</label>
+                    <input type="number" id="input-cant" value="1" min="1">
+                </div>
+                <button id="btn-agregar" class="btn-primary">Agregar item</button>
+            </section>
+
+            <!-- TABLA DE ARTÍCULOS EN LA VENTA -->
+            <section class="table-container">
+                <table class="pos-table">
+                    <thead>
+                        <tr>
+                            <th>Cant</th>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                            <th>P. Unitario</th>
+                            <th>Subtotal</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+                        <!-- Cargas dinámicas con JS -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- PANEL INFERIOR DE TOTALES Y COBRO -->
+            <footer class="pos-footer">
+                <div class="totals-summary">
+                    <div class="total-box">
+                        <span>TOTAL A COBRAR</span>
+                        <h1 id="display-total">$0,00</h1>
+                    </div>
+                </div>
+                <button id="btn-cobrar" class="btn-success">CONFIRMAR / COBRAR [F9]</button>
+            </footer>
+        </main>
+    </div>
+
+    <!-- MODAL DE COBRO Y VUELTO -->
+    <div id="modal-cobro" class="modal-overlay hidden">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h3>Venta de Mercadería - Cobro</h3>
+                <button id="btn-cerrar-modal">✕</button>
+            </header>
+            
+            <div class="modal-body">
+                <div class="payment-tabs">
+                    <button class="tab active">EFECTIVO</button>
+                    <button class="tab">TARJETA</button>
+                </div>
+
+                <div class="payment-calculator">
+                    <div class="calc-row">
+                        <label>Total Venta:</label>
+                        <span id="modal-total" class="amount">$0,00</span>
+                    </div>
+                    <div class="calc-row highlighted">
+                        <label for="input-abona">Abona con ($):</label>
+                        <input type="number" id="input-abona" placeholder="0.00" autofocus>
+                    </div>
+                    <div class="calc-row">
+                        <label>Su Vuelto:</label>
+                        <span id="modal-vuelto" class="amount-vuelto">$0,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="modal-footer">
+                <button id="btn-finalizar" class="btn-success">Finalizar Venta (Imprimir)</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
