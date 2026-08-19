@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Player</title>
+    <link rel="stylesheet" href="./SpotifyWebPlayer.css">
+</head>
+<body>
+
+    <header>
+        <h1>Spotify Web Player</h1>
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <!-- PANEL IZQUIERDO: CARÁTULA + CONTROLES -->
+            <div class="reproductor-container">
+                <div class="caratula-container">
+                    <img src="https://picsum.photos/180" alt="album" id="caratula-img">
+                </div>
+
+                <h3 class="cancion-actual" id="cancionActual">Cargando canciones...</h3>
+                <p id="artistaActual" style="color: #a7a7a7; font-size: 0.85rem;"></p>
+
+                <input type="range" id="barra-progreso" value="0">
+                <span id="timer-cancion">0:00</span>
+
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <button id="btn-anterior">⏮️</button>
+                    <button id="btn-play-stop">▶️</button>
+                    <button id="btn-siguiente">⏭️</button>
+                </div>
+
+                <div style="width: 100%; display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                    <span>🔊</span>
+                    <input type="range" value="80" id="volumen">
+                </div>
+            </div>
+
+            <!-- PANEL DERECHO: TABLA DE CANCIONES -->
+            <div class="playlist-container">
+                <table class="lista-reproduccion">
+                    <thead class="thead-lista">
+                        <tr>
+                            <th>#</th>
+                            <th>Título</th>
+                            <th>Álbum</th>
+                            <th>Preview</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-lista" id="canciones">
+                        <!-- Se insertan con JS -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./SpotifyWebPlayer.js"></script>
+</body>
+</html>

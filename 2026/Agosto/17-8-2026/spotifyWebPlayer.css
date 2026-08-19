@@ -1,0 +1,165 @@
+:root {
+    --bg-black: #000000;
+    --bg-dark: #121212;
+    --bg-card: #181818;
+    --primary-green: #1ed760;
+    --text-white: #ffffff;
+    --text-gray: #a7a7a7;
+    --border-color: #282828;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header principal */
+header {
+    background-color: var(--bg-black);
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    letter-spacing: 1px;
+}
+
+/* Layout Principal */
+main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Panel Izquierdo: Carátula y Controles de Reproducción */
+.reproductor-container {
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.caratula-container {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+.caratula-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    background-color: var(--bg-card);
+}
+
+.cancion-actual {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+/* Controles e Inputs de Rango */
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--primary-green);
+    cursor: pointer;
+}
+
+#timer-cancion {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+#btn-play-stop {
+    font-size: 2rem;
+}
+
+/* Panel Derecho: Lista de Canciones */
+.playlist-container {
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.lista-reproduccion {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.thead-lista th {
+    color: var(--text-gray);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.tbody-lista td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+}
+
+/* Filas interactivas */
+.track-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.track-row:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.track-row.playing {
+    color: var(--primary-green);
+    font-weight: bold;
+}
