@@ -1,0 +1,29 @@
+<div class="faq-item">
+    <button class="faq-titulo">¿Qué es esto?</button>
+    <div class="faq-respuesta" style="display:none;">Es un componente de acordeón.</div>
+</div>
+<div class="faq-item">
+    <button class="faq-titulo">¿Cómo funciona?</button>
+    <div class="faq-respuesta" style="display:none;">Usa JS para desplegar el contenido.</div>
+</div>
+
+<script>
+const botones = document.querySelectorAll(".faq-titulo");
+
+botones.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const respuestaActual = btn.nextElementSibling;
+        const estaAbierta = respuestaActual.style.display === "block";
+
+        // Cerrar todas las respuestas
+        document.querySelectorAll(".faq-respuesta").forEach(resp => {
+            resp.style.display = "none";
+        });
+
+        // Si no estaba abierta, abrir la seleccionada
+        if (!estaAbierta) {
+            respuestaActual.style.display = "block";
+        }
+    });
+});
+</script>

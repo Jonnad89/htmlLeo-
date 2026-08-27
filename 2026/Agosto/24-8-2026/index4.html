@@ -1,0 +1,30 @@
+<input type="number" id="segundos-input" placeholder="Segundos">
+<button id="btn-iniciar">Iniciar</button>
+<h2 id="pantalla">00</h2>
+
+<script>
+const input = document.getElementById("segundos-input");
+const btnIniciar = document.getElementById("btn-iniciar");
+const pantalla = document.getElementById("pantalla");
+let intervalo = null;
+
+btnIniciar.addEventListener("click", () => {
+    clearInterval(intervalo);
+    let tiempo = parseInt(input.value);
+
+    if (isNaN(tiempo) || tiempo <= 0) return;
+
+    document.body.style.backgroundColor = "";
+    pantalla.textContent = tiempo;
+
+    intervalo = setInterval(() => {
+        tiempo--;
+        pantalla.textContent = tiempo;
+
+        if (tiempo <= 0) {
+            clearInterval(intervalo);
+            document.body.style.backgroundColor = "#ff4d4d"; // Alerta en rojo
+        }
+    }, 1000);
+});
+</script>

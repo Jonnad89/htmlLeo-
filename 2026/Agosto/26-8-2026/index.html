@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Clase de Js: DOM, Arrays, Bucles y Objetos</h1>
+
+
+    <!-- Sección 1: Navegación DOM -->
+
+    <section>
+        <h2>1. Navegación de DOm (Relaciones de Parentesco)</h2>
+        <div class="padre-container">
+            <div class="caja activa">Item 1 (Inicial)</div>
+            <div class="caja">Item 2</div>
+            <div class="caja">Item 3</div>
+        </div>
+        <button id="btn-next">Siguiente (.nextElementSibling)</button>
+        <button id="btn-prev">Anterior (.previousElementSiling)</button>
+        <button id="btn-parent">Ver Padre (.parentElement)</button>
+        <p id="out-dom" style="color: #aaa"></p>
+    </section>
+
+    <!-- Sección 2: Arrays -->
+     <section>
+        <h2>2. Métodos de Arrays (Comunes VS No Comunes)</h2>
+        <p>Array Base: <code>[12, 45, 8, 90, 68]</code> </p>
+
+        <!-- Comunes -->
+         <strong>Comunes:</strong>
+         <button id="btn-map">.map() (multiplicar x2)</button>
+         <button id="btn-filter">.filter() (Mayores a 30)</button>
+         <button id="btn-reduce">.reduce() (Sumar todo)</button>
+         <button id="btn-includes">.includes() (90)</button>
+ 
+         <br><br>
+
+         <!-- No comunes -->
+
+         <strong>No Comunes / Avanzados:</strong>
+         <button id="btn-some">.some() (¿Hay pares?)</button>
+         <button id="btn-every">.every() (¿Todos > 5?)</button>
+         <button id="btn-find">.find() (Primer > 40)</button>
+         <button id="btn-findIndex">.findIndex() (Posición de 90)</button>
+         <button id="btn-flat">.flat() (Desarmar matriz)</button>
+         <p id="out-array" style="color:#1ed760; font-weight: bold; font-size: 1.1rem;"></p>
+
+        
+     </section>
+
+     <!-- Sección 3: Bucle While -->
+
+     <section>
+        <h2>3. Bucle While, Break y Continue</h2>
+        <input type="number" id="input-limite" value="10" placeholder="Limite">
+        <button id="btn-while-normal">Ejecutar While</button>
+        <button id="btn-while-break">While con Break (para en 5)</button>
+        <button id="btn-while-continue">While con Continue (Saltea pares)</button>
+        <ul id="out-while"></ul>
+     </section>
+
+     <!-- Sección 4: Objetos -->
+
+     <section>
+        <h2>4. Métodos de Objetos</h2>
+        <p>Objeto Usuario: <code>{ nombre: "Leo", rol: "Dev", nivel: "JS", estado: "Activo" }</code></p>
+        <button id="btn-keys">Object.keys()</button>
+        <button id="btn-values">Object.values()</button>
+        <button id="btn-entries">Object.entries()</button>
+        <button id="btn-assign">Object.assign() (Clonar/Merge)</button>
+        <div id="out-objetos" class="caja" style="margin-top: 10px;"></div>
+    </section>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

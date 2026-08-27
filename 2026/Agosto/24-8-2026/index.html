@@ -1,0 +1,26 @@
+<input type="text" id="buscador" placeholder="Buscar usuario...">
+<ul id="lista-usuarios">
+    <li>Roma</li>
+    <li>Leo</li>
+    <li>Matias</li>
+    <li>Sofia</li>
+    <li>Jonatan</li>
+</ul>
+
+<script>
+const buscador = document.getElementById("buscador");
+const usuarios = document.querySelectorAll("#lista-usuarios li");
+
+buscador.addEventListener("input", () => {
+    const texto = buscador.value.toLowerCase();
+    
+    usuarios.forEach(usuario => {
+        const nombre = usuario.textContent.toLowerCase();
+        if (nombre.includes(texto)) {
+            usuario.style.display = "";
+        } else {
+            usuario.style.display = "none";
+        }
+    });
+});
+</script>
