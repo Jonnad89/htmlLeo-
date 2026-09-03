@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="contenedor-principal">
+      <h1>Bloc de Notas Persistente</h1>
+
+      <p class="descripcion">
+        Tus notas se guardarán en LocalStorage y no se borrarán al recargar la
+        página
+      </p>
+
+      <div class="formulario-notas">
+        <input
+          type="text"
+          id="input-nota"
+          placeholder="Escribí una nueva nota..."
+        />
+
+        <button id="btn-guardar">Guardar Notas</button>
+      </div>
+
+      <div class="seccion-lista">
+        <h2>Mis Notas Guardadas:</h2>
+
+        <ul id="lista-notas"></ul>
+
+       <button id="btn-limpiar" class="btn-peligro">Borrar Todas las Notas</button>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

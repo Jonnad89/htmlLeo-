@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        textarea { width: 100%; max-width: 400px; height: 100px; padding: 10px; border-radius: 5px; }
+        .contador { font-weight: bold; margin-top: 5px; }
+        .alerta { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Crear Publicación</h2>
+    <textarea id="texto" placeholder="Escribí algo..."></textarea>
+    <div class="contador">Caracteres restantes: <span id="restantes">140</span></div>
+    <br>
+    <button id="btn-publicar">Publicar</button>
+
+    <script>
+    const MAX_CARACTERES = 140;
+    const textarea = document.getElementById("texto");
+    const restantes = document.getElementById("restantes");
+    const btnPublicar = document.getElementById("btn-publicar");
+
+    textarea.addEventListener("input", () => {
+        const longitud = textarea.value.length;
+        const faltantes = MAX_CARACTERES - longitud;
+        
+        restantes.textContent = faltantes;
+
+        // Cambiar color cuando quedan menos de 20 caracteres
+        if (faltantes < 20) {
+            restantes.classList.add("alerta");
+        } else {
+            restantes.classList.remove("alerta");
+        }
+
+        // Desactivar botón si supera el límite
+        if (faltantes < 0) {
+            btnPublicar.disabled = true;
+        } else {
+            btnPublicar.disabled = false;
+        }
+    });
+    </script>
+</body>
+</html>
