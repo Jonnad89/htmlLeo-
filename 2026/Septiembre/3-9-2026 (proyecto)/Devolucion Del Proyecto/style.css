@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumpurple;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 15px; /* CORRECCIÓN: Un poco más de margen superior */
+    color: rgb(162, 67, 30);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingresar-tarea {
+    display: flex;
+    width: 280px; /* CORRECCIÓN: Se agrandó un poco para dar aire al input */
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: midnightblue;
+    color: crimson;
+    margin: 5px;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#input-agregar-tarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: midnightblue;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+#input-agregar-tarea:focus {
+    border-color: aqua;
+}
+
+#btn-agregar-tarea {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: mediumpurple;
+    color: black;
+    box-shadow: 0 4px 4px rgba(162, 67, 30, 0.4);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-agregar-tarea:hover {
+    background-color: rgb(95, 240, 240);
+    color: brown;
+}
+
+.tareas-container {
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    min-height: 200px; /* CORRECCIÓN: 'min-height' para que crezca si hay muchas tareas */
+    margin: 5px;
+    width: 550px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.lista-pendientes {
+    border-right: 1px solid black; /* CORRECCIÓN: Borde divisorio entre listas */
+    background-color: brown;
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.lista-completadas {
+    background-color: green;
+    width: 50%;
+    text-align: center;
+    color: white; /* CORRECCIÓN: Texto blanco para mejor contraste sobre verde */
+    padding: 10px;
+}
+
+/* CORRECCIÓN: Estilos para las listas y los ítems generados con JS */
+ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botones dentro de los ítems de lista */
+.btn-accion {
+    border: none;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 2px 6px;
+    margin-left: 5px;
+}
+
+#btn-borrar-listas {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: midnightblue;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    margin-top: 10px;
+}
+
+#btn-borrar-listas:hover {
+    background-color: brown;
+}

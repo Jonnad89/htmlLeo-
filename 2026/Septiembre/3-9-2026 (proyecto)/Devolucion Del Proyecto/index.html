@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CORRECCIÓN: Cambié el título para que no diga 'Document' -->
+    <title>Gestor de Tareas de Leo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Gestor de Tareas</h1>
+    </header>
+
+    <main>
+        <div class="ingresar-tarea">
+            <label for="input-agregar-tarea">Agregue una tarea: </label> 
+            <input type="text" id="input-agregar-tarea">
+            <button id="btn-agregar-tarea">Agregar Tarea</button>
+        </div>
+
+        <h2>Lista de tareas</h2>
+
+        <div class="tareas-container">
+            <div class="lista-pendientes">
+                <h3>Pendientes</h3>
+                <ul id="pendientes"></ul>
+                <!-- CORRECCIÓN: Los botones globales de mover/borrar 
+                 individual no son necesarios acá si cada tarea tiene sus propios controles -->
+            </div>
+
+            <div class="lista-completadas">
+                <h3>Completadas</h3>
+                <ul id="completadas"></ul>
+            </div>
+        </div>
+
+        <button id="btn-borrar-listas">Limpiar Listas</button>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
