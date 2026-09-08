@@ -34,3 +34,19 @@ Consigna para Leo:
 Guardá el array frutas en el localStorage bajo la clave "mis_frutas". Después, abrí una pestaña nueva o recargá la página y lográ recuperar ese array en una variable llamada frutasGuardadas convirtiéndolo de vuelta a objeto JS.
 
 Qué estás evaluando: Uso fluido de localStorage.setItem(), localStorage.getItem(), JSON.stringify() y JSON.parse()
+
+=========================================================================================================
+
+Ejercicio 5: Eliminación en el Estado y Sync con LocalStorage
+El problema a resolver: Borrar un elemento del array usando .filter() y actualizar la memoria del navegador.
+
+Consigna para Leo:
+
+Dado un array guardado en localStorage con varios productos (ej: [{ id: 101, nombre: "Teclado" }, { id: 102, nombre: "Mouse" }]), escribí una función eliminarProducto(idAEliminar).
+La función debe:
+
+Filtrar el array para quitar el producto que tenga ese id.
+
+Guardar el nuevo array filtrado en localStorage.
+
+Volver a llamar a la función renderizar() para que desaparezca de la pantalla.
