@@ -3,7 +3,7 @@ El problema a resolver: Corregir la lectura del valor de un input y su validaci�
 
 Consigna para Leo:
 
-Crea un <input> y un <button>. Al hacer clic en el botón, el código debe verificar que el campo no esté vacío ni contenga solo espacios. Si tiene texto válido, mostralo en un alert() o en un <p>. Si está vacío, mostrá una alerta de error.
+Crea un input y un button . Al hacer clic en el botón, el código debe verificar que el campo no esté vacío ni contenga solo espacios. Si tiene texto válido, mostralo en un alert() o en un <p>. Si está vacío, mostrá una alerta de error.
 
 Qué estás evaluando: Que use input.value.trim() y no la variable del elemento DOM directamente.
 
@@ -22,7 +22,7 @@ Qué estás evaluando: Que entienda cómo mutar o mapear objetos dentro de un ar
 
 =========================================================================================================
 
-Ejercicio 3: El Renderizador de Listas (El Estado Manda)El problema a resolver: Crear el HTML a partir del Array y no hacer .appendChild() manual suelto.Consigna para Leo:Usando el array del ejercicio anterior, creá una función renderizar(). La función debe vaciar un <ul> con innerHTML = "" y recorrer el array con .forEach() para agregar un <li> por cada fruta. Si enStock es false, el texto debe decir "AGOTADO".Qué estás evaluando: Que domine el patrón "Limpiar contenedor $\rightarrow$ Recorrer Array $\rightarrow$ Dibujar en pantalla".
+Ejercicio 3: El Renderizador de Listas (El Estado Manda)El problema a resolver: Crear el HTML a partir del Array y no hacer .appendChild() manual suelto.Consigna para Leo:Usando el array del ejercicio anterior, creá una función renderizar(). La función debe vaciar un ul con innerHTML = "" y recorrer el array con .forEach() para agregar un li por cada fruta. Si enStock es false, el texto debe decir "AGOTADO".Qué estás evaluando: Que domine el patrón "Limpiar contenedor $ \ rightarrow $ Recorrer Array $ \ rightarrow $ Dibujar en pantalla".
 
 =========================================================================================================
 
