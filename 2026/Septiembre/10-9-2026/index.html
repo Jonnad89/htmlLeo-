@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito Express</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f9; display: flex; justify-content: center; }
+        .card { background: white; padding: 20px; border-radius: 8px; width: 350px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .input-group { display: flex; gap: 5px; margin-bottom: 15px; }
+        input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex: 1; }
+        button { padding: 8px 12px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        ul { list-style: none; padding: 0; }
+        li { background: #eee; margin-bottom: 5px; padding: 8px; display: flex; justify-content: space-between; align-items: center; border-radius: 4px; }
+        .btn-del { background: #dc3545; padding: 4px 8px; font-size: 12px; }
+        .total { font-weight: bold; font-size: 1.1rem; margin-top: 15px; border-top: 2px solid #ccc; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🛒 Carrito Express</h2>
+        <div class="input-group">
+            <input type="text" id="prod-nombre" placeholder="Producto...">
+            <input type="number" id="prod-precio" placeholder="$ Precio" style="width: 70px;">
+            <button id="btn-agregar">Add</button>
+        </div>
+
+        <ul id="lista-carrito"></ul>
+
+        <div class="total">Total: $<span id="monto-total">0</span></div>
+        <button id="btn-vaciar" style="background:#6c757d; width:100%; margin-top:10px;">Vaciar Carrito</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
