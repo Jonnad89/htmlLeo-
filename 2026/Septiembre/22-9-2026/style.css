@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header h1 {
+    color: #38bdf8;
+    font-size: 1.8rem;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* Panel de Stats */
+.stats-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+.stat-card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.stat-card small {
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+/* Formulario */
+.task-form {
+    display: flex;
+    gap: 8px;
+}
+
+input, select, button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    outline: none;
+}
+
+input {
+    flex: 1;
+    background: #1e293b;
+    color: white;
+}
+
+select {
+    background: #1e293b;
+    color: white;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+/* Lista de tareas */
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 5px solid #94a3b8;
+}
+
+.task-item.alta { border-left-color: #ef4444; }
+.task-item.media { border-left-color: #f59e0b; }
+.task-item.baja { border-left-color: #10b981; }
+
+.task-item.completada .text {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-check {
+    background: #10b981;
+    padding: 6px 10px;
+}
+
+.btn-delete {
+    background: #ef4444;
+    padding: 6px 10px;
+}

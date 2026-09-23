@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master POO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="dashboard">
+        <header>
+            <h1>⚡ Task Master POO</h1>
+            <p>Gestión de Tareas Orientada a Objetos</p>
+        </header>
+
+        <!-- PANEL DE ESTADÍSTICAS -->
+        <section class="stats-panel">
+            <div class="stat-card">
+                <span id="stat-totales">0</span>
+                <small>Totales</small>
+            </div>
+            <div class="stat-card">
+                <span id="stat-completadas">0</span>
+                <small>Completadas</small>
+            </div>
+            <div class="stat-card">
+                <span id="stat-pendientes">0</span>
+                <small>Pendientes</small>
+            </div>
+        </section>
+
+        <!-- FORMULARIO -->
+        <form id="form-tarea" class="task-form">
+            <input type="text" id="input-titulo" placeholder="¿Qué hay que hacer?" required>
+            <select id="select-prioridad">
+                <option value="baja">Baja</option>
+                <option value="media" selected>Media</option>
+                <option value="alta">Alta</option>
+            </select>
+            <button type="submit">Agregar Tarea</button>
+        </form>
+
+        <!-- LISTA DE TAREAS -->
+        <ul id="lista-tareas" class="task-list">
+            <!-- Se inyecta dinámicamente -->
+        </ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
