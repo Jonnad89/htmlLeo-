@@ -70,3 +70,5 @@ const PELICULAS_DB = [
     categoria: "Acción"
   },
 ];
+
+
