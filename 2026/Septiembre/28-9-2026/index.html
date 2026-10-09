@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder - Buscador de Películas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎬 Movie Finder</h1>
+        <div class="fav-counter">
+            ❤️ Favoritos: <span id="fav-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- BARRA DE BÚSQUEDA Y FILTROS -->
+        <section class="search-section">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar película o serie..." required>
+                
+                <select id="type-select">
+                    <option value="">Todos los tipos</option>
+                    <option value="movie">Película</option>
+                    <option value="series">Serie</option>
+                </select>
+
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <!-- PESTAÑAS PARA CAMBIAR DE VISTA -->
+        <nav class="tabs">
+            <button id="tab-search" class="active">Resultados</button>
+            <button id="tab-favs">Mis Favoritos</button>
+        </nav>
+
+        <!-- RECIPIENTE DE RESULTADOS O FAVORITOS -->
+        <section id="movies-grid" class="movies-grid">
+            <p class="placeholder-text">Ingresá un título arriba para comenzar a buscar.</p>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
