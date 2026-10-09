@@ -12,7 +12,7 @@ Listado dinámico que diferencie visualmente los ingresos (en verde) de los gast
 Balance total: Calcular automáticamente cuánto dinero queda disponible restando gastos a ingresos (ideal para practicar .reduce()).
 
 Botón para eliminar un movimiento y actualización automática del localStorage.
-
+ 
 =========================================================================================================
 
 Opción 2: Quiz de Preguntas (Trivia App)
