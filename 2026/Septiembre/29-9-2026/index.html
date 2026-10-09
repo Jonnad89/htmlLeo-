@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Commerce</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Express Commerce</h1>
+    </header>
+
+    <main>
+        <!-- COLUMNA IZQUIERDA: Formulario de Carga -->
+        <section class="addProductContainer">
+            <h2>Formulario de Nuevos Productos</h2>
+            <form id="productos-form">
+                <div class="form-group">
+                    <label for="input-nombre">Nombre del Producto:</label>
+                    <input type="text" id="input-nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-precio">Precio del Producto ($):</label>
+                    <input type="number" id="input-precio" min="0" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="select-categoria">Categoría:</label>
+                    <select id="select-categoria">
+                        <option value="electronica">Electrónica</option>
+                        <option value="ropa">Ropa</option>
+                        <option value="hogar">Hogar</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-imagen">URL de Imagen:</label>
+                    <input type="url" id="input-imagen" placeholder="https://..." required>
+                </div>
+
+                <button type="submit" id="btn-agregar">Agregar Producto</button>
+            </form>
+        </section>
+
+        <!-- COLUMNA DERECHA: Filtros y Lista de Productos -->
+        <section class="filtrosContainer">
+            <h2>Filtrar Productos</h2>
+            
+            <form id="filtros-form">
+                <div class="filter-group">
+                    <label for="buscar-nombre">Filtrar por nombre:</label>
+                    <input type="text" id="buscar-nombre" placeholder="Buscar...">
+                </div>
+
+                <div class="filter-group">
+                    <label for="filtrar-categoria">Filtrar por categoría:</label>
+                    <select id="filtrar-categoria">
+                        <option value="todas">Todas</option>
+                        <option value="electronica">Electrónica</option>
+                        <option value="ropa">Ropa</option>
+                        <option value="hogar">Hogar</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- Galería/Catálogo de productos -->
+            <div id="catalogo-productos" class="productos-grid"></div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
